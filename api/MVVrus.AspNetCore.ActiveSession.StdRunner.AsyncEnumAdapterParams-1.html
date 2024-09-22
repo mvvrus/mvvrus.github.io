@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct AsyncEnumAdapterParams&lt;TItem&gt;
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct AsyncEnumAdapterParams&lt;TItem&gt;
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterParams`1">
+
+
+
+  <h1 id="MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterParams_1" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterParams`1" class="text-break">
+    Struct AsyncEnumAdapterParams&lt;TItem&gt;
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MVVrus.html">MVVrus</a>.<a class="xref" href="MVVrus.AspNetCore.html">AspNetCore</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.html">ActiveSession</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.html">StdRunner</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MVVrus.AspNetCore.ActiveSession.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Class containg parameters that are to be passed to the
+<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterRunner-1.-ctor.html#MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterRunner_1__ctor_System_Collections_Generic_IAsyncEnumerable__0__System_Boolean_System_Threading_CancellationTokenSource_System_Boolean_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Boolean_MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Options_IOptionsSnapshot_MVVrus_AspNetCore_ActiveSession_ActiveSessionOptions__Microsoft_Extensions_Logging_ILogger_"> 
+    AsyncEnumAdapterRunner class constructor</a> while creating it via
+<a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.CreateRunner.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_CreateRunner__2___0_Microsoft_AspNetCore_Http_HttpContext_">IActiveSession.CreateRunner</a> method.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public record struct AsyncEnumAdapterParams&lt;TItem&gt; : IEquatable&lt;AsyncEnumAdapterParams&lt;TItem&gt;&gt;</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TItem</code></dt>
+    <dd><p>Type specializing the runner's <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner-1.html">IRunner&lt;TResult&gt;</a> interface</p>
+</dd>
+  </dl>
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterParams-1.html">AsyncEnumAdapterParams</a>&lt;TItem&gt;&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterParams-1.-ctor.html#MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterParams_1__ctor_System_Collections_Generic_IAsyncEnumerable__0__System_Nullable_System_Int32__System_Threading_CancellationTokenSource_System_Nullable_System_Int32__System_Boolean_System_Boolean_System_Boolean_">AsyncEnumAdapterParams(IAsyncEnumerable&lt;TItem&gt;, int?, CancellationTokenSource?, int?, bool, bool, bool)</a></dt>
+    <dd><p>Class containg parameters that are to be passed to the
+<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterRunner-1.-ctor.html#MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterRunner_1__ctor_System_Collections_Generic_IAsyncEnumerable__0__System_Boolean_System_Threading_CancellationTokenSource_System_Boolean_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Boolean_MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Options_IOptionsSnapshot_MVVrus_AspNetCore_ActiveSession_ActiveSessionOptions__Microsoft_Extensions_Logging_ILogger_"> 
+    AsyncEnumAdapterRunner class constructor</a> while creating it via
+<a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.CreateRunner.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_CreateRunner__2___0_Microsoft_AspNetCore_Http_HttpContext_">IActiveSession.CreateRunner</a> method.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterParams-1.CompletionTokenSource.html#MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterParams_1_CompletionTokenSource">CompletionTokenSource</a></dt>
+    <dd><param name="CompletionTokenSource"><param name="CompletionTokenSource">
+External source for a value of the <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> property. If it is null (default value), 
+a new <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> will be used as the source in the instance to be created.
+
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterParams-1.DefaultAdvance.html#MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterParams_1_DefaultAdvance">DefaultAdvance</a></dt>
+    <dd><param name="DefaultAdvance"><param name="DefaultAdvance">
+Default value for the first parameter (Advance) for 
+<a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.GetRequiredAsync.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_GetRequiredAsync_System_Int32_System_Threading_CancellationToken_System_Int32_System_String_">GetRequiredAsync</a>
+method of the instance to be created.
+
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterParams-1.EnumAheadLimit.html#MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterParams_1_EnumAheadLimit">EnumAheadLimit</a></dt>
+    <dd><param name="EnumAheadLimit"><param name="QueueSize">Maximum number of items fetched in background ahead of time in the instance to be created.
+
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterParams-1.PassCtsOwnership.html#MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterParams_1_PassCtsOwnership">PassCtsOwnership</a></dt>
+    <dd><param name="PassCtsOwnership"><param name="PassCtsOwnership">
+This value indicates will the instance to be created be responsible for disposing an external <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> source if it was passed by <code class="paramref">CompletionTokenSource</code>.
+
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterParams-1.PassSourceOnership.html#MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterParams_1_PassSourceOnership">PassSourceOnership</a></dt>
+    <dd><param name="PassSourceOnership">
+Flag showing that the instance to be created will be responsible for disposing the <code class="paramref">Source</code> value passed to it.
+
+The default value is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterParams-1.Source.html#MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterParams_1_Source">Source</a></dt>
+    <dd><param name="Source">An async-enumerable for which the instance to be created will serve as an adapter.
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterParams-1.StartInConstructor.html#MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterParams_1_StartInConstructor">StartInConstructor</a></dt>
+    <dd><param name="StartInConstructor">Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to start background processing in the constructor.
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

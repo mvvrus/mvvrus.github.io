@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IActiveSession
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IActiveSession
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MVVrus.AspNetCore.ActiveSession.IActiveSession">
+
+
+
+  <h1 id="MVVrus_AspNetCore_ActiveSession_IActiveSession" data-uid="MVVrus.AspNetCore.ActiveSession.IActiveSession" class="text-break">
+    Interface IActiveSession
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MVVrus.html">MVVrus</a>.<a class="xref" href="MVVrus.AspNetCore.html">AspNetCore</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.html">ActiveSession</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MVVrus.AspNetCore.ActiveSession.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>An interface used to access Active Session object</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IActiveSession : ILocalSession</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.ILocalSession.BaseId.html#MVVrus_AspNetCore_ActiveSession_ILocalSession_BaseId">ILocalSession.BaseId</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.ILocalSession.IsAvailable.html#MVVrus_AspNetCore_ActiveSession_ILocalSession_IsAvailable">ILocalSession.IsAvailable</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.ILocalSession.SessionServices.html#MVVrus_AspNetCore_ActiveSession_ILocalSession_SessionServices">ILocalSession.SessionServices</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.ILocalSession.Properties.html#MVVrus_AspNetCore_ActiveSession_ILocalSession_Properties">ILocalSession.Properties</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionExtensions.CreateRunnerWithExclusiveService.html#MVVrus_AspNetCore_ActiveSession_ActiveSessionExtensions_CreateRunnerWithExclusiveService__2_MVVrus_AspNetCore_ActiveSession_IActiveSession___0_Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_">ActiveSessionExtensions.CreateRunnerWithExclusiveService&lt;TRequest, TResult&gt;(IActiveSession, TRequest, HttpContext, IDisposable)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSequenceRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSequenceRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterParams___0__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_">StdRunnerActiveSessionExtensions.CreateSequenceRunner&lt;TItem&gt;(IActiveSession, AsyncEnumAdapterParams&lt;TItem&gt;, HttpContext, IDisposable?)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSequenceRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSequenceRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_MVVrus_AspNetCore_ActiveSession_StdRunner_EnumAdapterParams___0__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_">StdRunnerActiveSessionExtensions.CreateSequenceRunner&lt;TItem&gt;(IActiveSession, EnumAdapterParams&lt;TItem&gt;, HttpContext, IDisposable?)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSequenceRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSequenceRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Collections_Generic_IAsyncEnumerable___0__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_">StdRunnerActiveSessionExtensions.CreateSequenceRunner&lt;TItem&gt;(IActiveSession, IAsyncEnumerable&lt;TItem&gt;, HttpContext, IDisposable?)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSequenceRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSequenceRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Collections_Generic_IEnumerable___0__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_">StdRunnerActiveSessionExtensions.CreateSequenceRunner&lt;TItem&gt;(IActiveSession, IEnumerable&lt;TItem&gt;, HttpContext, IDisposable?)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Action_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_">StdRunnerActiveSessionExtensions.CreateSessionProcessRunner&lt;TResult&gt;(IActiveSession, Action&lt;Action&lt;TResult, int?&gt;, CancellationToken&gt;, HttpContext, IDisposable?)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Action_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken__Microsoft_AspNetCore_Http_HttpContext_System_Threading_CancellationTokenSource_System_Boolean_System_IDisposable_">StdRunnerActiveSessionExtensions.CreateSessionProcessRunner&lt;TResult&gt;(IActiveSession, Action&lt;Action&lt;TResult, int?&gt;, CancellationToken&gt;, HttpContext, CancellationTokenSource, bool, IDisposable?)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Func_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken___0__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_">StdRunnerActiveSessionExtensions.CreateSessionProcessRunner&lt;TResult&gt;(IActiveSession, Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, TResult&gt;, HttpContext, IDisposable?)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Func_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken___0__Microsoft_AspNetCore_Http_HttpContext_System_Threading_CancellationTokenSource_System_Boolean_System_IDisposable_">StdRunnerActiveSessionExtensions.CreateSessionProcessRunner&lt;TResult&gt;(IActiveSession, Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, TResult&gt;, HttpContext, CancellationTokenSource, bool, IDisposable?)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Func_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task___0___Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_">StdRunnerActiveSessionExtensions.CreateSessionProcessRunner&lt;TResult&gt;(IActiveSession, Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&lt;TResult&gt;&gt;, HttpContext, IDisposable?)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Func_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task___0___Microsoft_AspNetCore_Http_HttpContext_System_Threading_CancellationTokenSource_System_Boolean_System_IDisposable_">StdRunnerActiveSessionExtensions.CreateSessionProcessRunner&lt;TResult&gt;(IActiveSession, Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&lt;TResult&gt;&gt;, HttpContext, CancellationTokenSource, bool, IDisposable?)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Func_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_">StdRunnerActiveSessionExtensions.CreateSessionProcessRunner&lt;TResult&gt;(IActiveSession, Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&gt;, HttpContext, IDisposable?)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Func_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task__Microsoft_AspNetCore_Http_HttpContext_System_Threading_CancellationTokenSource_System_Boolean_System_IDisposable_">StdRunnerActiveSessionExtensions.CreateSessionProcessRunner&lt;TResult&gt;(IActiveSession, Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&gt;, HttpContext, CancellationTokenSource, bool, IDisposable?)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateTimeSeriesRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateTimeSeriesRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_MVVrus_AspNetCore_ActiveSession_StdRunner_TimeSeriesParams___0__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_">StdRunnerActiveSessionExtensions.CreateTimeSeriesRunner&lt;TResult&gt;(IActiveSession, TimeSeriesParams&lt;TResult&gt;, HttpContext, IDisposable?)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateTimeSeriesRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateTimeSeriesRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Func___0__System_TimeSpan_Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_">StdRunnerActiveSessionExtensions.CreateTimeSeriesRunner&lt;TResult&gt;(IActiveSession, Func&lt;TResult&gt;, TimeSpan, HttpContext, IDisposable?)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateTimeSeriesRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateTimeSeriesRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Func___0__System_TimeSpan_System_Int32_Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_">StdRunnerActiveSessionExtensions.CreateTimeSeriesRunner&lt;TResult&gt;(IActiveSession, Func&lt;TResult&gt;, TimeSpan, int, HttpContext, IDisposable?)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.GetSequenceRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_GetSequenceRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Int32_Microsoft_AspNetCore_Http_HttpContext_">StdRunnerActiveSessionExtensions.GetSequenceRunner&lt;TItem&gt;(IActiveSession, int, HttpContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.GetTimeSeriesRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_GetTimeSeriesRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Int32_Microsoft_AspNetCore_Http_HttpContext_">StdRunnerActiveSessionExtensions.GetTimeSeriesRunner&lt;TResult&gt;(IActiveSession, int, HttpContext)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.CleanupCompletionTask.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_CleanupCompletionTask">CleanupCompletionTask</a></dt>
+    <dd><p>Task that performs asynchronous cleanup of this active session (waits for all runners completion etc).</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_CompletionToken">CompletionToken</a></dt>
+    <dd><p>Cancellation token that will be fired after the active session completion (eviction/disposal) at start of cleanup/</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.Generation.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_Generation">Generation</a></dt>
+    <dd><p>A generation number of this ActiveSession within the containing <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.isession">ASP.NET Core session/</a></p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.Id.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_Id">Id</a></dt>
+    <dd><p>The ActiveSession identifier.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.IsFresh.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_IsFresh">IsFresh</a></dt>
+    <dd><p>Indicator that the Active Session object was just created an is still empty.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.IsIdle.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_IsIdle">IsIdle</a></dt>
+    <dd><p>Indicates whether no runners are executing within this session.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.CreateRunner.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_CreateRunner__2___0_Microsoft_AspNetCore_Http_HttpContext_">CreateRunner&lt;TRequest, TResult&gt;(TRequest, HttpContext)</a></dt>
+    <dd><p>A method used to create a new runner</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.GetNonTypedRunner.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_GetNonTypedRunner_System_Int32_Microsoft_AspNetCore_Http_HttpContext_">GetNonTypedRunner(int, HttpContext)</a></dt>
+    <dd><p>A method used to search for and return a base, non-typed interface of an existing runner</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.GetNonTypedRunnerAsync.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_GetNonTypedRunnerAsync_System_Int32_Microsoft_AspNetCore_Http_HttpContext_System_Threading_CancellationToken_">GetNonTypedRunnerAsync(int, HttpContext, CancellationToken)</a></dt>
+    <dd><p>An asynchronous version of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.GetNonTypedRunner.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_GetNonTypedRunner_System_Int32_Microsoft_AspNetCore_Http_HttpContext_">GetNonTypedRunner(int, HttpContext)</a> method.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.GetRunnerAsync.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_GetRunnerAsync__1_System_Int32_Microsoft_AspNetCore_Http_HttpContext_System_Threading_CancellationToken_">GetRunnerAsync&lt;TResult&gt;(int, HttpContext, CancellationToken)</a></dt>
+    <dd><p>An asynchronous version of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.GetRunner.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_GetRunner__1_System_Int32_Microsoft_AspNetCore_Http_HttpContext_">GetRunner&lt;TResult&gt;(int, HttpContext)</a> method.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.GetRunner.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_GetRunner__1_System_Int32_Microsoft_AspNetCore_Http_HttpContext_">GetRunner&lt;TResult&gt;(int, HttpContext)</a></dt>
+    <dd><p>A method used to search for an existing runner</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.Terminate.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_Terminate_Microsoft_AspNetCore_Http_HttpContext_">Terminate(HttpContext)</a></dt>
+    <dd><p>Terminate the active session aborting all runners.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.TrackRunnerCleanup.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_TrackRunnerCleanup_System_Int32_">TrackRunnerCleanup(int)</a></dt>
+    <dd><p>Obtains a task for the runner that tracks the runner's completion and cleanup,
+completing after the runner has been completed and its object has been disposed (if disposal is required).</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.WaitUntilIdle.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_WaitUntilIdle_System_Boolean_System_TimeSpan_System_Threading_CancellationToken_">WaitUntilIdle(bool, TimeSpan, CancellationToken)</a></dt>
+    <dd><p>Waits until all runners in the session complete their execution.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

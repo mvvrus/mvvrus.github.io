@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method GetAvailable
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method GetAvailable
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.GetAvailable*">
+
+
+
+
+
+<h1 id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1_GetAvailable_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.GetAvailable*" class="text-break">
+  Method GetAvailable
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="MVVrus.html">MVVrus</a>.<a class="xref" href="MVVrus.AspNetCore.html">AspNetCore</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.html">ActiveSession</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.html">StdRunner</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MVVrus.AspNetCore.ActiveSession.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1_GetAvailable_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.GetAvailable*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1_GetAvailable_System_Int32_System_Int32_System_String_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.GetAvailable(System.Int32,System.Int32,System.String)">
+  GetAvailable(int, int, string?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p><toinherit>Returns a result of the runner available at the moment of the method call.</toinherit></p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public RunnerResult&lt;TResult&gt; GetAvailable(int Advance = 2147483647, int StartPosition = -1, string? TraceIdentifier = null)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>Advance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd><p>Desired increment of the runner's <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner.Position.html#MVVrus_AspNetCore_ActiveSession_IRunner_Position">Position</a>, at which the fetch should stop.
+If the backgound process did not get so far, this method returns the result for the last Position reached.
+In general, the value of this param should be positive, zero ( <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner.DEFAULT_ADVANCE.html">DEFAULT_ADVANCE</a>) value having a special meaning.</p>
+</dd>
+  <dt><code>StartPosition</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd><p><toinherit>Position value from which a fetch of the result should begin. </toinherit>
+In general, value of this parameter should be non-negative (except for the special value below) and not less than value of the <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner.Position.html#MVVrus_AspNetCore_ActiveSession_IRunner_Position">Position</a> property.
+Use <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner.CURRENT_POSITION.html">CURRENT_POSITION</a> constant to continue to fetch result from the last position fetched.</p>
+</dd>
+  <dt><code>TraceIdentifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+  <dd><param name="TraceIdentifier">String that can be used for tracing.
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerResult-1.html">RunnerResult</a>&lt;TResult&gt;</dt>
+  <dd><toinherit>
+    Fields in the structure returned as a result contains values of the properties 
+    <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner.Status.html#MVVrus_AspNetCore_ActiveSession_IRunner_Status">Status</a> and <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner.Position.html#MVVrus_AspNetCore_ActiveSession_IRunner_Position">Position</a>
+    at the point of completion in fields with the same names 
+    and a runner-specific result in a <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerResult-1.Result.html#MVVrus_AspNetCore_ActiveSession_RunnerResult_1_Result">Result</a> field,
+    </toinherit>
+    the field Result type being TResult).
+</dd>
+</dl>
+
+
+
+
+
+
+
+<h4 class="section" id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1_GetAvailable_System_Int32_System_Int32_System_String__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><interprete>
+<p>
+If <code class="paramref">Advance</code> has zero (i.e. <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner.DEFAULT_ADVANCE.html">DEFAULT_ADVANCE</a>) value 
+and <code class="paramref">StartPosition</code> has (explicitly or implicitly, using <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner.CURRENT_POSITION.html">CURRENT_POSITION</a>) the same value 
+as the current <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner.Position.html#MVVrus_AspNetCore_ActiveSession_IRunner_Position">Position</a> property then value of the Advance is assumed to be 1.
+</p>
+<p>
+This method always returns a result (value of Result field in the <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerResult-1.html">RunnerResult</a> structure) 
+obtained from the last callback from the background process 
+(or its returned result if the background process has been ended and returns a result).
+So when the method is called for the earlier resulting position than achieved by the background process 
+it does return not an intermediate result for that position 
+but the last result for the current position achieved by background.
+</p>
+</interprete>
+</div>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace MVVrus.AspNetCore.ActiveSession
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace MVVrus.AspNetCore.ActiveSession
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MVVrus.AspNetCore.ActiveSession">
+
+  <h1 id="MVVrus_AspNetCore_ActiveSession" data-uid="MVVrus.AspNetCore.ActiveSession" class="text-break">Namespace MVVrus.AspNetCore.ActiveSession
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.html">ActiveSessionBuilderExtensions</a></dt>
+      <dd><p>Contains extension methods used to configure middleware for ActiveSession feature</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionConstructorAttribute.html">ActiveSessionConstructorAttribute</a></dt>
+      <dd><p>Attribute used to select or deny use of constructors for type-based runner factories</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.html">ActiveSessionContextExtension</a></dt>
+      <dd><p>This class contains extension methods for the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext">HttpContext</a> class associated with the ActiveSession feature</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionExtensions.html">ActiveSessionExtensions</a></dt>
+      <dd><p>TODO</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionOptions.html">ActiveSessionOptions</a></dt>
+      <dd><p>The object containing options for configuring an ActiveSession feature</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionServiceCollectionExtensions.html">ActiveSessionServiceCollectionExtensions</a></dt>
+      <dd><p>Contains extension methods used to configure services for ActiveSession feature</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionStoreStats.html">ActiveSessionStoreStats</a></dt>
+      <dd><p>A record containing current statistics of ActiveSession store</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.html">EnumerableRunnerBase&lt;TItem&gt;</a></dt>
+      <dd><p>This class is a base class for sequence-oriented runner classes (see Remarks section).
+It is an abstract class intended to be a base for specific sequence-oriented runner classes.
+It implements a common logic for those runners.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.html">RunnerBase</a></dt>
+      <dd><p>An abstract class intended to be used as a base for runner classes implementing <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner-1.html">IRunner&lt;TResult&gt;</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerExtensions.html">RunnerExtensions</a></dt>
+      <dd><p>Contains extension methods for <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner-1.html">IRunner&lt;TResult&gt;</a> interface</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerStatusExtensions.html">RunnerStatusExtensions</a></dt>
+      <dd><p>Class containing an extension method for <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerStatus.html">RunnerStatus</a> enumerable</p>
+</dd>
+    </dl>
+    <h3 id="structs">
+Structs
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.ExtRunnerKey.html">ExtRunnerKey</a></dt>
+      <dd><p>This struct is intended to pass a runner identifier into a code external to an ActiveSession library (e.g as a part of URL).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.KeyedRunner-1.html">KeyedRunner&lt;TResult&gt;</a></dt>
+      <dd><p>The type of structure used to return newly created runner</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBkgProgress.html">RunnerBkgProgress</a></dt>
+      <dd><p>Used to return information about a progress of a background execution of the runner</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerId.html">RunnerId</a></dt>
+      <dd><p>A type to be used by a runner identifier. It usually exposed by a runner via its <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner.Id.html#MVVrus_AspNetCore_ActiveSession_IRunner_Id">Id</a> property.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerResult-1.html">RunnerResult&lt;TResult&gt;</a></dt>
+      <dd><p>Used to return result of a runner execution.</p>
+</dd>
+    </dl>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.html">IActiveSession</a></dt>
+      <dd><p>An interface used to access Active Session object</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSessionFeature.html">IActiveSessionFeature</a></dt>
+      <dd><p>The feature interface for an ActiveSession feature to be put into a <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext.features">Features</a> collection.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.ILocalSession.html">ILocalSession</a></dt>
+      <dd><p>An interface that is implemented by session objects of  ActiveSession library - local to each host and attched
+to <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.isession">ASP.NET Core sessions</a> (those are possibly distribute).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.ILockedSessionService-1.html">ILockedSessionService&lt;TService&gt;</a></dt>
+      <dd><p>Represents an exclusive service accessor for a scoped service from the active session's DI container.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner.html">IRunner</a></dt>
+      <dd><p>A base, non-typed part of any generic runner interface, <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner-1.html">IRunner&lt;TResult&gt;</a></p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunnerFactory-2.html">IRunnerFactory&lt;TRequest, TResult&gt;</a></dt>
+      <dd><p>A factory object used to create a new runner</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunnerProxy.html">IRunnerProxy</a></dt>
+      <dd><p>Extension of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner.html">IRunner</a> to support remote runner calls. Not implemented yet</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunnerProxy-1.html">IRunnerProxy&lt;TResult&gt;</a></dt>
+      <dd><p>Extension of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner-1.html">IRunner&lt;TResult&gt;</a> to support remote runner calls. Not implemented yet</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner-1.html">IRunner&lt;TResult&gt;</a></dt>
+      <dd><p>A generic interface that must be implemented by an ActiveSession runner.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.ISessionServiceLock-1.html">ISessionServiceLock&lt;TService&gt;</a></dt>
+      <dd><p>This generic interface is intended to obtain an exclusive access to a scoped service instance
+within the current active session's service scope (if any).</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.ISessionService-1.html">ISessionService&lt;TService&gt;</a></dt>
+      <dd><p>This generic interface facilitates obtaining a service instance
+from the current active session's service scope DI container(if any).</p>
+</dd>
+    </dl>
+    <h3 id="enums">
+Enums
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerStatus.html">RunnerStatus</a></dt>
+      <dd><p>Enumeration containing possible states of a runner object? implementing a <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner-1.html">IRunner&lt;TResult&gt;</a>interface.</p>
+</dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

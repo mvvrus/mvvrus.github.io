@@ -1,0 +1,615 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Constructor SessionProcessRunner
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Constructor SessionProcessRunner
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.#ctor*">
+
+
+
+
+
+<h1 id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.#ctor*" class="text-break">
+  Constructor SessionProcessRunner
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="MVVrus.html">MVVrus</a>.<a class="xref" href="MVVrus.AspNetCore.html">AspNetCore</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.html">ActiveSession</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.html">StdRunner</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MVVrus.AspNetCore.ActiveSession.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.#ctor*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_System_Func_System_Action__0_System_Nullable_System_Int32___System_Threading_CancellationToken__0__MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner__0___" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.#ctor(System.Func{System.Action{`0,System.Nullable{System.Int32}},System.Threading.CancellationToken,`0},MVVrus.AspNetCore.ActiveSession.RunnerId,Microsoft.Extensions.Logging.ILogger{MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner{`0}})">
+  SessionProcessRunner(Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, TResult&gt;, RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p><factory>A constructor that creates an instance of the runner by means of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a>.</factory>
+<noextcts>An external source for CompletionToken property of the runner cannot be used. </noextcts>
+<sync>The runner will run a background task that executes the specified (synchronous) delegate </sync>
+<result>returning the final result from the task.</result></p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">[ActiveSessionConstructor(true)]
+public SessionProcessRunner(Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, TResult&gt; ProcessTaskBody, RunnerId RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;? Logger)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>ProcessTaskBody</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TResult, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, TResult&gt;</dt>
+  <dd><p>A delegate that is used as a synchronously executing body of a background task.</p>
+</dd>
+  <dt><code>RunnerId</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerId.html">RunnerId</a></dt>
+  <dd><param name="RunnerId"><param name="RunnerId">The identifier to be assigned to the instance to be created.
+</dd>
+  <dt><code>Logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.html">SessionProcessRunner</a>&lt;TResult&gt;&gt;</dt>
+  <dd><param name="Logger"><param name="Logger">The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> instance used to write log messages from the instance to be created.
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.#ctor*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_System_ValueTuple_System_Func_System_Action__0_System_Nullable_System_Int32___System_Threading_CancellationToken__0__System_Threading_CancellationTokenSource_System_Boolean__MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner__0___" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.#ctor(System.ValueTuple{System.Func{System.Action{`0,System.Nullable{System.Int32}},System.Threading.CancellationToken,`0},System.Threading.CancellationTokenSource,System.Boolean},MVVrus.AspNetCore.ActiveSession.RunnerId,Microsoft.Extensions.Logging.ILogger{MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner{`0}})">
+  SessionProcessRunner((Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, TResult&gt; ProcessTaskBody, CancellationTokenSource? Cts, bool PassCtsOwnership), RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p><factory>A constructor that creates an instance of the runner by means of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a>.</factory>
+<extcts>An external source for CompletionToken property of the runner can be used. </extcts>
+<sync>The runner will run a background task that executes the specified (synchronous) delegate </sync>
+<result>returning the final result from the task.</result></p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">[ActiveSessionConstructor(true)]
+public SessionProcessRunner((Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, TResult&gt; ProcessTaskBody, CancellationTokenSource? Cts, bool PassCtsOwnership) Param, RunnerId RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;? Logger)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>Param</code> (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TResult, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, TResult&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.func-system.action--0,system.nullable-system.int32--,system.threading.cancellationtoken,-0-,system.threading.cancellationtokensource,system.boolean-.processtaskbody">ProcessTaskBody</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.func-system.action--0,system.nullable-system.int32--,system.threading.cancellationtoken,-0-,system.threading.cancellationtokensource,system.boolean-.cts">Cts</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.func-system.action--0,system.nullable-system.int32--,system.threading.cancellationtoken,-0-,system.threading.cancellationtokensource,system.boolean-.passctsownership">PassCtsOwnership</a>)</dt>
+  <dd><p>A tuple of three values:</p>
+   <ul><li>
+   <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func&lt;Action&lt;TResilt, int?&gt;, CancellationToken, TResult&gt; </a> ProcessTaskBody: <br>
+   <param name="ProcessTaskBody">A delegate that is used as a synchronously executing body of a background task.
+   </li><li>
+   <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> Cts: <br> 
+   <param name="CompletionTokenSource"><param name="CompletionTokenSource">
+   External source for a value of the <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> property. If it is null (default value), 
+   a new <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> will be used as the source in the instance to be created.
+   
+   </li><li><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> PassCtsOwnership: <br>
+   <param name="PassCtsOwnership"><param name="PassCtsOwnership">
+   This value indicates will the instance to be created be responsible for disposing an external <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> source if it was passed by <code class="paramref">CompletionTokenSource</code>.
+   
+   </li></ul>
+</dd>
+  <dt><code>RunnerId</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerId.html">RunnerId</a></dt>
+  <dd><param name="RunnerId"><param name="RunnerId">The identifier to be assigned to the instance to be created.
+</dd>
+  <dt><code>Logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.html">SessionProcessRunner</a>&lt;TResult&gt;&gt;</dt>
+  <dd><param name="Logger"><param name="Logger">The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> instance used to write log messages from the instance to be created.
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.#ctor*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_System_Action_System_Action__0_System_Nullable_System_Int32___System_Threading_CancellationToken__MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner__0___" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.#ctor(System.Action{System.Action{`0,System.Nullable{System.Int32}},System.Threading.CancellationToken},MVVrus.AspNetCore.ActiveSession.RunnerId,Microsoft.Extensions.Logging.ILogger{MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner{`0}})">
+  SessionProcessRunner(Action&lt;Action&lt;TResult, int?&gt;, CancellationToken&gt;, RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p><factory>A constructor that creates an instance of the runner by means of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a>.</factory>
+<noextcts>An external source for CompletionToken property of the runner cannot be used. </noextcts>
+<sync>The runner will run a background task that executes the specified (synchronous) delegate </sync>
+<noresult>without returning the final result from the task.</noresult></p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">[ActiveSessionConstructor(true)]
+public SessionProcessRunner(Action&lt;Action&lt;TResult, int?&gt;, CancellationToken&gt; ProcessTaskBody, RunnerId RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;? Logger)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>ProcessTaskBody</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TResult, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>&gt;</dt>
+  <dd><param name="ProcessTaskBody">A delegate that is used as a synchronously executing body of a background task.
+</dd>
+  <dt><code>RunnerId</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerId.html">RunnerId</a></dt>
+  <dd><param name="RunnerId"><param name="RunnerId">The identifier to be assigned to the instance to be created.
+</dd>
+  <dt><code>Logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.html">SessionProcessRunner</a>&lt;TResult&gt;&gt;</dt>
+  <dd><param name="Logger"><param name="Logger">The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> instance used to write log messages from the instance to be created.
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.#ctor*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_System_ValueTuple_System_Action_System_Action__0_System_Nullable_System_Int32___System_Threading_CancellationToken__System_Threading_CancellationTokenSource_System_Boolean__MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner__0___" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.#ctor(System.ValueTuple{System.Action{System.Action{`0,System.Nullable{System.Int32}},System.Threading.CancellationToken},System.Threading.CancellationTokenSource,System.Boolean},MVVrus.AspNetCore.ActiveSession.RunnerId,Microsoft.Extensions.Logging.ILogger{MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner{`0}})">
+  SessionProcessRunner((Action&lt;Action&lt;TResult, int?&gt;, CancellationToken&gt; ProcessTaskBody, CancellationTokenSource? Cts, bool PassCtsOwnership), RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p><factory>A constructor that creates an instance of the runner by means of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a>.</factory>
+<extcts>An external source for CompletionToken property of the runner can be used. </extcts>
+<sync>The runner will run a background task that executes the specified (synchronous) delegate </sync>
+<noresult>without returning the final result from the task.</noresult></p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">[ActiveSessionConstructor(true)]
+public SessionProcessRunner((Action&lt;Action&lt;TResult, int?&gt;, CancellationToken&gt; ProcessTaskBody, CancellationTokenSource? Cts, bool PassCtsOwnership) Param, RunnerId RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;? Logger)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>Param</code> (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TResult, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.action-system.action--0,system.nullable-system.int32--,system.threading.cancellationtoken-,system.threading.cancellationtokensource,system.boolean-.processtaskbody">ProcessTaskBody</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.action-system.action--0,system.nullable-system.int32--,system.threading.cancellationtoken-,system.threading.cancellationtokensource,system.boolean-.cts">Cts</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.action-system.action--0,system.nullable-system.int32--,system.threading.cancellationtoken-,system.threading.cancellationtokensource,system.boolean-.passctsownership">PassCtsOwnership</a>)</dt>
+  <dd><p>A tuple of three values:
+<ul><li>
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action&lt;Action&lt;TResilt, Int32?&gt;, CancellationToken&gt; </a> ProcessTaskBody: <br>
+<param name="ProcessTaskBody">A delegate that is used as a synchronously executing body of a background task.
+</li><li><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> Cts: <br><param name="CompletionTokenSource"><param name="CompletionTokenSource">
+External source for a value of the <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> property. If it is null (default value),
+a new <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> will be used as the source in the instance to be created.
+</li><li><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> PassCtsOwnership: <br><param name="PassCtsOwnership"><param name="PassCtsOwnership">
+This value indicates will the instance to be created be responsible for disposing an external <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> source if it was passed by <code class="paramref">CompletionTokenSource</code>.
+</li></ul>
+</dd>
+  <dt><code>RunnerId</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerId.html">RunnerId</a></dt>
+  <dd><param name="RunnerId"><param name="RunnerId">The identifier to be assigned to the instance to be created.
+</dd>
+  <dt><code>Logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.html">SessionProcessRunner</a>&lt;TResult&gt;&gt;</dt>
+  <dd><param name="Logger"><param name="Logger">The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> instance used to write log messages from the instance to be created.
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.#ctor*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_System_Func_System_Action__0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task__0___MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner__0___" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.#ctor(System.Func{System.Action{`0,System.Nullable{System.Int32}},System.Threading.CancellationToken,System.Threading.Tasks.Task{`0}},MVVrus.AspNetCore.ActiveSession.RunnerId,Microsoft.Extensions.Logging.ILogger{MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner{`0}})">
+  SessionProcessRunner(Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&lt;TResult&gt;&gt;, RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p><factory>A constructor that creates an instance of the runner by means of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a>.</factory>
+<noextcts>An external source for CompletionToken property of the runner cannot be used. </noextcts>
+<async>The runner will run a background task created by the specified delegate </async>
+<result>returning the final result from the task.</result></p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">[ActiveSessionConstructor(true)]
+public SessionProcessRunner(Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&lt;TResult&gt;&gt; ProcessTaskCreator, RunnerId RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;? Logger)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>ProcessTaskCreator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TResult, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResult&gt;&gt;</dt>
+  <dd><param name="ProcessTaskCreator">
+A delegate that is used to create a background task. 
+
+</dd>
+  <dt><code>RunnerId</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerId.html">RunnerId</a></dt>
+  <dd><param name="RunnerId"><param name="RunnerId">The identifier to be assigned to the instance to be created.
+</dd>
+  <dt><code>Logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.html">SessionProcessRunner</a>&lt;TResult&gt;&gt;</dt>
+  <dd><param name="Logger"><param name="Logger">The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> instance used to write log messages from the instance to be created.
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.#ctor*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_System_Func_System_Action__0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task__MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner__0___" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.#ctor(System.Func{System.Action{`0,System.Nullable{System.Int32}},System.Threading.CancellationToken,System.Threading.Tasks.Task},MVVrus.AspNetCore.ActiveSession.RunnerId,Microsoft.Extensions.Logging.ILogger{MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner{`0}})">
+  SessionProcessRunner(Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&gt;, RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p><factory>A constructor that creates an instance of the runner by means of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a>.</factory>
+<noextcts>An external source for CompletionToken property of the runner cannot be used. </noextcts>
+<async>The runner will run a background task created by the specified delegate </async>
+<noresult>without returning the final result from the task.</noresult></p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">[ActiveSessionConstructor(true)]
+public SessionProcessRunner(Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&gt; ProcessTaskCreator, RunnerId RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;? Logger)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>ProcessTaskCreator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TResult, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+  <dd><param name="ProcessTaskCreator">
+A delegate that is used to create a background task. 
+
+</dd>
+  <dt><code>RunnerId</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerId.html">RunnerId</a></dt>
+  <dd><param name="RunnerId"><param name="RunnerId">The identifier to be assigned to the instance to be created.
+</dd>
+  <dt><code>Logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.html">SessionProcessRunner</a>&lt;TResult&gt;&gt;</dt>
+  <dd><param name="Logger"><param name="Logger">The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> instance used to write log messages from the instance to be created.
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.#ctor*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_System_ValueTuple_System_Func_System_Action__0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task__0___System_Threading_CancellationTokenSource_System_Boolean__MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner__0___" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.#ctor(System.ValueTuple{System.Func{System.Action{`0,System.Nullable{System.Int32}},System.Threading.CancellationToken,System.Threading.Tasks.Task{`0}},System.Threading.CancellationTokenSource,System.Boolean},MVVrus.AspNetCore.ActiveSession.RunnerId,Microsoft.Extensions.Logging.ILogger{MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner{`0}})">
+  SessionProcessRunner((Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&lt;TResult&gt;&gt; ProcessTaskCreator, CancellationTokenSource? Cts, bool PassCtsOwnership), RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p><factory>A constructor that creates an instance of the runner by means of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a>.</factory>
+<extcts>An external source for CompletionToken property of the runner can be used. </extcts>
+<async>The runner will run a background task created by the specified delegate </async>
+<result>returning the final result from the task.</result></p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">[ActiveSessionConstructor(true)]
+public SessionProcessRunner((Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&lt;TResult&gt;&gt; ProcessTaskCreator, CancellationTokenSource? Cts, bool PassCtsOwnership) Param, RunnerId RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;? Logger)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>Param</code> (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TResult, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResult&gt;&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.func-system.action--0,system.nullable-system.int32--,system.threading.cancellationtoken,system.threading.tasks.task--0--,system.threading.cancellationtokensource,system.boolean-.processtaskcreator">ProcessTaskCreator</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.func-system.action--0,system.nullable-system.int32--,system.threading.cancellationtoken,system.threading.tasks.task--0--,system.threading.cancellationtokensource,system.boolean-.cts">Cts</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.func-system.action--0,system.nullable-system.int32--,system.threading.cancellationtoken,system.threading.tasks.task--0--,system.threading.cancellationtokensource,system.boolean-.passctsownership">PassCtsOwnership</a>)</dt>
+  <dd><p>A tuple of three values:</p>
+   <ul><li>
+   <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func&lt;Action&lt;TResilt, Int32?&gt;, CancellationToken, Task&lt;TResult&gt;&gt; </a> ProcessTaskCreator: <br>
+   <param name="ProcessTaskCreator">
+   A delegate that is used to create a background task. 
+   
+   </li><li><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> Cts: <br><param name="CompletionTokenSource"><param name="CompletionTokenSource">
+   External source for a value of the <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> property. If it is null (default value), 
+   a new <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> will be used as the source in the instance to be created.
+   </li><li><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> PassCtsOwnership: <br><param name="PassCtsOwnership"><param name="PassCtsOwnership">
+   This value indicates will the instance to be created be responsible for disposing an external <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> source if it was passed by <code class="paramref">CompletionTokenSource</code>.
+   </li></ul>
+</dd>
+  <dt><code>RunnerId</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerId.html">RunnerId</a></dt>
+  <dd><param name="RunnerId"><param name="RunnerId">The identifier to be assigned to the instance to be created.
+</dd>
+  <dt><code>Logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.html">SessionProcessRunner</a>&lt;TResult&gt;&gt;</dt>
+  <dd><param name="Logger"><param name="Logger">The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> instance used to write log messages from the instance to be created.
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.#ctor*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_System_ValueTuple_System_Func_System_Action__0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationTokenSource_System_Boolean__MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner__0___" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.#ctor(System.ValueTuple{System.Func{System.Action{`0,System.Nullable{System.Int32}},System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationTokenSource,System.Boolean},MVVrus.AspNetCore.ActiveSession.RunnerId,Microsoft.Extensions.Logging.ILogger{MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner{`0}})">
+  SessionProcessRunner((Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&gt; ProcessTaskCreator, CancellationTokenSource? Cts, bool PassCtsOwnership), RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p><factory>A constructor that creates an instance of the runner by means of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a>.</factory>
+<extcts>An external source for CompletionToken property of the runner can be used. </extcts>
+<async>The runner will run a background task created by the specified delegate </async>
+<noresult>without returning the final result from the task.</noresult></p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">[ActiveSessionConstructor(true)]
+public SessionProcessRunner((Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&gt; ProcessTaskCreator, CancellationTokenSource? Cts, bool PassCtsOwnership) Param, RunnerId RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;? Logger)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>Param</code> (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TResult, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.func-system.action--0,system.nullable-system.int32--,system.threading.cancellationtoken,system.threading.tasks.task-,system.threading.cancellationtokensource,system.boolean-.processtaskcreator">ProcessTaskCreator</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.func-system.action--0,system.nullable-system.int32--,system.threading.cancellationtoken,system.threading.tasks.task-,system.threading.cancellationtokensource,system.boolean-.cts">Cts</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.func-system.action--0,system.nullable-system.int32--,system.threading.cancellationtoken,system.threading.tasks.task-,system.threading.cancellationtokensource,system.boolean-.passctsownership">PassCtsOwnership</a>)</dt>
+  <dd><p>A tuple of three values:</p>
+   <ul><li>
+   <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func&lt;Action&lt;TResilt, Int32?&gt;, CancellationToken, Task&gt; </a> ProcessTaskCreator: <br>
+   <param name="ProcessTaskCreator">
+   A delegate that is used to create a background task. 
+   
+   </li><li><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> Cts: <br><param name="CompletionTokenSource"><param name="CompletionTokenSource">
+   External source for a value of the <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> property. If it is null (default value), 
+   a new <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> will be used as the source in the instance to be created.
+   </li><li><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> PassCtsOwnership: <br><param name="PassCtsOwnership"><param name="PassCtsOwnership">
+   This value indicates will the instance to be created be responsible for disposing an external <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> source if it was passed by <code class="paramref">CompletionTokenSource</code>.
+   </li></ul>
+</dd>
+  <dt><code>RunnerId</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerId.html">RunnerId</a></dt>
+  <dd><param name="RunnerId"><param name="RunnerId">The identifier to be assigned to the instance to be created.
+</dd>
+  <dt><code>Logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.html">SessionProcessRunner</a>&lt;TResult&gt;&gt;</dt>
+  <dd><param name="Logger"><param name="Logger">The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> instance used to write log messages from the instance to be created.
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+<h4 class="section">Exceptions</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.#ctor*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_System_Func_System_Action__0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationTokenSource_System_Boolean_MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1.#ctor(System.Func{System.Action{`0,System.Nullable{System.Int32}},System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Threading.CancellationTokenSource,System.Boolean,MVVrus.AspNetCore.ActiveSession.RunnerId,Microsoft.Extensions.Logging.ILogger)">
+  SessionProcessRunner(Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&gt;, CancellationTokenSource?, bool, RunnerId, ILogger?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>A constructor that performs real work of creating an instance of the runner of this class.
+This is a protected constructor that is used by all public constructors of this class
+and may be used by constructors of descendent classes.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected SessionProcessRunner(Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&gt; ProcessTaskCreator, CancellationTokenSource? CompletionTokenSource, bool PassCtsOwnership, RunnerId RunnerId, ILogger? Logger)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>ProcessTaskCreator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TResult, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+  <dd><p>A delegate that is used to create a background task.</p>
+</dd>
+  <dt><code>CompletionTokenSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a></dt>
+  <dd><param name="CompletionTokenSource">
+External source for a value of the <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> property. If it is null (default value), 
+a new <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> will be used as the source in the instance to be created.
+
+</dd>
+  <dt><code>PassCtsOwnership</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+  <dd><param name="PassCtsOwnership">
+This value indicates will the instance to be created be responsible for disposing an external <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> source if it was passed by <code class="paramref">CompletionTokenSource</code>.
+
+</dd>
+  <dt><code>RunnerId</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerId.html">RunnerId</a></dt>
+  <dd><param name="RunnerId">The identifier to be assigned to the instance to be created.
+</dd>
+  <dt><code>Logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+  <dd><param name="Logger">The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> instance used to write log messages from the instance to be created.
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+<h4 class="section" id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_System_Func_System_Action__0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationTokenSource_System_Boolean_MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>In some cases the delagate <code class="paramref">ProcessTaskCreator</code> really creates a task of type <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task&lt;TResult&gt;</a>.</p>
+</div>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

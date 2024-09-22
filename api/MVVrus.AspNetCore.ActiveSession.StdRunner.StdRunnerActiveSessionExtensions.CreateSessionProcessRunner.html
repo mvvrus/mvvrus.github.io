@@ -1,0 +1,740 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method CreateSessionProcessRunner
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method CreateSessionProcessRunner
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner*">
+
+
+
+
+
+<h1 id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner*" class="text-break">
+  Method CreateSessionProcessRunner
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="MVVrus.html">MVVrus</a>.<a class="xref" href="MVVrus.AspNetCore.html">AspNetCore</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.html">ActiveSession</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.html">StdRunner</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MVVrus.AspNetCore.ActiveSession.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Func_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken___0__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner``1(MVVrus.AspNetCore.ActiveSession.IActiveSession,System.Func{System.Action{``0,System.Nullable{System.Int32}},System.Threading.CancellationToken,``0},Microsoft.AspNetCore.Http.HttpContext,System.IDisposable)">
+  CreateSessionProcessRunner&lt;TResult&gt;(IActiveSession, Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, TResult&gt;, HttpContext, IDisposable?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p><general>Creates a <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.html">SessionProcessRunner&lt;TResult&gt;</a> instance in the specified Active Session: </general>
+synchronous task, returns result, no external source for CompletionToken.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static KeyedRunner&lt;TResult&gt; CreateSessionProcessRunner&lt;TResult&gt;(this IActiveSession Session, Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, TResult&gt; ProcessTaskBody, HttpContext Context, IDisposable? ExclusiveServiceAccessor = null)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>Session</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.html">IActiveSession</a></dt>
+  <dd><param name="Session">An interface of Active Session object to work with.
+</dd>
+  <dt><code>ProcessTaskBody</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TResult, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, TResult&gt;</dt>
+  <dd><param name="ProcessTaskBody">A delegate that is used as a synchronously executing body of a background task.
+</dd>
+  <dt><code>Context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext">HttpContext</a></dt>
+  <dd><param name="Context">Context of the HTTP request from a handler of which the method is called.
+</dd>
+  <dt><code>ExclusiveServiceAccessor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+  <dd><param name="ExclusiveServiceAccessor"><param name="ExclusiveServiceAccessor">
+The accessor for the exlusively accessible service to be used by the runner.
+This accessor will be disposed after the runner completion and cleanup thus releasing the lock 
+represented by the accessor on the exclusively accessible scoped service from the active session's container.
+
+The accesor value may be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> (this is the default value), 
+that means the new runner will not use any exclusively accessible service from the active session's DI container.
+
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.KeyedRunner-1.html">KeyedRunner</a>&lt;TResult&gt;</dt>
+  <dd><p><returns>A structure that contains the reference to the new runner and its number within the active session.</returns></p>
+</dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TResult</code></dt>
+  <dd><typeparam name="TResult">
+  <typeparam name="TResult">The type of the result returned by the interface methods of the runner.</typeparam>
+    Values of this type are passed to a callback and a value of this type is optionally returned by a background task.
+    </typeparam>
+</dd>
+</dl>
+
+
+
+
+
+
+<h4 class="section" id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Func_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken___0__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p><features>Runners created by this method have the following features.</features>
+<noextcts>An external source for CompletionToken property of the runner cannot be used. </noextcts><sync>The runner will run a background task that executes the specified (synchronous) delegate </sync><result>returning the final result from the task.</result></p>
+</div>
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Action_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner``1(MVVrus.AspNetCore.ActiveSession.IActiveSession,System.Action{System.Action{``0,System.Nullable{System.Int32}},System.Threading.CancellationToken},Microsoft.AspNetCore.Http.HttpContext,System.IDisposable)">
+  CreateSessionProcessRunner&lt;TResult&gt;(IActiveSession, Action&lt;Action&lt;TResult, int?&gt;, CancellationToken&gt;, HttpContext, IDisposable?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p><general>Creates a <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.html">SessionProcessRunner&lt;TResult&gt;</a> instance in the specified Active Session: </general>
+synchronous task, does not return result, no external source for CompletionToken.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static KeyedRunner&lt;TResult&gt; CreateSessionProcessRunner&lt;TResult&gt;(this IActiveSession Session, Action&lt;Action&lt;TResult, int?&gt;, CancellationToken&gt; ProcessTaskBody, HttpContext Context, IDisposable? ExclusiveServiceAccessor = null)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>Session</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.html">IActiveSession</a></dt>
+  <dd><param name="Session">An interface of Active Session object to work with.
+</dd>
+  <dt><code>ProcessTaskBody</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TResult, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>&gt;</dt>
+  <dd><param name="ProcessTaskBody">
+  <param name="ProcessTaskBody">A delegate that is used as a synchronously executing body of a background task.
+
+</dd>
+  <dt><code>Context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext">HttpContext</a></dt>
+  <dd><param name="Context">Context of the HTTP request from a handler of which the method is called.
+</dd>
+  <dt><code>ExclusiveServiceAccessor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+  <dd><param name="ExclusiveServiceAccessor"><param name="ExclusiveServiceAccessor">
+The accessor for the exlusively accessible service to be used by the runner.
+This accessor will be disposed after the runner completion and cleanup thus releasing the lock 
+represented by the accessor on the exclusively accessible scoped service from the active session's container.
+
+The accesor value may be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> (this is the default value), 
+that means the new runner will not use any exclusively accessible service from the active session's DI container.
+
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.KeyedRunner-1.html">KeyedRunner</a>&lt;TResult&gt;</dt>
+  <dd><p><returns>A structure that contains the reference to the new runner and its number within the active session.</returns></p>
+</dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TResult</code></dt>
+  <dd><typeparam name="TResult">
+  <typeparam name="TResult">The type of the result returned by the interface methods of the runner.</typeparam>
+    Values of this type are passed to a callback and a value of this type is optionally returned by a background task.
+    </typeparam>
+</dd>
+</dl>
+
+
+
+
+
+
+<h4 class="section" id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Action_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p><features>Runners created by this method have the following features.</features>
+<noextcts>An external source for CompletionToken property of the runner cannot be used. </noextcts><sync>The runner will run a background task that executes the specified (synchronous) delegate </sync><noresult>without returning the final result from the task.</noresult></p>
+</div>
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Func_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task___0___Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner``1(MVVrus.AspNetCore.ActiveSession.IActiveSession,System.Func{System.Action{``0,System.Nullable{System.Int32}},System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}},Microsoft.AspNetCore.Http.HttpContext,System.IDisposable)">
+  CreateSessionProcessRunner&lt;TResult&gt;(IActiveSession, Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&lt;TResult&gt;&gt;, HttpContext, IDisposable?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p><general>Creates a <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.html">SessionProcessRunner&lt;TResult&gt;</a> instance in the specified Active Session: </general>
+asynchronous task, returns result, no external source for CompletionToken.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static KeyedRunner&lt;TResult&gt; CreateSessionProcessRunner&lt;TResult&gt;(this IActiveSession Session, Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&lt;TResult&gt;&gt; ProcessTaskCreator, HttpContext Context, IDisposable? ExclusiveServiceAccessor = null)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>Session</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.html">IActiveSession</a></dt>
+  <dd><param name="Session">An interface of Active Session object to work with.
+</dd>
+  <dt><code>ProcessTaskCreator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TResult, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResult&gt;&gt;</dt>
+  <dd><param name="ProcessTaskCreator"><param name="ProcessTaskCreator">
+A delegate that is used to create a background task. 
+
+</dd>
+  <dt><code>Context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext">HttpContext</a></dt>
+  <dd><param name="Context">Context of the HTTP request from a handler of which the method is called.
+</dd>
+  <dt><code>ExclusiveServiceAccessor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+  <dd><param name="ExclusiveServiceAccessor"><param name="ExclusiveServiceAccessor">
+The accessor for the exlusively accessible service to be used by the runner.
+This accessor will be disposed after the runner completion and cleanup thus releasing the lock 
+represented by the accessor on the exclusively accessible scoped service from the active session's container.
+
+The accesor value may be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> (this is the default value), 
+that means the new runner will not use any exclusively accessible service from the active session's DI container.
+
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.KeyedRunner-1.html">KeyedRunner</a>&lt;TResult&gt;</dt>
+  <dd><p><returns>A structure that contains the reference to the new runner and its number within the active session.</returns></p>
+</dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TResult</code></dt>
+  <dd><typeparam name="TResult">
+  <typeparam name="TResult">The type of the result returned by the interface methods of the runner.</typeparam>
+    Values of this type are passed to a callback and a value of this type is optionally returned by a background task.
+    </typeparam>
+</dd>
+</dl>
+
+
+
+
+
+
+<h4 class="section" id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Func_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task___0___Microsoft_AspNetCore_Http_HttpContext_System_IDisposable__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p><features>Runners created by this method have the following features.</features>
+<noextcts>An external source for CompletionToken property of the runner cannot be used. </noextcts><async>The runner will run a background task created by the specified delegate </async><result>returning the final result from the task.</result></p>
+</div>
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Func_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner``1(MVVrus.AspNetCore.ActiveSession.IActiveSession,System.Func{System.Action{``0,System.Nullable{System.Int32}},System.Threading.CancellationToken,System.Threading.Tasks.Task},Microsoft.AspNetCore.Http.HttpContext,System.IDisposable)">
+  CreateSessionProcessRunner&lt;TResult&gt;(IActiveSession, Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&gt;, HttpContext, IDisposable?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p><general>Creates a <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.html">SessionProcessRunner&lt;TResult&gt;</a> instance in the specified Active Session: </general>
+asynchronous task, does not return result, no external source for CompletionToken.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static KeyedRunner&lt;TResult&gt; CreateSessionProcessRunner&lt;TResult&gt;(this IActiveSession Session, Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&gt; ProcessTaskCreator, HttpContext Context, IDisposable? ExclusiveServiceAccessor = null)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>Session</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.html">IActiveSession</a></dt>
+  <dd><param name="Session">An interface of Active Session object to work with.
+</dd>
+  <dt><code>ProcessTaskCreator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TResult, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+  <dd><param name="ProcessTaskCreator"><param name="ProcessTaskCreator">
+A delegate that is used to create a background task. 
+
+</dd>
+  <dt><code>Context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext">HttpContext</a></dt>
+  <dd><param name="Context">Context of the HTTP request from a handler of which the method is called.
+</dd>
+  <dt><code>ExclusiveServiceAccessor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+  <dd><param name="ExclusiveServiceAccessor"><param name="ExclusiveServiceAccessor">
+The accessor for the exlusively accessible service to be used by the runner.
+This accessor will be disposed after the runner completion and cleanup thus releasing the lock 
+represented by the accessor on the exclusively accessible scoped service from the active session's container.
+
+The accesor value may be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> (this is the default value), 
+that means the new runner will not use any exclusively accessible service from the active session's DI container.
+
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.KeyedRunner-1.html">KeyedRunner</a>&lt;TResult&gt;</dt>
+  <dd><p><returns>A structure that contains the reference to the new runner and its number within the active session.</returns></p>
+</dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TResult</code></dt>
+  <dd><typeparam name="TResult">
+  <typeparam name="TResult">The type of the result returned by the interface methods of the runner.</typeparam>
+    Values of this type are passed to a callback and a value of this type is optionally returned by a background task.
+    </typeparam>
+</dd>
+</dl>
+
+
+
+
+
+
+<h4 class="section" id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Func_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p><features>Runners created by this method have the following features.</features>
+<noextcts>An external source for CompletionToken property of the runner cannot be used. </noextcts><async>The runner will run a background task created by the specified delegate </async><noresult>without returning the final result from the task.</noresult></p>
+</div>
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Func_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken___0__Microsoft_AspNetCore_Http_HttpContext_System_Threading_CancellationTokenSource_System_Boolean_System_IDisposable_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner``1(MVVrus.AspNetCore.ActiveSession.IActiveSession,System.Func{System.Action{``0,System.Nullable{System.Int32}},System.Threading.CancellationToken,``0},Microsoft.AspNetCore.Http.HttpContext,System.Threading.CancellationTokenSource,System.Boolean,System.IDisposable)">
+  CreateSessionProcessRunner&lt;TResult&gt;(IActiveSession, Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, TResult&gt;, HttpContext, CancellationTokenSource, bool, IDisposable?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p><general>Creates a <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.html">SessionProcessRunner&lt;TResult&gt;</a> instance in the specified Active Session: </general>
+synchronous task, returns result, can use external source for CompletionToken.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static KeyedRunner&lt;TResult&gt; CreateSessionProcessRunner&lt;TResult&gt;(this IActiveSession Session, Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, TResult&gt; ProcessTaskBody, HttpContext Context, CancellationTokenSource CompletionTokenSource, bool PassCtsOwnership = true, IDisposable? ExclusiveServiceAccessor = null)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>Session</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.html">IActiveSession</a></dt>
+  <dd><param name="Session">An interface of Active Session object to work with.
+</dd>
+  <dt><code>ProcessTaskBody</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TResult, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, TResult&gt;</dt>
+  <dd><param name="ProcessTaskBody">A delegate that is used as a synchronously executing body of a background task.
+</dd>
+  <dt><code>Context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext">HttpContext</a></dt>
+  <dd><param name="Context">Context of the HTTP request from a handler of which the method is called.
+</dd>
+  <dt><code>CompletionTokenSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a></dt>
+  <dd><param name="CompletionTokenSource"><param name="CompletionTokenSource">
+External source for a value of the <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> property. If it is null (default value), 
+a new <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> will be used as the source in the instance to be created.
+
+</dd>
+  <dt><code>PassCtsOwnership</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+  <dd><param name="PassCtsOwnership"><param name="PassCtsOwnership">
+This value indicates will the instance to be created be responsible for disposing an external <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> source if it was passed by <code class="paramref">CompletionTokenSource</code>.
+
+</dd>
+  <dt><code>ExclusiveServiceAccessor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+  <dd><param name="ExclusiveServiceAccessor"><param name="ExclusiveServiceAccessor">
+The accessor for the exlusively accessible service to be used by the runner.
+This accessor will be disposed after the runner completion and cleanup thus releasing the lock 
+represented by the accessor on the exclusively accessible scoped service from the active session's container.
+
+The accesor value may be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> (this is the default value), 
+that means the new runner will not use any exclusively accessible service from the active session's DI container.
+
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.KeyedRunner-1.html">KeyedRunner</a>&lt;TResult&gt;</dt>
+  <dd><p><returns>A structure that contains the reference to the new runner and its number within the active session.</returns></p>
+</dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TResult</code></dt>
+  <dd><typeparam name="TResult">
+  <typeparam name="TResult">The type of the result returned by the interface methods of the runner.</typeparam>
+    Values of this type are passed to a callback and a value of this type is optionally returned by a background task.
+    </typeparam>
+</dd>
+</dl>
+
+
+
+
+
+
+<h4 class="section" id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Func_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken___0__Microsoft_AspNetCore_Http_HttpContext_System_Threading_CancellationTokenSource_System_Boolean_System_IDisposable__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p><features>Runners created by this method have the following features.</features>
+<extcts>An external source for CompletionToken property of the runner can be used. </extcts><sync>The runner will run a background task that executes the specified (synchronous) delegate </sync><result>returning the final result from the task.</result></p>
+</div>
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Action_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken__Microsoft_AspNetCore_Http_HttpContext_System_Threading_CancellationTokenSource_System_Boolean_System_IDisposable_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner``1(MVVrus.AspNetCore.ActiveSession.IActiveSession,System.Action{System.Action{``0,System.Nullable{System.Int32}},System.Threading.CancellationToken},Microsoft.AspNetCore.Http.HttpContext,System.Threading.CancellationTokenSource,System.Boolean,System.IDisposable)">
+  CreateSessionProcessRunner&lt;TResult&gt;(IActiveSession, Action&lt;Action&lt;TResult, int?&gt;, CancellationToken&gt;, HttpContext, CancellationTokenSource, bool, IDisposable?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p><general>Creates a <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.html">SessionProcessRunner&lt;TResult&gt;</a> instance in the specified Active Session: </general>
+synchronous task, does not return result, can use external source for CompletionToken.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static KeyedRunner&lt;TResult&gt; CreateSessionProcessRunner&lt;TResult&gt;(this IActiveSession Session, Action&lt;Action&lt;TResult, int?&gt;, CancellationToken&gt; ProcessTaskBody, HttpContext Context, CancellationTokenSource CompletionTokenSource, bool PassCtsOwnership = true, IDisposable? ExclusiveServiceAccessor = null)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>Session</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.html">IActiveSession</a></dt>
+  <dd><param name="Session">An interface of Active Session object to work with.
+</dd>
+  <dt><code>ProcessTaskBody</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TResult, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>&gt;</dt>
+  <dd><param name="ProcessTaskBody">
+  <param name="ProcessTaskBody">A delegate that is used as a synchronously executing body of a background task.
+
+</dd>
+  <dt><code>Context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext">HttpContext</a></dt>
+  <dd><param name="Context">Context of the HTTP request from a handler of which the method is called.
+</dd>
+  <dt><code>CompletionTokenSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a></dt>
+  <dd><param name="CompletionTokenSource"><param name="CompletionTokenSource">
+External source for a value of the <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> property. If it is null (default value), 
+a new <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> will be used as the source in the instance to be created.
+
+</dd>
+  <dt><code>PassCtsOwnership</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+  <dd><param name="PassCtsOwnership"><param name="PassCtsOwnership">
+This value indicates will the instance to be created be responsible for disposing an external <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> source if it was passed by <code class="paramref">CompletionTokenSource</code>.
+
+</dd>
+  <dt><code>ExclusiveServiceAccessor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+  <dd><param name="ExclusiveServiceAccessor"><param name="ExclusiveServiceAccessor">
+The accessor for the exlusively accessible service to be used by the runner.
+This accessor will be disposed after the runner completion and cleanup thus releasing the lock 
+represented by the accessor on the exclusively accessible scoped service from the active session's container.
+
+The accesor value may be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> (this is the default value), 
+that means the new runner will not use any exclusively accessible service from the active session's DI container.
+
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.KeyedRunner-1.html">KeyedRunner</a>&lt;TResult&gt;</dt>
+  <dd><p><returns>A structure that contains the reference to the new runner and its number within the active session.</returns></p>
+</dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TResult</code></dt>
+  <dd><typeparam name="TResult">
+  <typeparam name="TResult">The type of the result returned by the interface methods of the runner.</typeparam>
+    Values of this type are passed to a callback and a value of this type is optionally returned by a background task.
+    </typeparam>
+</dd>
+</dl>
+
+
+
+
+
+
+<h4 class="section" id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Action_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken__Microsoft_AspNetCore_Http_HttpContext_System_Threading_CancellationTokenSource_System_Boolean_System_IDisposable__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p><features>Runners created by this method have the following features.</features>
+<extcts>An external source for CompletionToken property of the runner can be used. </extcts><sync>The runner will run a background task that executes the specified (synchronous) delegate </sync><noresult>without returning the final result from the task.</noresult></p>
+</div>
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Func_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task___0___Microsoft_AspNetCore_Http_HttpContext_System_Threading_CancellationTokenSource_System_Boolean_System_IDisposable_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner``1(MVVrus.AspNetCore.ActiveSession.IActiveSession,System.Func{System.Action{``0,System.Nullable{System.Int32}},System.Threading.CancellationToken,System.Threading.Tasks.Task{``0}},Microsoft.AspNetCore.Http.HttpContext,System.Threading.CancellationTokenSource,System.Boolean,System.IDisposable)">
+  CreateSessionProcessRunner&lt;TResult&gt;(IActiveSession, Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&lt;TResult&gt;&gt;, HttpContext, CancellationTokenSource, bool, IDisposable?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p><general>Creates a <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.html">SessionProcessRunner&lt;TResult&gt;</a> instance in the specified Active Session: </general>
+asynchronous task, returns result, can use external source for CompletionToken.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static KeyedRunner&lt;TResult&gt; CreateSessionProcessRunner&lt;TResult&gt;(this IActiveSession Session, Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&lt;TResult&gt;&gt; ProcessTaskCreator, HttpContext Context, CancellationTokenSource CompletionTokenSource, bool PassCtsOwnership = true, IDisposable? ExclusiveServiceAccessor = null)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>Session</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.html">IActiveSession</a></dt>
+  <dd><param name="Session">An interface of Active Session object to work with.
+</dd>
+  <dt><code>ProcessTaskCreator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TResult, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;TResult&gt;&gt;</dt>
+  <dd><param name="ProcessTaskCreator"><param name="ProcessTaskCreator">
+A delegate that is used to create a background task. 
+
+</dd>
+  <dt><code>Context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext">HttpContext</a></dt>
+  <dd><param name="Context">Context of the HTTP request from a handler of which the method is called.
+</dd>
+  <dt><code>CompletionTokenSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a></dt>
+  <dd><param name="CompletionTokenSource"><param name="CompletionTokenSource">
+External source for a value of the <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> property. If it is null (default value), 
+a new <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> will be used as the source in the instance to be created.
+
+</dd>
+  <dt><code>PassCtsOwnership</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+  <dd><param name="PassCtsOwnership"><param name="PassCtsOwnership">
+This value indicates will the instance to be created be responsible for disposing an external <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> source if it was passed by <code class="paramref">CompletionTokenSource</code>.
+
+</dd>
+  <dt><code>ExclusiveServiceAccessor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+  <dd><param name="ExclusiveServiceAccessor"><param name="ExclusiveServiceAccessor">
+The accessor for the exlusively accessible service to be used by the runner.
+This accessor will be disposed after the runner completion and cleanup thus releasing the lock 
+represented by the accessor on the exclusively accessible scoped service from the active session's container.
+
+The accesor value may be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> (this is the default value), 
+that means the new runner will not use any exclusively accessible service from the active session's DI container.
+
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.KeyedRunner-1.html">KeyedRunner</a>&lt;TResult&gt;</dt>
+  <dd><p><returns>A structure that contains the reference to the new runner and its number within the active session.</returns></p>
+</dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TResult</code></dt>
+  <dd><typeparam name="TResult">
+  <typeparam name="TResult">The type of the result returned by the interface methods of the runner.</typeparam>
+    Values of this type are passed to a callback and a value of this type is optionally returned by a background task.
+    </typeparam>
+</dd>
+</dl>
+
+
+
+
+
+
+<h4 class="section" id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Func_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task___0___Microsoft_AspNetCore_Http_HttpContext_System_Threading_CancellationTokenSource_System_Boolean_System_IDisposable__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p><features>Runners created by this method have the following features.</features>
+<extcts>An external source for CompletionToken property of the runner can be used. </extcts><async>The runner will run a background task created by the specified delegate </async><result>returning the final result from the task.</result></p>
+</div>
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Func_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task__Microsoft_AspNetCore_Http_HttpContext_System_Threading_CancellationTokenSource_System_Boolean_System_IDisposable_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSessionProcessRunner``1(MVVrus.AspNetCore.ActiveSession.IActiveSession,System.Func{System.Action{``0,System.Nullable{System.Int32}},System.Threading.CancellationToken,System.Threading.Tasks.Task},Microsoft.AspNetCore.Http.HttpContext,System.Threading.CancellationTokenSource,System.Boolean,System.IDisposable)">
+  CreateSessionProcessRunner&lt;TResult&gt;(IActiveSession, Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&gt;, HttpContext, CancellationTokenSource, bool, IDisposable?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p><general>Creates a <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.html">SessionProcessRunner&lt;TResult&gt;</a> instance in the specified Active Session: </general>
+asynchronous task, does not return result, can use external source for CompletionToken.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static KeyedRunner&lt;TResult&gt; CreateSessionProcessRunner&lt;TResult&gt;(this IActiveSession Session, Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&gt; ProcessTaskCreator, HttpContext Context, CancellationTokenSource CompletionTokenSource, bool PassCtsOwnership = true, IDisposable? ExclusiveServiceAccessor = null)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>Session</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.html">IActiveSession</a></dt>
+  <dd><param name="Session">An interface of Active Session object to work with.
+</dd>
+  <dt><code>ProcessTaskCreator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;TResult, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+  <dd><param name="ProcessTaskCreator"><param name="ProcessTaskCreator">
+A delegate that is used to create a background task. 
+
+</dd>
+  <dt><code>Context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext">HttpContext</a></dt>
+  <dd><param name="Context">Context of the HTTP request from a handler of which the method is called.
+</dd>
+  <dt><code>CompletionTokenSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a></dt>
+  <dd><param name="CompletionTokenSource"><param name="CompletionTokenSource">
+External source for a value of the <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> property. If it is null (default value), 
+a new <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> will be used as the source in the instance to be created.
+
+</dd>
+  <dt><code>PassCtsOwnership</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+  <dd><param name="PassCtsOwnership"><param name="PassCtsOwnership">
+This value indicates will the instance to be created be responsible for disposing an external <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> source if it was passed by <code class="paramref">CompletionTokenSource</code>.
+
+</dd>
+  <dt><code>ExclusiveServiceAccessor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+  <dd><param name="ExclusiveServiceAccessor"><param name="ExclusiveServiceAccessor">
+The accessor for the exlusively accessible service to be used by the runner.
+This accessor will be disposed after the runner completion and cleanup thus releasing the lock 
+represented by the accessor on the exclusively accessible scoped service from the active session's container.
+
+The accesor value may be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> (this is the default value), 
+that means the new runner will not use any exclusively accessible service from the active session's DI container.
+
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.KeyedRunner-1.html">KeyedRunner</a>&lt;TResult&gt;</dt>
+  <dd><p><returns>A structure that contains the reference to the new runner and its number within the active session.</returns></p>
+</dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TResult</code></dt>
+  <dd><typeparam name="TResult">
+  <typeparam name="TResult">The type of the result returned by the interface methods of the runner.</typeparam>
+    Values of this type are passed to a callback and a value of this type is optionally returned by a background task.
+    </typeparam>
+</dd>
+</dl>
+
+
+
+
+
+
+<h4 class="section" id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSessionProcessRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Func_System_Action___0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task__Microsoft_AspNetCore_Http_HttpContext_System_Threading_CancellationTokenSource_System_Boolean_System_IDisposable__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p><features>Runners created by this method have the following features.</features>
+<extcts>An external source for CompletionToken property of the runner can be used. </extcts><async>The runner will run a background task created by the specified delegate </async><noresult>without returning the final result from the task.</noresult></p>
+</div>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

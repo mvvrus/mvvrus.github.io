@@ -1,0 +1,446 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SessionProcessRunner&lt;TResult&gt;
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SessionProcessRunner&lt;TResult&gt;
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1">
+
+
+
+  <h1 id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner`1" class="text-break">
+    Class SessionProcessRunner&lt;TResult&gt;
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MVVrus.html">MVVrus</a>.<a class="xref" href="MVVrus.AspNetCore.html">AspNetCore</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.html">ActiveSession</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.html">StdRunner</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MVVrus.AspNetCore.ActiveSession.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A class used to create runners that execute background task.
+The executing task invokes from time to time a callback presented by the runner,
+informing it about background execution at the time of the invocation.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SessionProcessRunner&lt;TResult&gt; : RunnerBase, IDisposable, IRunner&lt;TResult&gt;, IRunner, IAsyncDisposable</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TResult</code></dt>
+    <dd><p><typeparam name="TResult">The type of the result returned by the interface methods of the runner.</typeparam>
+Values of this type are passed to a callback and a value of this type is optionally returned by a background task.</p>
+</dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.html">RunnerBase</a></div>
+      <div><span class="xref">SessionProcessRunner&lt;TResult&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner-1.html">IRunner</a>&lt;TResult&gt;</div>
+      <div><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner.html">IRunner</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.Logger.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_Logger">RunnerBase.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.Status.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_Status">RunnerBase.Status</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.Position.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_Position">RunnerBase.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.Abort.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_Abort_System_String_">RunnerBase.Abort(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">RunnerBase.CompletionToken</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.Dispose.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_Dispose">RunnerBase.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.Exception.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_Exception">RunnerBase.Exception</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.Id.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_Id">RunnerBase.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.ExtraData.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_ExtraData">RunnerBase.ExtraData</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.SetStatus.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_SetStatus_MVVrus_AspNetCore_ActiveSession_RunnerStatus_">RunnerBase.SetStatus(RunnerStatus)</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.DoAbort.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_DoAbort_System_String_">RunnerBase.DoAbort(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.StartBackgroundExecutionAsync.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_StartBackgroundExecutionAsync">RunnerBase.StartBackgroundExecutionAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.StartRunning.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_StartRunning_MVVrus_AspNetCore_ActiveSession_RunnerStatus_">RunnerBase.StartRunning(RunnerStatus)</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.StartRunningAsync.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_StartRunningAsync_MVVrus_AspNetCore_ActiveSession_RunnerStatus_">RunnerBase.StartRunningAsync(RunnerStatus)</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.FailStartRunning.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_FailStartRunning_MVVrus_AspNetCore_ActiveSession_RunnerStatus_System_Exception_">RunnerBase.FailStartRunning(RunnerStatus, Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.SetDisposed.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_SetDisposed">RunnerBase.SetDisposed()</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CheckDisposed.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CheckDisposed">RunnerBase.CheckDisposed()</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.DisposedObjectName.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_DisposedObjectName">RunnerBase.DisposedObjectName()</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.Disposed.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_Disposed">RunnerBase.Disposed()</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.LogFinishBackgroundProcess.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_LogFinishBackgroundProcess">RunnerBase.LogFinishBackgroundProcess()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerExtensions.AbortAsync.html#MVVrus_AspNetCore_ActiveSession_RunnerExtensions_AbortAsync_MVVrus_AspNetCore_ActiveSession_IRunner_System_String_System_Threading_CancellationToken_">RunnerExtensions.AbortAsync(IRunner, string?, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerExtensions.GetExceptionAsync.html#MVVrus_AspNetCore_ActiveSession_RunnerExtensions_GetExceptionAsync_MVVrus_AspNetCore_ActiveSession_IRunner_System_Threading_CancellationToken_">RunnerExtensions.GetExceptionAsync(IRunner, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerExtensions.GetIsBackgroundExecutionCompletedAsync.html#MVVrus_AspNetCore_ActiveSession_RunnerExtensions_GetIsBackgroundExecutionCompletedAsync_MVVrus_AspNetCore_ActiveSession_IRunner_System_Threading_CancellationToken_">RunnerExtensions.GetIsBackgroundExecutionCompletedAsync(IRunner, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerExtensions.GetPositionAsync.html#MVVrus_AspNetCore_ActiveSession_RunnerExtensions_GetPositionAsync_MVVrus_AspNetCore_ActiveSession_IRunner_System_Threading_CancellationToken_">RunnerExtensions.GetPositionAsync(IRunner, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerExtensions.GetProgressAsync.html#MVVrus_AspNetCore_ActiveSession_RunnerExtensions_GetProgressAsync_MVVrus_AspNetCore_ActiveSession_IRunner_System_Threading_CancellationToken_">RunnerExtensions.GetProgressAsync(IRunner, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerExtensions.GetStatusAsync.html#MVVrus_AspNetCore_ActiveSession_RunnerExtensions_GetStatusAsync_MVVrus_AspNetCore_ActiveSession_IRunner_System_Threading_CancellationToken_">RunnerExtensions.GetStatusAsync(IRunner, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerExtensions.IsLocal.html#MVVrus_AspNetCore_ActiveSession_RunnerExtensions_IsLocal_MVVrus_AspNetCore_ActiveSession_IRunner_">RunnerExtensions.IsLocal(IRunner)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerExtensions.GetAvailableAsync.html#MVVrus_AspNetCore_ActiveSession_RunnerExtensions_GetAvailableAsync__1_MVVrus_AspNetCore_ActiveSession_IRunner___0__System_Int32_System_Int32_System_String_System_Threading_CancellationToken_">RunnerExtensions.GetAvailableAsync&lt;TResult&gt;(IRunner&lt;TResult&gt;, int, int, string?, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerExtensions.GetRequired.html#MVVrus_AspNetCore_ActiveSession_RunnerExtensions_GetRequired__1_MVVrus_AspNetCore_ActiveSession_IRunner___0__System_Int32_System_Int32_System_String_">RunnerExtensions.GetRequired&lt;TResult&gt;(IRunner&lt;TResult&gt;, int, int, string?)</a>
+  </div>
+  </dd></dl>
+
+
+
+  <h2 id="MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><ol><li>
+The callback is a delegate of type <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action&lt;TResult, Int32?&gt;</a>, accepting two values:
+an intermediate result of the background process 
+and an estimation of final <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner.Position.html#MVVrus_AspNetCore_ActiveSession_IRunner_Position">Position</a> value after completion of the background task.
+If this estimation cannot be given the backgrond task should pass <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> instead of it.
+</li><li>
+The value of the <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner.Position.html#MVVrus_AspNetCore_ActiveSession_IRunner_Position">Position</a> property of runners of this class 
+indicates a number of invocations of the callback was made so far plus one more if the background task has run to completion.
+</li><li>
+Delegates passed to constructors of this class must accept two parameters: 
+the callback delegate to be periodically invoked (the runner code passes its internal method via this parameter)
+and a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> that can be used for cooperative cancellation of the background task
+(the runner code passes its <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_IRunner_CompletionToken">CompletionToken</a> via this parameter).
+</li><li>
+Delegates passed to constructors of this class belongs to one of two categories: one that directly creates the background task 
+(i.e. retruns result of type <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> or its descendant, see below)
+and the other that serves as a body of a background task executed synchronously by a thread from the thread pool.
+The later delegates may return <code class="typeparamref">TResult</code> or return nothing.
+</li><li>
+The runners belonging to this class can deal with two different types of background tasks: 
+one that returns the final result (i.e. having type <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task&lt;TResult&gt;</a>)
+and the other that does not return any result (i.e. having type <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>), 
+the result passed by the last callback invoked being assumed as a final one.
+A type of a delegate passed to the instance constructor determines a type of the background task for the instance created:
+if the delegate returns <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task&lt;TResult&gt;</a> or just <code class="typeparamref">TResult</code> 
+then the background task returns a final result,
+if the delegate returns <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> or does not return anything 
+then the background task does not return a final result.
+</li><li>
+Also there are two sorts of constructors for this class: 
+one that creates instance that uses an internal <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> for its <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_IRunner_CompletionToken">CompletionToken</a>
+and the other that can accept an external <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> for this purpose 
+(see description of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.-ctor.html#MVVrus_AspNetCore_ActiveSession_RunnerBase__ctor_System_Threading_CancellationTokenSource_System_Boolean_MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_">RunnerBase
+    constructor</a> parameters ). 
+The former accepts a delegate as its first parameter while the later accepts as its first parameter a tuple of 3 values:
+a delegate, a  <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> and a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> 
+value indicating passing ownership of the second value. 
+</li></ol>
+</div>
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.-ctor.html#MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_System_Action_System_Action__0_System_Nullable_System_Int32___System_Threading_CancellationToken__MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner__0___">SessionProcessRunner(Action&lt;Action&lt;TResult, int?&gt;, CancellationToken&gt;, RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;?)</a></dt>
+    <dd><p><factory>A constructor that creates an instance of the runner by means of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a>.</factory>
+<noextcts>An external source for CompletionToken property of the runner cannot be used. </noextcts>
+<sync>The runner will run a background task that executes the specified (synchronous) delegate </sync>
+<noresult>without returning the final result from the task.</noresult></p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.-ctor.html#MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_System_Func_System_Action__0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task__0___MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner__0___">SessionProcessRunner(Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&lt;TResult&gt;&gt;, RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;?)</a></dt>
+    <dd><p><factory>A constructor that creates an instance of the runner by means of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a>.</factory>
+<noextcts>An external source for CompletionToken property of the runner cannot be used. </noextcts>
+<async>The runner will run a background task created by the specified delegate </async>
+<result>returning the final result from the task.</result></p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.-ctor.html#MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_System_Func_System_Action__0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task__MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner__0___">SessionProcessRunner(Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&gt;, RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;?)</a></dt>
+    <dd><p><factory>A constructor that creates an instance of the runner by means of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a>.</factory>
+<noextcts>An external source for CompletionToken property of the runner cannot be used. </noextcts>
+<async>The runner will run a background task created by the specified delegate </async>
+<noresult>without returning the final result from the task.</noresult></p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.-ctor.html#MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_System_Func_System_Action__0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationTokenSource_System_Boolean_MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_">SessionProcessRunner(Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&gt;, CancellationTokenSource?, bool, RunnerId, ILogger?)</a></dt>
+    <dd><p>A constructor that performs real work of creating an instance of the runner of this class.
+This is a protected constructor that is used by all public constructors of this class
+and may be used by constructors of descendent classes.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.-ctor.html#MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_System_Func_System_Action__0_System_Nullable_System_Int32___System_Threading_CancellationToken__0__MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner__0___">SessionProcessRunner(Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, TResult&gt;, RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;?)</a></dt>
+    <dd><p><factory>A constructor that creates an instance of the runner by means of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a>.</factory>
+<noextcts>An external source for CompletionToken property of the runner cannot be used. </noextcts>
+<sync>The runner will run a background task that executes the specified (synchronous) delegate </sync>
+<result>returning the final result from the task.</result></p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.-ctor.html#MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_System_ValueTuple_System_Action_System_Action__0_System_Nullable_System_Int32___System_Threading_CancellationToken__System_Threading_CancellationTokenSource_System_Boolean__MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner__0___">SessionProcessRunner((Action&lt;Action&lt;TResult, int?&gt;, CancellationToken&gt; ProcessTaskBody, CancellationTokenSource? Cts, bool PassCtsOwnership), RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;?)</a></dt>
+    <dd><p><factory>A constructor that creates an instance of the runner by means of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a>.</factory>
+<extcts>An external source for CompletionToken property of the runner can be used. </extcts>
+<sync>The runner will run a background task that executes the specified (synchronous) delegate </sync>
+<noresult>without returning the final result from the task.</noresult></p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.-ctor.html#MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_System_ValueTuple_System_Func_System_Action__0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task__0___System_Threading_CancellationTokenSource_System_Boolean__MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner__0___">SessionProcessRunner((Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&lt;TResult&gt;&gt; ProcessTaskCreator, CancellationTokenSource? Cts, bool PassCtsOwnership), RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;?)</a></dt>
+    <dd><p><factory>A constructor that creates an instance of the runner by means of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a>.</factory>
+<extcts>An external source for CompletionToken property of the runner can be used. </extcts>
+<async>The runner will run a background task created by the specified delegate </async>
+<result>returning the final result from the task.</result></p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.-ctor.html#MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_System_ValueTuple_System_Func_System_Action__0_System_Nullable_System_Int32___System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Threading_CancellationTokenSource_System_Boolean__MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner__0___">SessionProcessRunner((Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, Task&gt; ProcessTaskCreator, CancellationTokenSource? Cts, bool PassCtsOwnership), RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;?)</a></dt>
+    <dd><p><factory>A constructor that creates an instance of the runner by means of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a>.</factory>
+<extcts>An external source for CompletionToken property of the runner can be used. </extcts>
+<async>The runner will run a background task created by the specified delegate </async>
+<noresult>without returning the final result from the task.</noresult></p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.-ctor.html#MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1__ctor_System_ValueTuple_System_Func_System_Action__0_System_Nullable_System_Int32___System_Threading_CancellationToken__0__System_Threading_CancellationTokenSource_System_Boolean__MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner__0___">SessionProcessRunner((Func&lt;Action&lt;TResult, int?&gt;, CancellationToken, TResult&gt; ProcessTaskBody, CancellationTokenSource? Cts, bool PassCtsOwnership), RunnerId, ILogger&lt;SessionProcessRunner&lt;TResult&gt;&gt;?)</a></dt>
+    <dd><p><factory>A constructor that creates an instance of the runner by means of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a>.</factory>
+<extcts>An external source for CompletionToken property of the runner can be used. </extcts>
+<sync>The runner will run a background task that executes the specified (synchronous) delegate </sync>
+<result>returning the final result from the task.</result></p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.IsBackgroundExecutionCompleted.html#MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1_IsBackgroundExecutionCompleted">IsBackgroundExecutionCompleted</a></dt>
+    <dd><p>Indicate whether the background operation is completed.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.Dispose.html#MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1_Dispose_System_Boolean_">Dispose(bool)</a></dt>
+    <dd><p>Protected, overrides <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.Dispose.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_Dispose_System_Boolean_">RunnerBase.Dispose(bool)</a>, sealed.
+<toinherit>This method performs a real work of disposing the object instance (synchronously).</toinherit></p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.DisposeAsync.html#MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1_DisposeAsync">DisposeAsync()</a></dt>
+    <dd><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources asynchronously.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.DisposeAsyncCore.html#MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1_DisposeAsyncCore">DisposeAsyncCore()</a></dt>
+    <dd><p>Protected virtual. <toinherit>This method performs a real work of disposing the object instance asynchronously.</toinherit></p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.GetAvailable.html#MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1_GetAvailable_System_Int32_System_Int32_System_String_">GetAvailable(int, int, string?)</a></dt>
+    <dd><p><toinherit>Returns a result of the runner available at the moment of the method call.</toinherit></p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.GetProgress.html#MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1_GetProgress">GetProgress()</a></dt>
+    <dd><p>Returns information about progress of background operation of a runner.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.GetRequiredAsync.html#MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1_GetRequiredAsync_System_Int32_System_Threading_CancellationToken_System_Int32_System_String_">GetRequiredAsync(int, CancellationToken, int, string?)</a></dt>
+    <dd><p><toinherit>Asynchronously fetch result from the runner up to the specified point.</toinherit></p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.PreDispose.html#MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1_PreDispose">PreDispose()</a></dt>
+    <dd><p>Protected, overrides <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.PreDispose.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_PreDispose">RunnerBase.PreDispose()</a>.
+Performs preliminary tasks before beginning of disposing any members of any descendent class.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.SessionProcessRunner-1.StartBackgroundExecution.html#MVVrus_AspNetCore_ActiveSession_StdRunner_SessionProcessRunner_1_StartBackgroundExecution">StartBackgroundExecution()</a></dt>
+    <dd><p>Protected, overrides <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.StartBackgroundExecution.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_StartBackgroundExecution">StartBackgroundExecution()</a>
+This method is used to start background execution synchronously.</p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

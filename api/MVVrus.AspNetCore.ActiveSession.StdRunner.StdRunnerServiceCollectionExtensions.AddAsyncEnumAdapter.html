@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method AddAsyncEnumAdapter
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method AddAsyncEnumAdapter
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerServiceCollectionExtensions.AddAsyncEnumAdapter*">
+
+
+
+
+
+<h1 id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerServiceCollectionExtensions_AddAsyncEnumAdapter_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerServiceCollectionExtensions.AddAsyncEnumAdapter*" class="text-break">
+  Method AddAsyncEnumAdapter
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="MVVrus.html">MVVrus</a>.<a class="xref" href="MVVrus.AspNetCore.html">AspNetCore</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.html">ActiveSession</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.html">StdRunner</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MVVrus.AspNetCore.ActiveSession.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerServiceCollectionExtensions_AddAsyncEnumAdapter_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerServiceCollectionExtensions.AddAsyncEnumAdapter*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerServiceCollectionExtensions_AddAsyncEnumAdapter__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerServiceCollectionExtensions.AddAsyncEnumAdapter``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+  AddAsyncEnumAdapter&lt;TItem&gt;(IServiceCollection)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Adds a runner factory to the application's DI container for <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterRunner-1.html">AsyncEnumAdapterRunner&lt;TItem&gt;</a>.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IServiceCollection AddAsyncEnumAdapter&lt;TItem&gt;(this IServiceCollection Services)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>Services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
+  <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a> implementation to be used to configure an application service container</p>
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
+  <dd><p>Value of the Services param, this value is used to facilitate call chaining.</p>
+</dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TItem</code></dt>
+  <dd><p>Type of objects in a sequence (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;TItem&gt;</a>) for which the adapter to be created.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+<h4 class="section" id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerServiceCollectionExtensions_AddAsyncEnumAdapter__1_Microsoft_Extensions_DependencyInjection_IServiceCollection__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The factory created will be used for creation of a runner via following extension methods:</p>
+<p><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSequenceRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSequenceRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Collections_Generic_IAsyncEnumerable___0__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_">CreateSequenceRunner&lt;TItem&gt;(IActiveSession, IAsyncEnumerable&lt;TItem&gt;, HttpContext, IDisposable?)</a>
+or <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSequenceRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSequenceRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterParams___0__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_">CreateSequenceRunner&lt;TItem&gt;(IActiveSession, AsyncEnumAdapterParams&lt;TItem&gt;, HttpContext, IDisposable?)</a></p>
+</div>
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerServiceCollectionExtensions_AddAsyncEnumAdapter_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerServiceCollectionExtensions.AddAsyncEnumAdapter*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerServiceCollectionExtensions_AddAsyncEnumAdapter__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_MVVrus_AspNetCore_ActiveSession_ActiveSessionOptions__" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerServiceCollectionExtensions.AddAsyncEnumAdapter``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{MVVrus.AspNetCore.ActiveSession.ActiveSessionOptions})">
+  AddAsyncEnumAdapter&lt;TItem&gt;(IServiceCollection, Action&lt;ActiveSessionOptions&gt;?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Adds a runner factory to the application's DI container for <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterRunner-1.html">AsyncEnumAdapterRunner&lt;TItem&gt;</a>.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static IServiceCollection AddAsyncEnumAdapter&lt;TItem&gt;(this IServiceCollection Services, Action&lt;ActiveSessionOptions&gt;? Configurator)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>Services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
+  <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a> implementation to be used to configure an application service container</p>
+</dd>
+  <dt><code>Configurator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionOptions.html">ActiveSessionOptions</a>&gt;</dt>
+  <dd><param name="Configurator">
+    The delegate used to configure additional options (of type <a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionOptions.html">ActiveSessionOptions</a>) 
+    for the ActiveSession library features. May be null, if no additional configuraion to be performed
+    
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a></dt>
+  <dd><p>Value of the Services param, this value is used to facilitate call chaining.</p>
+</dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TItem</code></dt>
+  <dd><p>Type of objects in a sequence (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;TItem&gt;</a>) for which the adapter to be created.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+<h4 class="section" id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerServiceCollectionExtensions_AddAsyncEnumAdapter__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_MVVrus_AspNetCore_ActiveSession_ActiveSessionOptions___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>The factory created will be used for creation of a runner via following extension methods:</p>
+<p><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSequenceRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSequenceRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Collections_Generic_IAsyncEnumerable___0__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_">CreateSequenceRunner&lt;TItem&gt;(IActiveSession, IAsyncEnumerable&lt;TItem&gt;, HttpContext, IDisposable?)</a>
+or <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSequenceRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSequenceRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterParams___0__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_">CreateSequenceRunner&lt;TItem&gt;(IActiveSession, AsyncEnumAdapterParams&lt;TItem&gt;, HttpContext, IDisposable?)</a></p>
+</div>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

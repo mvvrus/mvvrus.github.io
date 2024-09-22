@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Constructor EnumerableRunnerBase
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Constructor EnumerableRunnerBase
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase`1.#ctor*">
+
+
+
+
+
+<h1 id="MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1__ctor_" data-uid="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase`1.#ctor*" class="text-break">
+  Constructor EnumerableRunnerBase
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="MVVrus.html">MVVrus</a>.<a class="xref" href="MVVrus.AspNetCore.html">AspNetCore</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.html">ActiveSession</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MVVrus.AspNetCore.ActiveSession.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1__ctor_" data-uid="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase`1.#ctor*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1__ctor_System_Threading_CancellationTokenSource_System_Boolean_MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Options_IOptionsSnapshot_MVVrus_AspNetCore_ActiveSession_ActiveSessionOptions__System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase`1.#ctor(System.Threading.CancellationTokenSource,System.Boolean,MVVrus.AspNetCore.ActiveSession.RunnerId,Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Options.IOptionsSnapshot{MVVrus.AspNetCore.ActiveSession.ActiveSessionOptions},System.Nullable{System.Int32},System.Nullable{System.Int32})">
+  EnumerableRunnerBase(CancellationTokenSource?, bool, RunnerId, ILogger?, IOptionsSnapshot&lt;ActiveSessionOptions&gt;, int?, int?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Constructor for a runner object to be used in descendent classes</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected EnumerableRunnerBase(CancellationTokenSource? CompletionTokenSource, bool PassCtsOwnership, RunnerId RunnerId, ILogger? Logger, IOptionsSnapshot&lt;ActiveSessionOptions&gt; Options, int? DefaultAdvance = null, int? QueueSize = null)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>CompletionTokenSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a></dt>
+  <dd><p>External source for a value of the <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> property. If it is null (default value),
+a new <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> will be used as the source in the instance to be created.</p>
+</dd>
+  <dt><code>PassCtsOwnership</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+  <dd><p>This value indicates will the instance to be created be responsible for disposing an external <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> source if it was passed by <code class="paramref">CompletionTokenSource</code>.</p>
+</dd>
+  <dt><code>RunnerId</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerId.html">RunnerId</a></dt>
+  <dd><p>The identifier to be assigned to the instance to be created.</p>
+</dd>
+  <dt><code>Logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+  <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> instance used to write log messages from the instance to be created.</p>
+</dd>
+  <dt><code>Options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptionssnapshot-1">IOptionsSnapshot</a>&lt;<a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionOptions.html">ActiveSessionOptions</a>&gt;</dt>
+  <dd><p>Presents access to a configuration object via the options pattern</p>
+</dd>
+  <dt><code>DefaultAdvance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+  <dd><p>Default value for the first parameter (Advance) for
+<a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.GetRequiredAsync.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_GetRequiredAsync_System_Int32_System_Threading_CancellationToken_System_Int32_System_String_">GetRequiredAsync</a>
+method of the instance to be created.</p>
+</dd>
+  <dt><code>QueueSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+  <dd><p>Maximum number of items fetched in background ahead of time in the instance to be created.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+<h4 class="section" id="MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1__ctor_System_Threading_CancellationTokenSource_System_Boolean_MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_Microsoft_Extensions_Options_IOptionsSnapshot_MVVrus_AspNetCore_ActiveSession_ActiveSessionOptions__System_Nullable_System_Int32__System_Nullable_System_Int32___remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This constructor overload accepts default values for the <code class="paramref">DefaultAdvance</code> and <code class="paramref">QueueSize</code> parameters
+from the configuration <a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionOptions.html">ActiveSessionOptions</a> object passed via <code class="paramref">Options</code> using the options pattern</p>
+</div>
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1__ctor_" data-uid="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase`1.#ctor*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1__ctor_System_Threading_CancellationTokenSource_System_Boolean_MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_System_Int32_System_Int32_" data-uid="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase`1.#ctor(System.Threading.CancellationTokenSource,System.Boolean,MVVrus.AspNetCore.ActiveSession.RunnerId,Microsoft.Extensions.Logging.ILogger,System.Int32,System.Int32)">
+  EnumerableRunnerBase(CancellationTokenSource?, bool, RunnerId, ILogger?, int, int)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Constructor for a runner object to be used in descendent classes</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected EnumerableRunnerBase(CancellationTokenSource? CompletionTokenSource, bool PassCtsOwnership, RunnerId RunnerId, ILogger? Logger, int DefaultAdvance, int QueueSize)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>CompletionTokenSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a></dt>
+  <dd><p>External source for a value of the <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> property. If it is null (default value),
+a new <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> will be used as the source in the instance to be created.</p>
+</dd>
+  <dt><code>PassCtsOwnership</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+  <dd><p>This value indicates will the instance to be created be responsible for disposing an external <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> source if it was passed by <code class="paramref">CompletionTokenSource</code>.</p>
+</dd>
+  <dt><code>RunnerId</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerId.html">RunnerId</a></dt>
+  <dd><p>The identifier to be assigned to the instance to be created.</p>
+</dd>
+  <dt><code>Logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+  <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> instance used to write log messages from the instance to be created.</p>
+</dd>
+  <dt><code>DefaultAdvance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd><p>Default value for the first parameter (Advance) for
+<a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.GetRequiredAsync.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_GetRequiredAsync_System_Int32_System_Threading_CancellationToken_System_Int32_System_String_">GetRequiredAsync</a>
+method of the instance to be created.</p>
+</dd>
+  <dt><code>QueueSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+  <dd><p>Maximum number of items fetched in background ahead of time in the instance to be created.</p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+<h4 class="section" id="MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1__ctor_System_Threading_CancellationTokenSource_System_Boolean_MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Logging_ILogger_System_Int32_System_Int32__remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>This constructor overload does not accept any default values
+for the <code class="paramref">DefaultAdvance</code> and <code class="paramref">QueueSize</code> parameters</p>
+</div>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

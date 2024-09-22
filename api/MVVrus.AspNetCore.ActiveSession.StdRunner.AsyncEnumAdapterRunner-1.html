@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AsyncEnumAdapterRunner&lt;TItem&gt;
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AsyncEnumAdapterRunner&lt;TItem&gt;
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterRunner`1">
+
+
+
+  <h1 id="MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterRunner_1" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterRunner`1" class="text-break">
+    Class AsyncEnumAdapterRunner&lt;TItem&gt;
+  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MVVrus.html">MVVrus</a>.<a class="xref" href="MVVrus.AspNetCore.html">AspNetCore</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.html">ActiveSession</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.html">StdRunner</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MVVrus.AspNetCore.ActiveSession.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>This class implements a sequence-oriented runner that is an adapter for an object
+implementing the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable&lt;TItem&gt;</a> interface.
+The adapter enumerates this async-enumerable object in background and returns parts of resulting sequence in order
+via <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner-1.html">IRunner&lt;TResult&gt;</a> interface with TResult being <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;TItem&gt;</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AsyncEnumAdapterRunner&lt;TItem&gt; : EnumerableRunnerBase&lt;TItem&gt;, IDisposable, IRunner&lt;IEnumerable&lt;TItem&gt;&gt;, IRunner, IAsyncDisposable</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TItem</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.html">RunnerBase</a></div>
+      <div><a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.html">EnumerableRunnerBase</a>&lt;TItem&gt;</div>
+      <div><span class="xref">AsyncEnumAdapterRunner&lt;TItem&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner-1.html">IRunner</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TItem&gt;&gt;</div>
+      <div><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner.html">IRunner</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesRunner-1.html">TimeSeriesRunner&lt;TResult&gt;</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.DisposeAsync.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_DisposeAsync">EnumerableRunnerBase&lt;TItem&gt;.DisposeAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.Status.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_Status">EnumerableRunnerBase&lt;TItem&gt;.Status</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.Position.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_Position">EnumerableRunnerBase&lt;TItem&gt;.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.GetAvailable.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_GetAvailable_System_Int32_System_Int32_System_String_">EnumerableRunnerBase&lt;TItem&gt;.GetAvailable(int, int, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.GetRequiredAsync.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_GetRequiredAsync_System_Int32_System_Threading_CancellationToken_System_Int32_System_String_">EnumerableRunnerBase&lt;TItem&gt;.GetRequiredAsync(int, CancellationToken, int, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.GetProgress.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_GetProgress">EnumerableRunnerBase&lt;TItem&gt;.GetProgress()</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.IsBackgroundExecutionCompleted.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_IsBackgroundExecutionCompleted">EnumerableRunnerBase&lt;TItem&gt;.IsBackgroundExecutionCompleted</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.Dispose.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_Dispose_System_Boolean_">EnumerableRunnerBase&lt;TItem&gt;.Dispose(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.DoAbort.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_DoAbort_System_String_">EnumerableRunnerBase&lt;TItem&gt;.DoAbort(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.QueueIsAddingCompleted.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_QueueIsAddingCompleted">EnumerableRunnerBase&lt;TItem&gt;.QueueIsAddingCompleted</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.QueueCompleteAdding.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_QueueCompleteAdding">EnumerableRunnerBase&lt;TItem&gt;.QueueCompleteAdding()</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.QueueTryAdd.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_QueueTryAdd__0_">EnumerableRunnerBase&lt;TItem&gt;.QueueTryAdd(TItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.QueueTryTake.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_QueueTryTake__0__">EnumerableRunnerBase&lt;TItem&gt;.QueueTryTake(out TItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.QueueCount.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_QueueCount">EnumerableRunnerBase&lt;TItem&gt;.QueueCount</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.Logger.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_Logger">RunnerBase.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.Abort.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_Abort_System_String_">RunnerBase.Abort(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">RunnerBase.CompletionToken</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.Dispose.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_Dispose">RunnerBase.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.Exception.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_Exception">RunnerBase.Exception</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.Id.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_Id">RunnerBase.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.ExtraData.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_ExtraData">RunnerBase.ExtraData</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.SetStatus.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_SetStatus_MVVrus_AspNetCore_ActiveSession_RunnerStatus_">RunnerBase.SetStatus(RunnerStatus)</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.StartBackgroundExecutionAsync.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_StartBackgroundExecutionAsync">RunnerBase.StartBackgroundExecutionAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.StartRunning.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_StartRunning_MVVrus_AspNetCore_ActiveSession_RunnerStatus_">RunnerBase.StartRunning(RunnerStatus)</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.StartRunningAsync.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_StartRunningAsync_MVVrus_AspNetCore_ActiveSession_RunnerStatus_">RunnerBase.StartRunningAsync(RunnerStatus)</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.FailStartRunning.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_FailStartRunning_MVVrus_AspNetCore_ActiveSession_RunnerStatus_System_Exception_">RunnerBase.FailStartRunning(RunnerStatus, Exception)</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.SetDisposed.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_SetDisposed">RunnerBase.SetDisposed()</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CheckDisposed.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CheckDisposed">RunnerBase.CheckDisposed()</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.DisposedObjectName.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_DisposedObjectName">RunnerBase.DisposedObjectName()</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.Disposed.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_Disposed">RunnerBase.Disposed()</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.LogFinishBackgroundProcess.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_LogFinishBackgroundProcess">RunnerBase.LogFinishBackgroundProcess()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerExtensions.AbortAsync.html#MVVrus_AspNetCore_ActiveSession_RunnerExtensions_AbortAsync_MVVrus_AspNetCore_ActiveSession_IRunner_System_String_System_Threading_CancellationToken_">RunnerExtensions.AbortAsync(IRunner, string?, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerExtensions.GetExceptionAsync.html#MVVrus_AspNetCore_ActiveSession_RunnerExtensions_GetExceptionAsync_MVVrus_AspNetCore_ActiveSession_IRunner_System_Threading_CancellationToken_">RunnerExtensions.GetExceptionAsync(IRunner, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerExtensions.GetIsBackgroundExecutionCompletedAsync.html#MVVrus_AspNetCore_ActiveSession_RunnerExtensions_GetIsBackgroundExecutionCompletedAsync_MVVrus_AspNetCore_ActiveSession_IRunner_System_Threading_CancellationToken_">RunnerExtensions.GetIsBackgroundExecutionCompletedAsync(IRunner, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerExtensions.GetPositionAsync.html#MVVrus_AspNetCore_ActiveSession_RunnerExtensions_GetPositionAsync_MVVrus_AspNetCore_ActiveSession_IRunner_System_Threading_CancellationToken_">RunnerExtensions.GetPositionAsync(IRunner, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerExtensions.GetProgressAsync.html#MVVrus_AspNetCore_ActiveSession_RunnerExtensions_GetProgressAsync_MVVrus_AspNetCore_ActiveSession_IRunner_System_Threading_CancellationToken_">RunnerExtensions.GetProgressAsync(IRunner, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerExtensions.GetStatusAsync.html#MVVrus_AspNetCore_ActiveSession_RunnerExtensions_GetStatusAsync_MVVrus_AspNetCore_ActiveSession_IRunner_System_Threading_CancellationToken_">RunnerExtensions.GetStatusAsync(IRunner, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerExtensions.IsLocal.html#MVVrus_AspNetCore_ActiveSession_RunnerExtensions_IsLocal_MVVrus_AspNetCore_ActiveSession_IRunner_">RunnerExtensions.IsLocal(IRunner)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerExtensions.GetAvailableAsync.html#MVVrus_AspNetCore_ActiveSession_RunnerExtensions_GetAvailableAsync__1_MVVrus_AspNetCore_ActiveSession_IRunner___0__System_Int32_System_Int32_System_String_System_Threading_CancellationToken_">RunnerExtensions.GetAvailableAsync&lt;TResult&gt;(IRunner&lt;TResult&gt;, int, int, string?, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerExtensions.GetRequired.html#MVVrus_AspNetCore_ActiveSession_RunnerExtensions_GetRequired__1_MVVrus_AspNetCore_ActiveSession_IRunner___0__System_Int32_System_Int32_System_String_">RunnerExtensions.GetRequired&lt;TResult&gt;(IRunner&lt;TResult&gt;, int, int, string?)</a>
+  </div>
+  </dd></dl>
+
+
+
+  <h2 id="MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterRunner_1_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p><seqrunner><p>
+Sequence-oriented runners are ones that return a sequence of data records as a result.
+These runners implements  <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner-1.html">IRunner&lt;TResult&gt;</a> interface, with TResult type being an implementation
+of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;TItem&gt;</a> interface.</p>
+</seqrunner></p><p>
+Sequence-oriented runners returns parts of a sequence produced in a background by some process.
+The parts are returned via calls of 
+<a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.GetRequiredAsync.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_GetRequiredAsync_System_Int32_System_Threading_CancellationToken_System_Int32_System_String_">GetRequiredAsync</a> and/or 
+<a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.GetAvailable.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_GetAvailable_System_Int32_System_Int32_System_String_">GetAvailable </a> methods. 
+These parts may be obtained during processing of different HTTP requests belonging to one <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.html">Active Session</a>.
+All calls to these methods must be made in order and calls of these methods must not be made in parallel.
+</p>
+</div>
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterRunner-1.-ctor.html#MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterRunner_1__ctor_MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterParams__0__MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Options_IOptionsSnapshot_MVVrus_AspNetCore_ActiveSession_ActiveSessionOptions__Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterRunner__0___">AsyncEnumAdapterRunner(AsyncEnumAdapterParams&lt;TItem&gt;, RunnerId, IOptionsSnapshot&lt;ActiveSessionOptions&gt;, ILogger&lt;AsyncEnumAdapterRunner&lt;TItem&gt;&gt;?)</a></dt>
+    <dd><p><common>A constructor that creates AsyncEnumAdapterRunner instance.</common>
+<factory>This constructor is used to create an instance by <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a></factory></p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterRunner-1.-ctor.html#MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterRunner_1__ctor_System_Collections_Generic_IAsyncEnumerable__0__MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Options_IOptionsSnapshot_MVVrus_AspNetCore_ActiveSession_ActiveSessionOptions__Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterRunner__0___">AsyncEnumAdapterRunner(IAsyncEnumerable&lt;TItem&gt;, RunnerId, IOptionsSnapshot&lt;ActiveSessionOptions&gt;, ILogger&lt;AsyncEnumAdapterRunner&lt;TItem&gt;&gt;?)</a></dt>
+    <dd><p><common>A constructor that creates AsyncEnumAdapterRunner instance.</common>
+<factory>This constructor is used to create an instance by <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a></factory></p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterRunner-1.-ctor.html#MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterRunner_1__ctor_System_Collections_Generic_IAsyncEnumerable__0__System_Boolean_System_Threading_CancellationTokenSource_System_Boolean_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Boolean_MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Options_IOptionsSnapshot_MVVrus_AspNetCore_ActiveSession_ActiveSessionOptions__Microsoft_Extensions_Logging_ILogger_">AsyncEnumAdapterRunner(IAsyncEnumerable&lt;TItem&gt;, bool, CancellationTokenSource?, bool, int?, int?, bool, RunnerId, IOptionsSnapshot&lt;ActiveSessionOptions&gt;, ILogger?)</a></dt>
+    <dd><p><common>A constructor that creates AsyncEnumAdapterRunner instance.</common>
+This constructor has protected access level and is intended for use in other constructors of this and descendent classes.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterRunner-1.DisposeAsyncCore.html#MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterRunner_1_DisposeAsyncCore">DisposeAsyncCore()</a></dt>
+    <dd><p>Protected, overrides <a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.DisposeAsyncCore.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_DisposeAsyncCore">EnumerableRunnerBase.DisposeAsyncCore</a>.
+This method performs a real work of disposing the object instance asynchronously.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterRunner-1.FetchRequiredAsync.html#MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterRunner_1_FetchRequiredAsync_System_Int32_System_Collections_Generic_List__0__System_Threading_CancellationToken_System_String_">FetchRequiredAsync(int, List&lt;TItem&gt;, CancellationToken, string)</a></dt>
+    <dd><p>Protected, overrides <a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.FetchRequiredAsync.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_FetchRequiredAsync_System_Int32_System_Collections_Generic_List__0__System_Threading_CancellationToken_System_String_">
+    EnumerableRunnerBase.FetchRequiredAsync</a> abstract method.
+<toinherit>Creates a task representing an asynchronous fetch of results of the background processing to be returned by
+<a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.GetRequiredAsync.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_GetRequiredAsync_System_Int32_System_Threading_CancellationToken_System_Int32_System_String_">GetRequiredAsync</a> method.
+</toinherit></p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterRunner-1.PreDispose.html#MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterRunner_1_PreDispose">PreDispose()</a></dt>
+    <dd><p>Protected, overrides <a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.PreDispose.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_PreDispose">EnumerableRunnerBase.PreDispose</a>.
+Performs preliminary tasks before beginning of disposing any members of any descendent class.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterRunner-1.StartBackgroundExecution.html#MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterRunner_1_StartBackgroundExecution">StartBackgroundExecution()</a></dt>
+    <dd><p>Protected, overrides <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.StartBackgroundExecution.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_StartBackgroundExecution">RunnerBase.StartBackgroundExecution</a> abstract method.
+<toinherit>This method is used to start background execution synchronously.</toinherit></p>
+</dd>
+  </dl>
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

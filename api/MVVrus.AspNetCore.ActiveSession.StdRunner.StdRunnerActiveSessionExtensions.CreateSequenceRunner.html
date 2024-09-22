@@ -1,0 +1,379 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Method CreateSequenceRunner
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Method CreateSequenceRunner
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSequenceRunner*">
+
+
+
+
+
+<h1 id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSequenceRunner_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSequenceRunner*" class="text-break">
+  Method CreateSequenceRunner
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="MVVrus.html">MVVrus</a>.<a class="xref" href="MVVrus.AspNetCore.html">AspNetCore</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.html">ActiveSession</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.html">StdRunner</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MVVrus.AspNetCore.ActiveSession.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSequenceRunner_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSequenceRunner*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSequenceRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_MVVrus_AspNetCore_ActiveSession_StdRunner_EnumAdapterParams___0__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSequenceRunner``1(MVVrus.AspNetCore.ActiveSession.IActiveSession,MVVrus.AspNetCore.ActiveSession.StdRunner.EnumAdapterParams{``0},Microsoft.AspNetCore.Http.HttpContext,System.IDisposable)">
+  CreateSequenceRunner&lt;TItem&gt;(IActiveSession, EnumAdapterParams&lt;TItem&gt;, HttpContext, IDisposable?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Creates an <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.EnumAdapterRunner-1.html">EnumAdapterRunner&lt;TItem&gt;</a> instance in the specified Active Session</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static KeyedRunner&lt;IEnumerable&lt;TItem&gt;&gt; CreateSequenceRunner&lt;TItem&gt;(this IActiveSession Session, EnumAdapterParams&lt;TItem&gt; Source, HttpContext Context, IDisposable? ExclusiveServiceAccessor = null)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>Session</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.html">IActiveSession</a></dt>
+  <dd><p>An interface of Active Session object to work with.</p>
+</dd>
+  <dt><code>Source</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.EnumAdapterParams-1.html">EnumAdapterParams</a>&lt;TItem&gt;</dt>
+  <dd><param name="Params">A structure that contains a refernce to the source enumerable and additional parameters.
+</dd>
+  <dt><code>Context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext">HttpContext</a></dt>
+  <dd><param name="Context">Context of the HTTP request from a handler of which the method is called.
+</dd>
+  <dt><code>ExclusiveServiceAccessor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+  <dd><param name="ExclusiveServiceAccessor">
+The accessor for the exlusively accessible service to be used by the runner.
+This accessor will be disposed after the runner completion and cleanup thus releasing the lock 
+represented by the accessor on the exclusively accessible scoped service from the active session's container.
+
+The accesor value may be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> (this is the default value), 
+that means the new runner will not use any exclusively accessible service from the active session's DI container.
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.KeyedRunner-1.html">KeyedRunner</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TItem&gt;&gt;</dt>
+  <dd><p><returns>A structure that contains the reference to the new runner and its number within the active session.</returns></p>
+</dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TItem</code></dt>
+  <dd><p><typeparam name="TItem">Type of items of a sequence (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;TItem&gt;</a> interface) that a background process of the runner returns.</typeparam></p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSequenceRunner_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSequenceRunner*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSequenceRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Collections_Generic_IEnumerable___0__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSequenceRunner``1(MVVrus.AspNetCore.ActiveSession.IActiveSession,System.Collections.Generic.IEnumerable{``0},Microsoft.AspNetCore.Http.HttpContext,System.IDisposable)">
+  CreateSequenceRunner&lt;TItem&gt;(IActiveSession, IEnumerable&lt;TItem&gt;, HttpContext, IDisposable?)
+  
+</h3>
+
+<div class="markdown level1 summary"><summary>
+Creates an <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.EnumAdapterRunner-1.html">EnumAdapterRunner&lt;TItem&gt;</a> instance in the specified Active Session
+</summary>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static KeyedRunner&lt;IEnumerable&lt;TItem&gt;&gt; CreateSequenceRunner&lt;TItem&gt;(this IActiveSession Session, IEnumerable&lt;TItem&gt; Source, HttpContext Context, IDisposable? ExclusiveServiceAccessor = null)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>Session</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.html">IActiveSession</a></dt>
+  <dd><param name="Session">An interface of Active Session object to work with.
+</dd>
+  <dt><code>Source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TItem&gt;</dt>
+  <dd><param name="Source"><param name="Source">An enumerable for which the instance to be created will serve as an adapter.
+</dd>
+  <dt><code>Context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext">HttpContext</a></dt>
+  <dd><param name="Context">Context of the HTTP request from a handler of which the method is called.
+</dd>
+  <dt><code>ExclusiveServiceAccessor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+  <dd><param name="ExclusiveServiceAccessor"><param name="ExclusiveServiceAccessor">
+The accessor for the exlusively accessible service to be used by the runner.
+This accessor will be disposed after the runner completion and cleanup thus releasing the lock 
+represented by the accessor on the exclusively accessible scoped service from the active session's container.
+
+The accesor value may be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> (this is the default value), 
+that means the new runner will not use any exclusively accessible service from the active session's DI container.
+
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.KeyedRunner-1.html">KeyedRunner</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TItem&gt;&gt;</dt>
+  <dd><p><returns>A structure that contains the reference to the new runner and its number within the active session.</returns></p>
+</dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TItem</code></dt>
+  <dd><p><typeparam name="TItem">Type of items of a sequence (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;TItem&gt;</a> interface) that a background process of the runner returns.</typeparam></p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSequenceRunner_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSequenceRunner*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSequenceRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_MVVrus_AspNetCore_ActiveSession_StdRunner_AsyncEnumAdapterParams___0__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSequenceRunner``1(MVVrus.AspNetCore.ActiveSession.IActiveSession,MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterParams{``0},Microsoft.AspNetCore.Http.HttpContext,System.IDisposable)">
+  CreateSequenceRunner&lt;TItem&gt;(IActiveSession, AsyncEnumAdapterParams&lt;TItem&gt;, HttpContext, IDisposable?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Creates an <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterRunner-1.html">AsyncEnumAdapterRunner&lt;TItem&gt;</a> instance in the specified Active Session.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static KeyedRunner&lt;IEnumerable&lt;TItem&gt;&gt; CreateSequenceRunner&lt;TItem&gt;(this IActiveSession Session, AsyncEnumAdapterParams&lt;TItem&gt; Source, HttpContext Context, IDisposable? ExclusiveServiceAccessor = null)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>Session</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.html">IActiveSession</a></dt>
+  <dd><param name="Session">An interface of Active Session object to work with.
+</dd>
+  <dt><code>Source</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterParams-1.html">AsyncEnumAdapterParams</a>&lt;TItem&gt;</dt>
+  <dd><param name="Params">A structure that contains a refernce to the source async-enumerable and additional parameters.
+</dd>
+  <dt><code>Context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext">HttpContext</a></dt>
+  <dd><param name="Context">Context of the HTTP request from a handler of which the method is called.
+</dd>
+  <dt><code>ExclusiveServiceAccessor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+  <dd><param name="ExclusiveServiceAccessor"><param name="ExclusiveServiceAccessor">
+The accessor for the exlusively accessible service to be used by the runner.
+This accessor will be disposed after the runner completion and cleanup thus releasing the lock 
+represented by the accessor on the exclusively accessible scoped service from the active session's container.
+
+The accesor value may be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> (this is the default value), 
+that means the new runner will not use any exclusively accessible service from the active session's DI container.
+
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.KeyedRunner-1.html">KeyedRunner</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TItem&gt;&gt;</dt>
+  <dd><p><returns>A structure that contains the reference to the new runner and its number within the active session.</returns></p>
+</dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TItem</code></dt>
+  <dd><p><typeparam name="TItem">Type of items of a sequence (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;TItem&gt;</a> interface) that a background process of the runner returns.</typeparam></p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSequenceRunner_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSequenceRunner*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_CreateSequenceRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Collections_Generic_IAsyncEnumerable___0__Microsoft_AspNetCore_Http_HttpContext_System_IDisposable_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.CreateSequenceRunner``1(MVVrus.AspNetCore.ActiveSession.IActiveSession,System.Collections.Generic.IAsyncEnumerable{``0},Microsoft.AspNetCore.Http.HttpContext,System.IDisposable)">
+  CreateSequenceRunner&lt;TItem&gt;(IActiveSession, IAsyncEnumerable&lt;TItem&gt;, HttpContext, IDisposable?)
+  
+</h3>
+
+<div class="markdown level1 summary"><summary>
+Creates an <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.AsyncEnumAdapterRunner-1.html">AsyncEnumAdapterRunner&lt;TItem&gt;</a> instance in the specified Active Session.
+</summary>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public static KeyedRunner&lt;IEnumerable&lt;TItem&gt;&gt; CreateSequenceRunner&lt;TItem&gt;(this IActiveSession Session, IAsyncEnumerable&lt;TItem&gt; Source, HttpContext Context, IDisposable? ExclusiveServiceAccessor = null)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>Session</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.html">IActiveSession</a></dt>
+  <dd><param name="Session">An interface of Active Session object to work with.
+</dd>
+  <dt><code>Source</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;TItem&gt;</dt>
+  <dd><param name="Source"><param name="Source">An async-enumerable for which the instance to be created will serve as an adapter.
+</dd>
+  <dt><code>Context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext">HttpContext</a></dt>
+  <dd><param name="Context">Context of the HTTP request from a handler of which the method is called.
+</dd>
+  <dt><code>ExclusiveServiceAccessor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></dt>
+  <dd><param name="ExclusiveServiceAccessor"><param name="ExclusiveServiceAccessor">
+The accessor for the exlusively accessible service to be used by the runner.
+This accessor will be disposed after the runner completion and cleanup thus releasing the lock 
+represented by the accessor on the exclusively accessible scoped service from the active session's container.
+
+The accesor value may be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> (this is the default value), 
+that means the new runner will not use any exclusively accessible service from the active session's DI container.
+
+</dd>
+</dl>
+
+<h4 class="section">Returns</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.KeyedRunner-1.html">KeyedRunner</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TItem&gt;&gt;</dt>
+  <dd><p><returns>A structure that contains the reference to the new runner and its number within the active session.</returns></p>
+</dd>
+</dl>
+
+<h4 class="section">Type Parameters</h4>
+<dl class="parameters">
+  <dt><code>TItem</code></dt>
+  <dd><p><typeparam name="TItem">Type of items of a sequence (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;TItem&gt;</a> interface) that a background process of the runner returns.</typeparam></p>
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

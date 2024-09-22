@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Constructor TimeSeriesRunner
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Constructor TimeSeriesRunner
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesRunner`1.#ctor*">
+
+
+
+
+
+<h1 id="MVVrus_AspNetCore_ActiveSession_StdRunner_TimeSeriesRunner_1__ctor_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesRunner`1.#ctor*" class="text-break">
+  Constructor TimeSeriesRunner
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="MVVrus.html">MVVrus</a>.<a class="xref" href="MVVrus.AspNetCore.html">AspNetCore</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.html">ActiveSession</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.html">StdRunner</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MVVrus.AspNetCore.ActiveSession.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_TimeSeriesRunner_1__ctor_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesRunner`1.#ctor*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_TimeSeriesRunner_1__ctor_System_ValueTuple_System_Func__0__System_TimeSpan__MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Options_IOptionsSnapshot_MVVrus_AspNetCore_ActiveSession_ActiveSessionOptions__Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_TimeSeriesRunner__0___" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesRunner`1.#ctor(System.ValueTuple{System.Func{`0},System.TimeSpan},MVVrus.AspNetCore.ActiveSession.RunnerId,Microsoft.Extensions.Options.IOptionsSnapshot{MVVrus.AspNetCore.ActiveSession.ActiveSessionOptions},Microsoft.Extensions.Logging.ILogger{MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesRunner{`0}})">
+  TimeSeriesRunner((Func&lt;TResult&gt;, TimeSpan), RunnerId, IOptionsSnapshot&lt;ActiveSessionOptions&gt;, ILogger&lt;TimeSeriesRunner&lt;TResult&gt;&gt;?)
+  
+</h3>
+
+<div class="markdown level1 summary"><summary><common>A constructor that creates TimeSeriesRunner instance.</common>
+This constructor is used to create an instance via <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a>.
+</summary>
+Creates a runner producing an unlimited series of measurements.
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">[ActiveSessionConstructor(true)]
+public TimeSeriesRunner((Func&lt;TResult&gt;, TimeSpan) SeriesParam, RunnerId RunnerId, IOptionsSnapshot&lt;ActiveSessionOptions&gt; Options, ILogger&lt;TimeSeriesRunner&lt;TResult&gt;&gt;? Logger)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>SeriesParam</code> (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;TResult&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>)</dt>
+  <dd><p>A pair of values.
+The first value is a delegate that returns a result of a measurement.
+The second value is a requested interval between measurements.</p>
+</dd>
+  <dt><code>RunnerId</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerId.html">RunnerId</a></dt>
+  <dd><param name="RunnerId"><param name="RunnerId">The identifier to be assigned to the instance to be created.
+</dd>
+  <dt><code>Options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptionssnapshot-1">IOptionsSnapshot</a>&lt;<a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionOptions.html">ActiveSessionOptions</a>&gt;</dt>
+  <dd><param name="Options"><param name="Options">Presents access to a configuration object via the options pattern
+</dd>
+  <dt><code>Logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesRunner-1.html">TimeSeriesRunner</a>&lt;TResult&gt;&gt;</dt>
+  <dd><param name="Logger"><param name="Logger"><param name="Logger">The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> instance used to write log messages from the instance to be created.
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_TimeSeriesRunner_1__ctor_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesRunner`1.#ctor*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_TimeSeriesRunner_1__ctor_System_ValueTuple_System_Func__0__System_TimeSpan_System_Int32__MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Options_IOptionsSnapshot_MVVrus_AspNetCore_ActiveSession_ActiveSessionOptions__Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_TimeSeriesRunner__0___" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesRunner`1.#ctor(System.ValueTuple{System.Func{`0},System.TimeSpan,System.Int32},MVVrus.AspNetCore.ActiveSession.RunnerId,Microsoft.Extensions.Options.IOptionsSnapshot{MVVrus.AspNetCore.ActiveSession.ActiveSessionOptions},Microsoft.Extensions.Logging.ILogger{MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesRunner{`0}})">
+  TimeSeriesRunner((Func&lt;TResult&gt;, TimeSpan, int), RunnerId, IOptionsSnapshot&lt;ActiveSessionOptions&gt;, ILogger&lt;TimeSeriesRunner&lt;TResult&gt;&gt;?)
+  
+</h3>
+
+<div class="markdown level1 summary"><summary><common>A constructor that creates TimeSeriesRunner instance.</common>
+This constructor is used to create an instance via <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a>.
+</summary>
+Creates a runner producing a finite series of measurements.
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">[ActiveSessionConstructor(true)]
+public TimeSeriesRunner((Func&lt;TResult&gt;, TimeSpan, int) SeriesParam, RunnerId RunnerId, IOptionsSnapshot&lt;ActiveSessionOptions&gt; Options, ILogger&lt;TimeSeriesRunner&lt;TResult&gt;&gt;? Logger)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>SeriesParam</code> (<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;TResult&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>)</dt>
+  <dd><p>A group of three values.
+The first value is a delegate that returns a result of a measurement.
+The second value is a requested interval between measurements.
+The third value is a maximum number of measurements to be performed.</p>
+</dd>
+  <dt><code>RunnerId</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerId.html">RunnerId</a></dt>
+  <dd><param name="RunnerId"><param name="RunnerId">The identifier to be assigned to the instance to be created.
+</dd>
+  <dt><code>Options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptionssnapshot-1">IOptionsSnapshot</a>&lt;<a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionOptions.html">ActiveSessionOptions</a>&gt;</dt>
+  <dd><param name="Options"><param name="Options">Presents access to a configuration object via the options pattern
+</dd>
+  <dt><code>Logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesRunner-1.html">TimeSeriesRunner</a>&lt;TResult&gt;&gt;</dt>
+  <dd><param name="Logger"><param name="Logger"><param name="Logger">The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> instance used to write log messages from the instance to be created.
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_TimeSeriesRunner_1__ctor_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesRunner`1.#ctor*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_TimeSeriesRunner_1__ctor_MVVrus_AspNetCore_ActiveSession_StdRunner_TimeSeriesParams__0__MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Options_IOptionsSnapshot_MVVrus_AspNetCore_ActiveSession_ActiveSessionOptions__Microsoft_Extensions_Logging_ILogger_MVVrus_AspNetCore_ActiveSession_StdRunner_TimeSeriesRunner__0___" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesRunner`1.#ctor(MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesParams{`0},MVVrus.AspNetCore.ActiveSession.RunnerId,Microsoft.Extensions.Options.IOptionsSnapshot{MVVrus.AspNetCore.ActiveSession.ActiveSessionOptions},Microsoft.Extensions.Logging.ILogger{MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesRunner{`0}})">
+  TimeSeriesRunner(TimeSeriesParams&lt;TResult&gt;, RunnerId, IOptionsSnapshot&lt;ActiveSessionOptions&gt;, ILogger&lt;TimeSeriesRunner&lt;TResult&gt;&gt;?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p><common>A constructor that creates TimeSeriesRunner instance.</common>
+This constructor is used to create an instance via <a class="xref" href="MVVrus.AspNetCore.ActiveSession.Internal.TypeRunnerFactory-2.html">TypeRunnerFactory</a>.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">[ActiveSessionConstructor(true)]
+public TimeSeriesRunner(TimeSeriesParams&lt;TResult&gt; SeriesParam, RunnerId RunnerId, IOptionsSnapshot&lt;ActiveSessionOptions&gt; Options, ILogger&lt;TimeSeriesRunner&lt;TResult&gt;&gt;? Logger)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>SeriesParam</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesParams-1.html">TimeSeriesParams</a>&lt;TResult&gt;</dt>
+  <dd><p>A structure that contains parameters used for creation of the instance.
+Fields of the structure contains the same values as the paramemters of  the
+<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesRunner-1.-ctor.html#MVVrus_AspNetCore_ActiveSession_StdRunner_TimeSeriesRunner_1__ctor_System_Func__0__System_TimeSpan_System_Nullable_System_Int32__System_Threading_CancellationTokenSource_System_Boolean_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Boolean_MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Options_IOptionsSnapshot_MVVrus_AspNetCore_ActiveSession_ActiveSessionOptions__Microsoft_Extensions_Logging_ILogger_">
+    protected constructor</a> with the same names.</p>
+</dd>
+  <dt><code>RunnerId</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerId.html">RunnerId</a></dt>
+  <dd><param name="RunnerId"><param name="RunnerId">The identifier to be assigned to the instance to be created.
+</dd>
+  <dt><code>Options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptionssnapshot-1">IOptionsSnapshot</a>&lt;<a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionOptions.html">ActiveSessionOptions</a>&gt;</dt>
+  <dd><param name="Options"><param name="Options">Presents access to a configuration object via the options pattern
+</dd>
+  <dt><code>Logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesRunner-1.html">TimeSeriesRunner</a>&lt;TResult&gt;&gt;</dt>
+  <dd><param name="Logger"><param name="Logger"><param name="Logger">The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> instance used to write log messages from the instance to be created.
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_StdRunner_TimeSeriesRunner_1__ctor_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesRunner`1.#ctor*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_StdRunner_TimeSeriesRunner_1__ctor_System_Func__0__System_TimeSpan_System_Nullable_System_Int32__System_Threading_CancellationTokenSource_System_Boolean_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Boolean_MVVrus_AspNetCore_ActiveSession_RunnerId_Microsoft_Extensions_Options_IOptionsSnapshot_MVVrus_AspNetCore_ActiveSession_ActiveSessionOptions__Microsoft_Extensions_Logging_ILogger_" data-uid="MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesRunner`1.#ctor(System.Func{`0},System.TimeSpan,System.Nullable{System.Int32},System.Threading.CancellationTokenSource,System.Boolean,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Boolean,MVVrus.AspNetCore.ActiveSession.RunnerId,Microsoft.Extensions.Options.IOptionsSnapshot{MVVrus.AspNetCore.ActiveSession.ActiveSessionOptions},Microsoft.Extensions.Logging.ILogger)">
+  TimeSeriesRunner(Func&lt;TResult&gt;, TimeSpan, int?, CancellationTokenSource?, bool, int?, int?, bool, RunnerId, IOptionsSnapshot&lt;ActiveSessionOptions&gt;, ILogger?)
+  
+</h3>
+
+<div class="markdown level1 summary"><p><common>A constructor that creates TimeSeriesRunner instance.</common>
+This constructor has protected access level and is intended for use in other constructors of this and descendent classes.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">protected TimeSeriesRunner(Func&lt;TResult&gt; Gauge, TimeSpan Interval, int? Count, CancellationTokenSource? CompletionTokenSource, bool PassCtsOwnership, int? DefaultAdvance, int? EnumAheadLimit, bool StartInConstructor, RunnerId RunnerId, IOptionsSnapshot&lt;ActiveSessionOptions&gt; Options, ILogger? Logger)</code></pre>
+</div>
+
+<h4 class="section">Parameters</h4>
+<dl class="parameters">
+  <dt><code>Gauge</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;TResult&gt;</dt>
+  <dd><p>A delegate that returns a result of a measurement.</p>
+</dd>
+  <dt><code>Interval</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></dt>
+  <dd><p>Requested interval between measurements.</p>
+</dd>
+  <dt><code>Count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+  <dd><p>Maximum number of measurements in the series.
+May be null to produce a series with unlimited number of measurements.</p>
+</dd>
+  <dt><code>CompletionTokenSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a></dt>
+  <dd><param name="CompletionTokenSource">
+External source for a value of the <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> property. If it is null (default value), 
+a new <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtokensource">CancellationTokenSource</a> will be used as the source in the instance to be created.
+
+</dd>
+  <dt><code>PassCtsOwnership</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+  <dd><param name="PassCtsOwnership">
+This value indicates will the instance to be created be responsible for disposing an external <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CompletionToken">CompletionToken</a> source if it was passed by <code class="paramref">CompletionTokenSource</code>.
+
+</dd>
+  <dt><code>DefaultAdvance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+  <dd><param name="DefaultAdvance">
+Default value for the first parameter (Advance) for 
+<a class="xref" href="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase-1.GetRequiredAsync.html#MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_GetRequiredAsync_System_Int32_System_Threading_CancellationToken_System_Int32_System_String_">GetRequiredAsync</a>
+method of the instance to be created.
+
+</dd>
+  <dt><code>EnumAheadLimit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+  <dd><param name="QueueSize">Maximum number of items fetched in background ahead of time in the instance to be created.
+
+</dd>
+  <dt><code>StartInConstructor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+  <dd><param name="StartInConstructor">Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to start background processing in the constructor.
+</dd>
+  <dt><code>RunnerId</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerId.html">RunnerId</a></dt>
+  <dd><param name="RunnerId">The identifier to be assigned to the instance to be created.
+</dd>
+  <dt><code>Options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.options.ioptionssnapshot-1">IOptionsSnapshot</a>&lt;<a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionOptions.html">ActiveSessionOptions</a>&gt;</dt>
+  <dd><param name="Options">Presents access to a configuration object via the options pattern
+</dd>
+  <dt><code>Logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+  <dd><param name="Logger"><param name="Logger">The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a> instance used to write log messages from the instance to be created.
+</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

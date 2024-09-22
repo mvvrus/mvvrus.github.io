@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Property Status
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Property Status
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase`1.Status*">
+
+
+
+
+
+<h1 id="MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_Status_" data-uid="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase`1.Status*" class="text-break">
+  Property Status
+  
+</h1>
+
+<div class="facts text-secondary">
+  <dl><dt>Namespace</dt><dd><a class="xref" href="MVVrus.html">MVVrus</a>.<a class="xref" href="MVVrus.AspNetCore.html">AspNetCore</a>.<a class="xref" href="MVVrus.AspNetCore.ActiveSession.html">ActiveSession</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MVVrus.AspNetCore.ActiveSession.dll</dd></dl>
+</div>
+
+<div class="markdown summary"></div>
+<div class="markdown conceptual"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a id="MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_Status_" data-uid="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase`1.Status*"></a>
+
+<h3 id="MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_Status" data-uid="MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase`1.Status">
+  Status
+  
+</h3>
+
+<div class="markdown level1 summary"><p>Current status of the runner object.
+It is a part of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner.html">IRunner</a> interface implementation.
+Overrides <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.Status.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_Status">RunnerBase.Status</a>.</p>
+</div>
+<div class="markdown level1 conceptual"></div>
+
+<div class="codewrapper">
+  <pre><code class="lang-csharp hljs">public override RunnerStatus Status { get; }</code></pre>
+</div>
+
+
+
+
+
+<h4 class="section">Property Value</h4>
+<dl class="parameters">
+  <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerStatus.html">RunnerStatus</a></dt>
+  <dd></dd>
+</dl>
+
+
+
+
+<h4 class="section" id="MVVrus_AspNetCore_ActiveSession_EnumerableRunnerBase_1_Status_remarks">Remarks</h4>
+<div class="markdown level1 remarks"><p>From a base class (<a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.html">RunnerBase</a>) perspective the value of the property at any running stages
+(namely <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerStatus.html#MVVrus_AspNetCore_ActiveSession_RunnerStatus_Stalled">Stalled</a> or <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerStatus.html#MVVrus_AspNetCore_ActiveSession_RunnerStatus_Progressed">Progressed</a>)
+always contains the same value: <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerStatus.html#MVVrus_AspNetCore_ActiveSession_RunnerStatus_Stalled">Stalled</a>.
+But this property override takes also in account the presence of items fetched into its queue,
+changing the returned property value to <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerStatus.html#MVVrus_AspNetCore_ActiveSession_RunnerStatus_Progressed">Progressed</a> if the queue is not empty.</p>
+</div>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
