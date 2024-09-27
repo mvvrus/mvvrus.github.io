@@ -1041,18 +1041,6 @@ references:
   commentId: Overload:MVVrus.AspNetCore.ActiveSession.IActiveSession.IsFresh
   fullName: MVVrus.AspNetCore.ActiveSession.IActiveSession.IsFresh
   nameWithType: IActiveSession.IsFresh
-- uid: MVVrus.AspNetCore.ActiveSession.IActiveSession.IsIdle
-  name: IsIdle
-  href: api/MVVrus.AspNetCore.ActiveSession.IActiveSession.IsIdle.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_IsIdle
-  commentId: P:MVVrus.AspNetCore.ActiveSession.IActiveSession.IsIdle
-  fullName: MVVrus.AspNetCore.ActiveSession.IActiveSession.IsIdle
-  nameWithType: IActiveSession.IsIdle
-- uid: MVVrus.AspNetCore.ActiveSession.IActiveSession.IsIdle*
-  name: IsIdle
-  href: api/MVVrus.AspNetCore.ActiveSession.IActiveSession.IsIdle.html
-  commentId: Overload:MVVrus.AspNetCore.ActiveSession.IActiveSession.IsIdle
-  fullName: MVVrus.AspNetCore.ActiveSession.IActiveSession.IsIdle
-  nameWithType: IActiveSession.IsIdle
 - uid: MVVrus.AspNetCore.ActiveSession.IActiveSession.Terminate(Microsoft.AspNetCore.Http.HttpContext)
   name: Terminate(HttpContext)
   href: api/MVVrus.AspNetCore.ActiveSession.IActiveSession.Terminate.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_Terminate_Microsoft_AspNetCore_Http_HttpContext_
@@ -1080,21 +1068,6 @@ references:
   commentId: Overload:MVVrus.AspNetCore.ActiveSession.IActiveSession.TrackRunnerCleanup
   fullName: MVVrus.AspNetCore.ActiveSession.IActiveSession.TrackRunnerCleanup
   nameWithType: IActiveSession.TrackRunnerCleanup
-- uid: MVVrus.AspNetCore.ActiveSession.IActiveSession.WaitUntilIdle(System.Boolean,System.TimeSpan,System.Threading.CancellationToken)
-  name: WaitUntilIdle(bool, TimeSpan, CancellationToken)
-  href: api/MVVrus.AspNetCore.ActiveSession.IActiveSession.WaitUntilIdle.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_WaitUntilIdle_System_Boolean_System_TimeSpan_System_Threading_CancellationToken_
-  commentId: M:MVVrus.AspNetCore.ActiveSession.IActiveSession.WaitUntilIdle(System.Boolean,System.TimeSpan,System.Threading.CancellationToken)
-  name.vb: WaitUntilIdle(Boolean, TimeSpan, CancellationToken)
-  fullName: MVVrus.AspNetCore.ActiveSession.IActiveSession.WaitUntilIdle(bool, System.TimeSpan, System.Threading.CancellationToken)
-  fullName.vb: MVVrus.AspNetCore.ActiveSession.IActiveSession.WaitUntilIdle(Boolean, System.TimeSpan, System.Threading.CancellationToken)
-  nameWithType: IActiveSession.WaitUntilIdle(bool, TimeSpan, CancellationToken)
-  nameWithType.vb: IActiveSession.WaitUntilIdle(Boolean, TimeSpan, CancellationToken)
-- uid: MVVrus.AspNetCore.ActiveSession.IActiveSession.WaitUntilIdle*
-  name: WaitUntilIdle
-  href: api/MVVrus.AspNetCore.ActiveSession.IActiveSession.WaitUntilIdle.html
-  commentId: Overload:MVVrus.AspNetCore.ActiveSession.IActiveSession.WaitUntilIdle
-  fullName: MVVrus.AspNetCore.ActiveSession.IActiveSession.WaitUntilIdle
-  nameWithType: IActiveSession.WaitUntilIdle
 - uid: MVVrus.AspNetCore.ActiveSession.IActiveSessionFeature
   name: IActiveSessionFeature
   href: api/MVVrus.AspNetCore.ActiveSession.IActiveSessionFeature.html
@@ -1755,6 +1728,18 @@ references:
   commentId: Overload:MVVrus.AspNetCore.ActiveSession.RunnerBase.Abort
   fullName: MVVrus.AspNetCore.ActiveSession.RunnerBase.Abort
   nameWithType: RunnerBase.Abort
+- uid: MVVrus.AspNetCore.ActiveSession.RunnerBase.CheckCompletion
+  name: CheckCompletion()
+  href: api/MVVrus.AspNetCore.ActiveSession.RunnerBase.CheckCompletion.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CheckCompletion
+  commentId: M:MVVrus.AspNetCore.ActiveSession.RunnerBase.CheckCompletion
+  fullName: MVVrus.AspNetCore.ActiveSession.RunnerBase.CheckCompletion()
+  nameWithType: RunnerBase.CheckCompletion()
+- uid: MVVrus.AspNetCore.ActiveSession.RunnerBase.CheckCompletion*
+  name: CheckCompletion
+  href: api/MVVrus.AspNetCore.ActiveSession.RunnerBase.CheckCompletion.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.RunnerBase.CheckCompletion
+  fullName: MVVrus.AspNetCore.ActiveSession.RunnerBase.CheckCompletion
+  nameWithType: RunnerBase.CheckCompletion
 - uid: MVVrus.AspNetCore.ActiveSession.RunnerBase.CheckDisposed
   name: CheckDisposed()
   href: api/MVVrus.AspNetCore.ActiveSession.RunnerBase.CheckDisposed.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CheckDisposed
@@ -1971,12 +1956,15 @@ references:
   commentId: Overload:MVVrus.AspNetCore.ActiveSession.RunnerBase.SetDisposed
   fullName: MVVrus.AspNetCore.ActiveSession.RunnerBase.SetDisposed
   nameWithType: RunnerBase.SetDisposed
-- uid: MVVrus.AspNetCore.ActiveSession.RunnerBase.SetStatus(MVVrus.AspNetCore.ActiveSession.RunnerStatus)
-  name: SetStatus(RunnerStatus)
-  href: api/MVVrus.AspNetCore.ActiveSession.RunnerBase.SetStatus.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_SetStatus_MVVrus_AspNetCore_ActiveSession_RunnerStatus_
-  commentId: M:MVVrus.AspNetCore.ActiveSession.RunnerBase.SetStatus(MVVrus.AspNetCore.ActiveSession.RunnerStatus)
-  fullName: MVVrus.AspNetCore.ActiveSession.RunnerBase.SetStatus(MVVrus.AspNetCore.ActiveSession.RunnerStatus)
-  nameWithType: RunnerBase.SetStatus(RunnerStatus)
+- uid: MVVrus.AspNetCore.ActiveSession.RunnerBase.SetStatus(MVVrus.AspNetCore.ActiveSession.RunnerStatus,System.Boolean)
+  name: SetStatus(RunnerStatus, bool)
+  href: api/MVVrus.AspNetCore.ActiveSession.RunnerBase.SetStatus.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_SetStatus_MVVrus_AspNetCore_ActiveSession_RunnerStatus_System_Boolean_
+  commentId: M:MVVrus.AspNetCore.ActiveSession.RunnerBase.SetStatus(MVVrus.AspNetCore.ActiveSession.RunnerStatus,System.Boolean)
+  name.vb: SetStatus(RunnerStatus, Boolean)
+  fullName: MVVrus.AspNetCore.ActiveSession.RunnerBase.SetStatus(MVVrus.AspNetCore.ActiveSession.RunnerStatus, bool)
+  fullName.vb: MVVrus.AspNetCore.ActiveSession.RunnerBase.SetStatus(MVVrus.AspNetCore.ActiveSession.RunnerStatus, Boolean)
+  nameWithType: RunnerBase.SetStatus(RunnerStatus, bool)
+  nameWithType.vb: RunnerBase.SetStatus(RunnerStatus, Boolean)
 - uid: MVVrus.AspNetCore.ActiveSession.RunnerBase.SetStatus*
   name: SetStatus
   href: api/MVVrus.AspNetCore.ActiveSession.RunnerBase.SetStatus.html

@@ -109,8 +109,8 @@
 
 <a id="MVVrus_AspNetCore_ActiveSession_RunnerBase_SetStatus_" data-uid="MVVrus.AspNetCore.ActiveSession.RunnerBase.SetStatus*"></a>
 
-<h3 id="MVVrus_AspNetCore_ActiveSession_RunnerBase_SetStatus_MVVrus_AspNetCore_ActiveSession_RunnerStatus_" data-uid="MVVrus.AspNetCore.ActiveSession.RunnerBase.SetStatus(MVVrus.AspNetCore.ActiveSession.RunnerStatus)">
-  SetStatus(RunnerStatus)
+<h3 id="MVVrus_AspNetCore_ActiveSession_RunnerBase_SetStatus_MVVrus_AspNetCore_ActiveSession_RunnerStatus_System_Boolean_" data-uid="MVVrus.AspNetCore.ActiveSession.RunnerBase.SetStatus(MVVrus.AspNetCore.ActiveSession.RunnerStatus,System.Boolean)">
+  SetStatus(RunnerStatus, bool)
   
 </h3>
 
@@ -119,13 +119,17 @@
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">protected bool SetStatus(RunnerStatus Status)</code></pre>
+  <pre><code class="lang-csharp hljs">protected bool SetStatus(RunnerStatus Status, bool DoNotComplete = false)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>Status</code> <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerStatus.html">RunnerStatus</a></dt>
   <dd><p>The new value for the <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.Status.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_Status">Status</a> property.</p>
+</dd>
+  <dt><code>DoNotComplete</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+  <dd><p>Do not singnal the runner completion (cancel <a class="xref" href="MVVrus.AspNetCore.ActiveSession.IRunner.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_IRunner_CompletionToken">CompletionToken</a>) in this call if it comes to a final status.
+If this parameter is set, one should call <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.CheckCompletion.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_CheckCompletion">CheckCompletion()</a> method later to signal completion.</p>
 </dd>
 </dl>
 
@@ -142,7 +146,7 @@
 
 
 
-<h4 class="section" id="MVVrus_AspNetCore_ActiveSession_RunnerBase_SetStatus_MVVrus_AspNetCore_ActiveSession_RunnerStatus__remarks">Remarks</h4>
+<h4 class="section" id="MVVrus_AspNetCore_ActiveSession_RunnerBase_SetStatus_MVVrus_AspNetCore_ActiveSession_RunnerStatus_System_Boolean__remarks">Remarks</h4>
 <div class="markdown level1 remarks"><p>The enforced rules rules are the following:</p>
 <ol><li>
 The <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerBase.Status.html#MVVrus_AspNetCore_ActiveSession_RunnerBase_Status">Status</a> value of <a class="xref" href="MVVrus.AspNetCore.ActiveSession.RunnerStatus.html#MVVrus_AspNetCore_ActiveSession_RunnerStatus_NotStarted">NotStarted</a> cannot be changed.

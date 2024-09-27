@@ -758,26 +758,6 @@
       "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IActiveSession.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IActiveSession.IsIdle.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IActiveSession.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IActiveSession.WaitUntilIdle.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IActiveSession.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IActiveSession.TrackRunnerCleanup.html"
         }
       },
@@ -1499,6 +1479,16 @@
       "output": {
         ".html": {
           "relative_path": "api/MVVrus.AspNetCore.ActiveSession.RunnerBase.FailStartRunning.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.RunnerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.RunnerBase.CheckCompletion.html"
         }
       },
       "version": ""
