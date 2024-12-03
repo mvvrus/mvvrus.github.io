@@ -142,13 +142,50 @@
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions.html#MVVrus_AspNetCore_ActiveSession_ActiveSessionBuilderExtensions_UseActiveSessions_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_Func_Microsoft_AspNetCore_Http_HttpContext_System_Boolean__">UseActiveSessions(IApplicationBuilder, Func&lt;HttpContext, bool&gt;?)</a></dt>
-    <dd><p>Adds the ActiveSession midleware to an application middleware pipeline to be built</p>
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions.html#MVVrus_AspNetCore_ActiveSession_ActiveSessionBuilderExtensions_UseActiveSessions_Microsoft_AspNetCore_Builder_IApplicationBuilder_MVVrus_AspNetCore_ActiveSession_IMiddlewareFilterSource_">UseActiveSessions(IApplicationBuilder, IMiddlewareFilterSource?)</a></dt>
+    <dd><p>Adds the ActiveSession midleware to an application middleware pipeline along with a filter defining a scope of HTTP requests,
+for which an active session will be available.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions.html#MVVrus_AspNetCore_ActiveSession_ActiveSessionBuilderExtensions_UseActiveSessions_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_Func_Microsoft_AspNetCore_Http_HttpContext_System_Boolean__">UseActiveSessions(IApplicationBuilder, Func&lt;HttpContext, bool&gt;)</a></dt>
+    <dd><summary>
+Adds the ActiveSession midleware to an application middleware pipeline along with a filter defining a scope of HTTP requests, 
+for which an active session will be available.
+</summary>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions.html#MVVrus_AspNetCore_ActiveSession_ActiveSessionBuilderExtensions_UseActiveSessions_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_Func_Microsoft_AspNetCore_Http_HttpContext_System_Boolean__System_String_">UseActiveSessions(IApplicationBuilder, Func&lt;HttpContext, bool&gt;, string)</a></dt>
+    <dd><summary>
+Adds the ActiveSession midleware to an application middleware pipeline along with a filter defining a scope of HTTP requests, 
+for which an active session will be available.
+</summary>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions.html#MVVrus_AspNetCore_ActiveSession_ActiveSessionBuilderExtensions_UseActiveSessions_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_Func_Microsoft_AspNetCore_Http_HttpContext_System_ValueTuple_System_Boolean_System_String___">UseActiveSessions(IApplicationBuilder, Func&lt;HttpContext, (bool, string?)&gt;)</a></dt>
+    <dd><summary>
+Adds the ActiveSession midleware to an application middleware pipeline along with a filter defining a scope of HTTP requests, 
+for which an active session will be available.
+</summary>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions.html#MVVrus_AspNetCore_ActiveSession_ActiveSessionBuilderExtensions_UseActiveSessions_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_String_System_String_System_TimeSpan_">UseActiveSessions(IApplicationBuilder, string, string, TimeSpan)</a></dt>
+    <dd><summary>
+Adds the ActiveSession midleware to an application middleware pipeline along with a filter defining a scope of HTTP requests, 
+for which an active session will be available.
+</summary>
 </dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions.html#MVVrus_AspNetCore_ActiveSession_ActiveSessionBuilderExtensions_UseActiveSessions_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_String_System_TimeSpan_">UseActiveSessions(IApplicationBuilder, string, TimeSpan)</a></dt>
-    <dd><p>Adds the ActiveSession midleware with a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.regularexpressions.regex">Regex</a>-based request path filter to an application middleware pipeline to be built</p>
+    <dd><summary>
+Adds the ActiveSession midleware to an application middleware pipeline along with a filter defining a scope of HTTP requests, 
+for which an active session will be available.
+</summary>
+The filter checks the request path against a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.regularexpressions.regex">regular expression</a> passed as a parameter.
 </dd>
   </dl>
 

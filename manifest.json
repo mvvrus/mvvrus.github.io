@@ -925,6 +925,86 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.MinOrder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.Apply.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.GetPrettyName.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.Create.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.HasSuffix.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.GetPrettyName.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IRunner-1.yml",
       "output": {
         ".html": {
@@ -2582,6 +2662,16 @@
         },
         ".json": {
           "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Setting up the ActiveSession library.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Setting up the ActiveSession library.html"
         }
       },
       "version": ""

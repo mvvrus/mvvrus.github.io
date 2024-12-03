@@ -13,15 +13,51 @@ references:
   commentId: T:MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions
   fullName: MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions
   nameWithType: ActiveSessionBuilderExtensions
+- uid: MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder,MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource)
+  name: UseActiveSessions(IApplicationBuilder, IMiddlewareFilterSource?)
+  href: api/MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions.html#MVVrus_AspNetCore_ActiveSession_ActiveSessionBuilderExtensions_UseActiveSessions_Microsoft_AspNetCore_Builder_IApplicationBuilder_MVVrus_AspNetCore_ActiveSession_IMiddlewareFilterSource_
+  commentId: M:MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder,MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource)
+  name.vb: UseActiveSessions(IApplicationBuilder, IMiddlewareFilterSource)
+  fullName: MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder, MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource?)
+  fullName.vb: MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder, MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource)
+  nameWithType: ActiveSessionBuilderExtensions.UseActiveSessions(IApplicationBuilder, IMiddlewareFilterSource?)
+  nameWithType.vb: ActiveSessionBuilderExtensions.UseActiveSessions(IApplicationBuilder, IMiddlewareFilterSource)
 - uid: MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Func{Microsoft.AspNetCore.Http.HttpContext,System.Boolean})
-  name: UseActiveSessions(IApplicationBuilder, Func<HttpContext, bool>?)
+  name: UseActiveSessions(IApplicationBuilder, Func<HttpContext, bool>)
   href: api/MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions.html#MVVrus_AspNetCore_ActiveSession_ActiveSessionBuilderExtensions_UseActiveSessions_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_Func_Microsoft_AspNetCore_Http_HttpContext_System_Boolean__
   commentId: M:MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Func{Microsoft.AspNetCore.Http.HttpContext,System.Boolean})
   name.vb: UseActiveSessions(IApplicationBuilder, Func(Of HttpContext, Boolean))
-  fullName: MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Func<Microsoft.AspNetCore.Http.HttpContext, bool>?)
+  fullName: MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Func<Microsoft.AspNetCore.Http.HttpContext, bool>)
   fullName.vb: MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Func(Of Microsoft.AspNetCore.Http.HttpContext, Boolean))
-  nameWithType: ActiveSessionBuilderExtensions.UseActiveSessions(IApplicationBuilder, Func<HttpContext, bool>?)
+  nameWithType: ActiveSessionBuilderExtensions.UseActiveSessions(IApplicationBuilder, Func<HttpContext, bool>)
   nameWithType.vb: ActiveSessionBuilderExtensions.UseActiveSessions(IApplicationBuilder, Func(Of HttpContext, Boolean))
+- uid: MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Func{Microsoft.AspNetCore.Http.HttpContext,System.Boolean},System.String)
+  name: UseActiveSessions(IApplicationBuilder, Func<HttpContext, bool>, string)
+  href: api/MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions.html#MVVrus_AspNetCore_ActiveSession_ActiveSessionBuilderExtensions_UseActiveSessions_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_Func_Microsoft_AspNetCore_Http_HttpContext_System_Boolean__System_String_
+  commentId: M:MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Func{Microsoft.AspNetCore.Http.HttpContext,System.Boolean},System.String)
+  name.vb: UseActiveSessions(IApplicationBuilder, Func(Of HttpContext, Boolean), String)
+  fullName: MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Func<Microsoft.AspNetCore.Http.HttpContext, bool>, string)
+  fullName.vb: MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Func(Of Microsoft.AspNetCore.Http.HttpContext, Boolean), String)
+  nameWithType: ActiveSessionBuilderExtensions.UseActiveSessions(IApplicationBuilder, Func<HttpContext, bool>, string)
+  nameWithType.vb: ActiveSessionBuilderExtensions.UseActiveSessions(IApplicationBuilder, Func(Of HttpContext, Boolean), String)
+- uid: MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Func{Microsoft.AspNetCore.Http.HttpContext,System.ValueTuple{System.Boolean,System.String}})
+  name: UseActiveSessions(IApplicationBuilder, Func<HttpContext, (bool, string?)>)
+  href: api/MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions.html#MVVrus_AspNetCore_ActiveSession_ActiveSessionBuilderExtensions_UseActiveSessions_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_Func_Microsoft_AspNetCore_Http_HttpContext_System_ValueTuple_System_Boolean_System_String___
+  commentId: M:MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Func{Microsoft.AspNetCore.Http.HttpContext,System.ValueTuple{System.Boolean,System.String}})
+  name.vb: UseActiveSessions(IApplicationBuilder, Func(Of HttpContext, (Boolean, String)))
+  fullName: MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Func<Microsoft.AspNetCore.Http.HttpContext, (bool, string?)>)
+  fullName.vb: MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.Func(Of Microsoft.AspNetCore.Http.HttpContext, (Boolean, String)))
+  nameWithType: ActiveSessionBuilderExtensions.UseActiveSessions(IApplicationBuilder, Func<HttpContext, (bool, string?)>)
+  nameWithType.vb: ActiveSessionBuilderExtensions.UseActiveSessions(IApplicationBuilder, Func(Of HttpContext, (Boolean, String)))
+- uid: MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String,System.String,System.TimeSpan)
+  name: UseActiveSessions(IApplicationBuilder, string, string, TimeSpan)
+  href: api/MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions.html#MVVrus_AspNetCore_ActiveSession_ActiveSessionBuilderExtensions_UseActiveSessions_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_String_System_String_System_TimeSpan_
+  commentId: M:MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String,System.String,System.TimeSpan)
+  name.vb: UseActiveSessions(IApplicationBuilder, String, String, TimeSpan)
+  fullName: MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder, string, string, System.TimeSpan)
+  fullName.vb: MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder, String, String, System.TimeSpan)
+  nameWithType: ActiveSessionBuilderExtensions.UseActiveSessions(IApplicationBuilder, string, string, TimeSpan)
+  nameWithType.vb: ActiveSessionBuilderExtensions.UseActiveSessions(IApplicationBuilder, String, String, TimeSpan)
 - uid: MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String,System.TimeSpan)
   name: UseActiveSessions(IApplicationBuilder, string, TimeSpan)
   href: api/MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.UseActiveSessions.html#MVVrus_AspNetCore_ActiveSession_ActiveSessionBuilderExtensions_UseActiveSessions_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_String_System_TimeSpan_
@@ -1241,6 +1277,93 @@ references:
   fullName.vb: MVVrus.AspNetCore.ActiveSession.ILockedSessionService(Of TService).Service
   nameWithType: ILockedSessionService<TService>.Service
   nameWithType.vb: ILockedSessionService(Of TService).Service
+- uid: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter
+  name: IMiddlewareFilter
+  href: api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.html
+  commentId: T:MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter
+  fullName: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter
+  nameWithType: IMiddlewareFilter
+- uid: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.Apply(Microsoft.AspNetCore.Http.HttpContext)
+  name: Apply(HttpContext)
+  href: api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.Apply.html#MVVrus_AspNetCore_ActiveSession_IMiddlewareFilter_Apply_Microsoft_AspNetCore_Http_HttpContext_
+  commentId: M:MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.Apply(Microsoft.AspNetCore.Http.HttpContext)
+  fullName: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.Apply(Microsoft.AspNetCore.Http.HttpContext)
+  nameWithType: IMiddlewareFilter.Apply(HttpContext)
+- uid: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.Apply*
+  name: Apply
+  href: api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.Apply.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.Apply
+  fullName: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.Apply
+  nameWithType: IMiddlewareFilter.Apply
+- uid: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.GetPrettyName
+  name: GetPrettyName()
+  href: api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.GetPrettyName.html#MVVrus_AspNetCore_ActiveSession_IMiddlewareFilter_GetPrettyName
+  commentId: M:MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.GetPrettyName
+  fullName: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.GetPrettyName()
+  nameWithType: IMiddlewareFilter.GetPrettyName()
+- uid: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.GetPrettyName*
+  name: GetPrettyName
+  href: api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.GetPrettyName.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.GetPrettyName
+  fullName: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.GetPrettyName
+  nameWithType: IMiddlewareFilter.GetPrettyName
+- uid: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.MinOrder
+  name: MinOrder
+  href: api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.MinOrder.html#MVVrus_AspNetCore_ActiveSession_IMiddlewareFilter_MinOrder
+  commentId: P:MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.MinOrder
+  fullName: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.MinOrder
+  nameWithType: IMiddlewareFilter.MinOrder
+- uid: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.MinOrder*
+  name: MinOrder
+  href: api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.MinOrder.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.MinOrder
+  fullName: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilter.MinOrder
+  nameWithType: IMiddlewareFilter.MinOrder
+- uid: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource
+  name: IMiddlewareFilterSource
+  href: api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.html
+  commentId: T:MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource
+  fullName: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource
+  nameWithType: IMiddlewareFilterSource
+- uid: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.Create(System.Int32)
+  name: Create(int)
+  href: api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.Create.html#MVVrus_AspNetCore_ActiveSession_IMiddlewareFilterSource_Create_System_Int32_
+  commentId: M:MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.Create(System.Int32)
+  name.vb: Create(Integer)
+  fullName: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.Create(int)
+  fullName.vb: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.Create(Integer)
+  nameWithType: IMiddlewareFilterSource.Create(int)
+  nameWithType.vb: IMiddlewareFilterSource.Create(Integer)
+- uid: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.Create*
+  name: Create
+  href: api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.Create.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.Create
+  fullName: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.Create
+  nameWithType: IMiddlewareFilterSource.Create
+- uid: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.GetPrettyName
+  name: GetPrettyName()
+  href: api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.GetPrettyName.html#MVVrus_AspNetCore_ActiveSession_IMiddlewareFilterSource_GetPrettyName
+  commentId: M:MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.GetPrettyName
+  fullName: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.GetPrettyName()
+  nameWithType: IMiddlewareFilterSource.GetPrettyName()
+- uid: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.GetPrettyName*
+  name: GetPrettyName
+  href: api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.GetPrettyName.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.GetPrettyName
+  fullName: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.GetPrettyName
+  nameWithType: IMiddlewareFilterSource.GetPrettyName
+- uid: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.HasSuffix
+  name: HasSuffix
+  href: api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.HasSuffix.html#MVVrus_AspNetCore_ActiveSession_IMiddlewareFilterSource_HasSuffix
+  commentId: P:MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.HasSuffix
+  fullName: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.HasSuffix
+  nameWithType: IMiddlewareFilterSource.HasSuffix
+- uid: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.HasSuffix*
+  name: HasSuffix
+  href: api/MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.HasSuffix.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.HasSuffix
+  fullName: MVVrus.AspNetCore.ActiveSession.IMiddlewareFilterSource.HasSuffix
+  nameWithType: IMiddlewareFilterSource.HasSuffix
 - uid: MVVrus.AspNetCore.ActiveSession.IRunner
   name: IRunner
   href: api/MVVrus.AspNetCore.ActiveSession.IRunner.html
