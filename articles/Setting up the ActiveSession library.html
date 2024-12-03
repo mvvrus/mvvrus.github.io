@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Setting up the ActiveSession library. </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Setting up the ActiveSession library. ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="setting-up-the-activesession-library">Setting up the ActiveSession library.</h1>
+
+<p>Configuring the ActiveSession library is part of the overall application configuration. It consists of two stages. The first stage - setting up the library configuration and services - is performed during the application services configuration. The second part - addition and configuration of the ActiveSession library middleware - is performed during the setup application's pipeline middleware.</p>
+<h2 id="setting-up-the-activesession-library-services-and-configuration">Setting up the ActiveSession library services and configuration.</h2>
+<p>To make the ActiveSession library up and running in the ASP.NET Core application, one must add some services to the application's service container (AKA DI_container). The addition of services in an ASP.NET Core application is performed at the service configuration stage via registering services in the service collection of an application builder, which is of type <a href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>. The services registered in this collection are then added to the application's	 DI-container during the application build process. Technically, registration of services is usually performed by extension methods for the IServiceCollection interface.</p>
+<h3 id="services-to-be-registered-for-the-activesession-library">Services to be registered for the ActiveSession library.</h3>
+<p>The ActiveSession library services include infrastructure ones and ActiveSession runner factory ones. The infrastructure services are necessary for the library itself to function and to perform useful job. These services are registered as a single bundle by call of the <a href="/api/MVVrus.AspNetCore.ActiveSession.ActiveSessionServiceCollectionExtensions.AddActiveSessionInfrastructure.html">AddActiveSessionInfrastructure</a> extension method for IServiceCollection interface. However, applications rarely need to call this method directly because it is called internally by any ActiveSession runner factory registration method discussed later.</p>
+<p>An ActiveSession runner factory service must be registered for each runner type to make runners of that type available for the application. Each runner factory service is a specialization of a generic interface <a href="/api/MVVrus.AspNetCore.ActiveSession.IRunnerFactory-2.html">IRunnerFactory&lt;TRequest,TResult&gt;</a>. For each combination of TRequest and TResult used in the application, its own runner factory service must be registered.</p>
+<p>There is a number of runner factory registration extension methods in the ActiveSession library. Each standard runner type has corresponding generic runner factory registration method. Those methods (namely, AddAsyncEnumAdapter, AddEnumAdapter, AddSessionProcessRunner and AddTimeSeriesRunner) are defined in the <a href="/api/MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerServiceCollectionExtensions.html">StdRunnerServiceCollectionExtensions</a>. To facilitate implementing custom runner a number of overloaded auxiliary <a href="/api/MVVrus.AspNetCore.ActiveSession.ActiveSessionServiceCollectionExtensions.AddActiveSessions.html">AddActiveSessions</a> methods with different sets of parameters exist too.</p>
+<h3 id="setting-up-the-activesession-library-configuration">Setting up the ActiveSession library configuration.</h3>
+<p>The ActiveSession library configuration is contained in an ActiveSessionOptions record instance, accessible via the <a href="https://learn.microsoft.com/aspnet/core/fundamentals/configuration/options">Options Pattern</a> as a default instance.
+The initial source of the ActiveSession library configuration is the &quot;MVVrus.ActiveSessions&quot; section of the application configuration. The contents of this section are set by any of the application configuration setting methods <a href="https://learn.microsoft.com/aspnet/core/fundamentals/configuration/">according to general rules</a>. Configuration parameters that are not set in any of the sources receive default values. The names, descriptions, and default values ​​for the parameters are described in the documentation for the <a href="/api/MVVrus.AspNetCore.ActiveSession.ActiveSessionOptions.html">ActiveSessionOptions</a> record</p>
+<p>For additional configuration customization, all the previously listed ActiveSession library service registration methods have overloaded variants with an additional parameter - a configuration customization delegate of the <code>Action&lt;ActiveSessionOptions&gt;</code> type. When creating an instance of a configuration record, these delegates are called in turn in the same order as the registration methods through which they were passed. A reference to a custom configuration object is passed to each such delegate, to which the delegate can make its changes.</p>
+<h2 id="configuring-the-middleware-pipeline-for-using-the-activesession-library">Configuring the middleware pipeline for using the ActiveSession Library.</h2>
+<p>The goal of configuring the ActiveSession library during the middleware pipeline setup step is to add the ActiveSession middleware to the pipeline and configure it. The ActiveSession middleware adds a reference to an active session object (either an existing one or a newly created one), to which the request belongs, to the HTTP request context (<a href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext">HttpContext</a>) being processed. The active session object is selected based on the ASP.NET Core session <a href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext.session">HttpContext.Session</a>, to which the request belongs, and possibly other request parameters such as the path in the request URL.</p>
+<p>Adding ActiveSession middleware to the middleware pipeline and configuring it is done by one or more calls to one of the overloaded <a href="/api/MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.html">UseActiveSessions</a> extension methods for the <a href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder">IApplicationBuilder</a> interface. The middleware is added to the pipeline at the point of the first call. Arguments of this first and other UseActiveSessions method calls are collected together and after necessary transformations passed to the constructor of the middleware instance to be added.</p>
+<p>Configuring ActiveSession middleware serves two purposes. First, it specifies for which requests a reference to the active session object will be added to the request context at all. Second, it specifies what suffix will be used in the active session identifier. Since version 1.1.0, ActiveSession supports multiple active sessions within a single ASP.NET Core session, and the active session identifier suffix is ​​what allows you to select the correct active session for the request handler.</p>
+<p>The ActiveSession middleware constructor, when combining the set of arguments passed to it, with which all UseActiveSessions methods were called, acts logically (the implementation contains a number of optimizations) according to the following set of rules. First, the middleware checks each method call one by one, in the order they are called, whether the request passes the filter specified in the call being checked. If the request satisfies the filter, then the middleware notes that a reference to the active session object should be set for this request and, if this filter sets a suffix, then the suffix set should be used for the active session identifier. If the filter does not set a suffix at all (returns null as a suffix), then the search continues for the next filter that the request also satisfies and that sets a suffix. Note: if a filter sets the suffix to an empty string, then the suffix is ​​considered to be set and the search stops. If none of the filters sets a suffix, then an empty string will be used as the active session identifier suffix.</p>
+<p>The way the filter works and the suffix is ​​obtained is determined by the specific form of the called overloaded method <a href="/api/MVVrus.AspNetCore.ActiveSession.ActiveSessionBuilderExtensions.html">UseActiveSessions</a>. Calling this method in the form that has no parameters means that the filter of this call will be satisfied by any request, and this filter does not set any suffix.</p>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
