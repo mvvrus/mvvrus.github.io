@@ -68,7 +68,27 @@
       "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.yml",
       "output": {
         ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.GetActiveSessionGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.GetLocalSession.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.RefreshActiveSession.html"
         }
       },
       "version": ""
@@ -535,6 +555,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.IsEphemerial.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.ExtRunnerKey.yml",
       "output": {
         ".html": {
@@ -718,7 +768,7 @@
       "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IActiveSession.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IActiveSession.Id.html"
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IActiveSession.BaseId.html"
         }
       },
       "version": ""
@@ -729,16 +779,6 @@
       "output": {
         ".html": {
           "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IActiveSession.Generation.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IActiveSession.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IActiveSession.CompletionToken.html"
         }
       },
       "version": ""
@@ -838,6 +878,16 @@
       "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IActiveSessionFeature.yml",
       "output": {
         ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IActiveSessionFeature.RefreshActiveSession.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IActiveSessionFeature.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IActiveSessionFeature.html"
         }
       },
@@ -848,7 +898,7 @@
       "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.ILocalSession.yml",
       "output": {
         ".html": {
-          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.ILocalSession.BaseId.html"
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.ILocalSession.Id.html"
         }
       },
       "version": ""
@@ -869,6 +919,16 @@
       "output": {
         ".html": {
           "relative_path": "api/MVVrus.AspNetCore.ActiveSession.ILocalSession.SessionServices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.ILocalSession.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.ILocalSession.CompletionToken.html"
         }
       },
       "version": ""
@@ -1185,6 +1245,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.GetRunnerCount.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.NewRunner.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.GetRunnerListSnaphot.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.IRunnerProxy-1.yml",
       "output": {
         ".html": {
@@ -1369,6 +1469,26 @@
       "output": {
         ".html": {
           "relative_path": "api/MVVrus.AspNetCore.ActiveSession.KeyedRunner-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.LocalSessionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.LocalSessionExtensions.TakeOwnership.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.LocalSessionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.LocalSessionExtensions.html"
         }
       },
       "version": ""
@@ -1859,6 +1979,76 @@
       "output": {
         ".html": {
           "relative_path": "api/MVVrus.AspNetCore.ActiveSession.RunnerId.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.Runner.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.ResultType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.RemoteHost.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.Number.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.TrackCleanup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.html"
         }
       },
       "version": ""
@@ -2635,6 +2825,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.IsTransactional.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/MVVrus.AspNetCore.ActiveSession.yml",
       "output": {
         ".html": {
@@ -2668,10 +2888,130 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/ActiveSessionGroups.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/ActiveSessionGroups.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/ActiveSessionlibraryentities.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/ActiveSessionlibraryentities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/ActiveSessionlibraryinfrastructure.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/ActiveSessionlibraryinfrastructure.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Activesessionobjects.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Activesessionobjects.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/AssociateDataWithASession.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/AssociateDataWithASession.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/HandlingRequests.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/HandlingRequests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Runnerfactories.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Runnerfactories.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/Runners.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/Runners.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/Setting up the ActiveSession library.md",
       "output": {
         ".html": {
           "relative_path": "articles/Setting up the ActiveSession library.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/UsingActiveSessionGroups.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/UsingActiveSessionGroups.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/UsingActiveSessions.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/UsingActiveSessions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/UsingDependencyInjection.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/UsingDependencyInjection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/UsingExternalRunnerIdentifiers.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/UsingExternalRunnerIdentifiers.html"
         }
       },
       "version": ""

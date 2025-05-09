@@ -105,13 +105,16 @@
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.ILocalSession.BaseId.html#MVVrus_AspNetCore_ActiveSession_ILocalSession_BaseId">ILocalSession.BaseId</a>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.ILocalSession.Id.html#MVVrus_AspNetCore_ActiveSession_ILocalSession_Id">ILocalSession.Id</a>
     </div>
     <div>
       <a class="xref" href="MVVrus.AspNetCore.ActiveSession.ILocalSession.IsAvailable.html#MVVrus_AspNetCore_ActiveSession_ILocalSession_IsAvailable">ILocalSession.IsAvailable</a>
     </div>
     <div>
       <a class="xref" href="MVVrus.AspNetCore.ActiveSession.ILocalSession.SessionServices.html#MVVrus_AspNetCore_ActiveSession_ILocalSession_SessionServices">ILocalSession.SessionServices</a>
+    </div>
+    <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.ILocalSession.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_ILocalSession_CompletionToken">ILocalSession.CompletionToken</a>
     </div>
     <div>
       <a class="xref" href="MVVrus.AspNetCore.ActiveSession.ILocalSession.Properties.html#MVVrus_AspNetCore_ActiveSession_ILocalSession_Properties">ILocalSession.Properties</a>
@@ -175,6 +178,9 @@
   <div>
       <a class="xref" href="MVVrus.AspNetCore.ActiveSession.StdRunner.StdRunnerActiveSessionExtensions.GetTimeSeriesRunner.html#MVVrus_AspNetCore_ActiveSession_StdRunner_StdRunnerActiveSessionExtensions_GetTimeSeriesRunner__1_MVVrus_AspNetCore_ActiveSession_IActiveSession_System_Int32_Microsoft_AspNetCore_Http_HttpContext_">StdRunnerActiveSessionExtensions.GetTimeSeriesRunner&lt;TResult&gt;(IActiveSession, int, HttpContext)</a>
   </div>
+  <div>
+      <a class="xref" href="MVVrus.AspNetCore.ActiveSession.LocalSessionExtensions.TakeOwnership.html#MVVrus_AspNetCore_ActiveSession_LocalSessionExtensions_TakeOwnership_MVVrus_AspNetCore_ActiveSession_ILocalSession_System_IDisposable_">LocalSessionExtensions.TakeOwnership(ILocalSession, IDisposable)</a>
+  </div>
   </dd></dl>
 
 
@@ -184,23 +190,18 @@
 </h2>
 
   <dl class="jumplist">
+    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.BaseId.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_BaseId">BaseId</a></dt>
+    <dd><p>The identifier of the base local session for this active session.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.CleanupCompletionTask.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_CleanupCompletionTask">CleanupCompletionTask</a></dt>
     <dd><p>Task that performs asynchronous cleanup of this active session (waits for all runners completion etc).</p>
 </dd>
   </dl>
   <dl class="jumplist">
-    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_CompletionToken">CompletionToken</a></dt>
-    <dd><p>Cancellation token that will be fired after the active session completion (eviction/disposal) at start of cleanup/</p>
-</dd>
-  </dl>
-  <dl class="jumplist">
     <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.Generation.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_Generation">Generation</a></dt>
     <dd><p>A generation number of this ActiveSession within the containing <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.isession">ASP.NET Core session/</a></p>
-</dd>
-  </dl>
-  <dl class="jumplist">
-    <dt><a class="xref" href="MVVrus.AspNetCore.ActiveSession.IActiveSession.Id.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_Id">Id</a></dt>
-    <dd><p>The ActiveSession identifier.</p>
 </dd>
   </dl>
   <dl class="jumplist">

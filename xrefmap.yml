@@ -121,6 +121,18 @@ references:
   commentId: Overload:MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.GetActiveSession
   fullName: MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.GetActiveSession
   nameWithType: ActiveSessionContextExtension.GetActiveSession
+- uid: MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.GetActiveSessionGroup(Microsoft.AspNetCore.Http.HttpContext)
+  name: GetActiveSessionGroup(HttpContext)
+  href: api/MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.GetActiveSessionGroup.html#MVVrus_AspNetCore_ActiveSession_ActiveSessionContextExtension_GetActiveSessionGroup_Microsoft_AspNetCore_Http_HttpContext_
+  commentId: M:MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.GetActiveSessionGroup(Microsoft.AspNetCore.Http.HttpContext)
+  fullName: MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.GetActiveSessionGroup(Microsoft.AspNetCore.Http.HttpContext)
+  nameWithType: ActiveSessionContextExtension.GetActiveSessionGroup(HttpContext)
+- uid: MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.GetActiveSessionGroup*
+  name: GetActiveSessionGroup
+  href: api/MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.GetActiveSessionGroup.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.GetActiveSessionGroup
+  fullName: MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.GetActiveSessionGroup
+  nameWithType: ActiveSessionContextExtension.GetActiveSessionGroup
 - uid: MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.GetLocalSession(Microsoft.AspNetCore.Http.HttpContext)
   name: GetLocalSession(HttpContext)
   href: api/MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.GetLocalSession.html#MVVrus_AspNetCore_ActiveSession_ActiveSessionContextExtension_GetLocalSession_Microsoft_AspNetCore_Http_HttpContext_
@@ -133,6 +145,18 @@ references:
   commentId: Overload:MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.GetLocalSession
   fullName: MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.GetLocalSession
   nameWithType: ActiveSessionContextExtension.GetLocalSession
+- uid: MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.RefreshActiveSession(Microsoft.AspNetCore.Http.HttpContext)
+  name: RefreshActiveSession(HttpContext)
+  href: api/MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.RefreshActiveSession.html#MVVrus_AspNetCore_ActiveSession_ActiveSessionContextExtension_RefreshActiveSession_Microsoft_AspNetCore_Http_HttpContext_
+  commentId: M:MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.RefreshActiveSession(Microsoft.AspNetCore.Http.HttpContext)
+  fullName: MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.RefreshActiveSession(Microsoft.AspNetCore.Http.HttpContext)
+  nameWithType: ActiveSessionContextExtension.RefreshActiveSession(HttpContext)
+- uid: MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.RefreshActiveSession*
+  name: RefreshActiveSession
+  href: api/MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.RefreshActiveSession.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.RefreshActiveSession
+  fullName: MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.RefreshActiveSession
+  nameWithType: ActiveSessionContextExtension.RefreshActiveSession
 - uid: MVVrus.AspNetCore.ActiveSession.ActiveSessionExtensions
   name: ActiveSessionExtensions
   href: api/MVVrus.AspNetCore.ActiveSession.ActiveSessionExtensions.html
@@ -789,6 +813,51 @@ references:
   fullName.vb: MVVrus.AspNetCore.ActiveSession.EnumerableRunnerBase(Of TItem).Status
   nameWithType: EnumerableRunnerBase<TItem>.Status
   nameWithType.vb: EnumerableRunnerBase(Of TItem).Status
+- uid: MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute
+  name: EphemerialProviderAttribute
+  href: api/MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.html
+  commentId: T:MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute
+  fullName: MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute
+  nameWithType: EphemerialProviderAttribute
+- uid: MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.#ctor
+  name: EphemerialProviderAttribute()
+  href: api/MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.-ctor.html#MVVrus_AspNetCore_ActiveSession_EphemerialProviderAttribute__ctor
+  commentId: M:MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.#ctor
+  name.vb: New()
+  fullName: MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.EphemerialProviderAttribute()
+  fullName.vb: MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.New()
+  nameWithType: EphemerialProviderAttribute.EphemerialProviderAttribute()
+  nameWithType.vb: EphemerialProviderAttribute.New()
+- uid: MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.#ctor(System.Boolean)
+  name: EphemerialProviderAttribute(bool)
+  href: api/MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.-ctor.html#MVVrus_AspNetCore_ActiveSession_EphemerialProviderAttribute__ctor_System_Boolean_
+  commentId: M:MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.#ctor(System.Boolean)
+  name.vb: New(Boolean)
+  fullName: MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.EphemerialProviderAttribute(bool)
+  fullName.vb: MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.New(Boolean)
+  nameWithType: EphemerialProviderAttribute.EphemerialProviderAttribute(bool)
+  nameWithType.vb: EphemerialProviderAttribute.New(Boolean)
+- uid: MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.#ctor*
+  name: EphemerialProviderAttribute
+  href: api/MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.-ctor.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.#ctor
+  name.vb: New
+  fullName: MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.EphemerialProviderAttribute
+  fullName.vb: MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.New
+  nameWithType: EphemerialProviderAttribute.EphemerialProviderAttribute
+  nameWithType.vb: EphemerialProviderAttribute.New
+- uid: MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.IsEphemerial
+  name: IsEphemerial
+  href: api/MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.IsEphemerial.html#MVVrus_AspNetCore_ActiveSession_EphemerialProviderAttribute_IsEphemerial
+  commentId: P:MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.IsEphemerial
+  fullName: MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.IsEphemerial
+  nameWithType: EphemerialProviderAttribute.IsEphemerial
+- uid: MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.IsEphemerial*
+  name: IsEphemerial
+  href: api/MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.IsEphemerial.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.IsEphemerial
+  fullName: MVVrus.AspNetCore.ActiveSession.EphemerialProviderAttribute.IsEphemerial
+  nameWithType: EphemerialProviderAttribute.IsEphemerial
 - uid: MVVrus.AspNetCore.ActiveSession.ExtRunnerKey
   name: ExtRunnerKey
   href: api/MVVrus.AspNetCore.ActiveSession.ExtRunnerKey.html
@@ -942,6 +1011,18 @@ references:
   commentId: T:MVVrus.AspNetCore.ActiveSession.IActiveSession
   fullName: MVVrus.AspNetCore.ActiveSession.IActiveSession
   nameWithType: IActiveSession
+- uid: MVVrus.AspNetCore.ActiveSession.IActiveSession.BaseId
+  name: BaseId
+  href: api/MVVrus.AspNetCore.ActiveSession.IActiveSession.BaseId.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_BaseId
+  commentId: P:MVVrus.AspNetCore.ActiveSession.IActiveSession.BaseId
+  fullName: MVVrus.AspNetCore.ActiveSession.IActiveSession.BaseId
+  nameWithType: IActiveSession.BaseId
+- uid: MVVrus.AspNetCore.ActiveSession.IActiveSession.BaseId*
+  name: BaseId
+  href: api/MVVrus.AspNetCore.ActiveSession.IActiveSession.BaseId.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.IActiveSession.BaseId
+  fullName: MVVrus.AspNetCore.ActiveSession.IActiveSession.BaseId
+  nameWithType: IActiveSession.BaseId
 - uid: MVVrus.AspNetCore.ActiveSession.IActiveSession.CleanupCompletionTask
   name: CleanupCompletionTask
   href: api/MVVrus.AspNetCore.ActiveSession.IActiveSession.CleanupCompletionTask.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_CleanupCompletionTask
@@ -954,18 +1035,6 @@ references:
   commentId: Overload:MVVrus.AspNetCore.ActiveSession.IActiveSession.CleanupCompletionTask
   fullName: MVVrus.AspNetCore.ActiveSession.IActiveSession.CleanupCompletionTask
   nameWithType: IActiveSession.CleanupCompletionTask
-- uid: MVVrus.AspNetCore.ActiveSession.IActiveSession.CompletionToken
-  name: CompletionToken
-  href: api/MVVrus.AspNetCore.ActiveSession.IActiveSession.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_CompletionToken
-  commentId: P:MVVrus.AspNetCore.ActiveSession.IActiveSession.CompletionToken
-  fullName: MVVrus.AspNetCore.ActiveSession.IActiveSession.CompletionToken
-  nameWithType: IActiveSession.CompletionToken
-- uid: MVVrus.AspNetCore.ActiveSession.IActiveSession.CompletionToken*
-  name: CompletionToken
-  href: api/MVVrus.AspNetCore.ActiveSession.IActiveSession.CompletionToken.html
-  commentId: Overload:MVVrus.AspNetCore.ActiveSession.IActiveSession.CompletionToken
-  fullName: MVVrus.AspNetCore.ActiveSession.IActiveSession.CompletionToken
-  nameWithType: IActiveSession.CompletionToken
 - uid: MVVrus.AspNetCore.ActiveSession.IActiveSession.CreateRunner*
   name: CreateRunner
   href: api/MVVrus.AspNetCore.ActiveSession.IActiveSession.CreateRunner.html
@@ -1053,18 +1122,6 @@ references:
   fullName.vb: MVVrus.AspNetCore.ActiveSession.IActiveSession.GetRunnerAsync(Of TResult)(Integer, Microsoft.AspNetCore.Http.HttpContext, System.Threading.CancellationToken)
   nameWithType: IActiveSession.GetRunnerAsync<TResult>(int, HttpContext, CancellationToken)
   nameWithType.vb: IActiveSession.GetRunnerAsync(Of TResult)(Integer, HttpContext, CancellationToken)
-- uid: MVVrus.AspNetCore.ActiveSession.IActiveSession.Id
-  name: Id
-  href: api/MVVrus.AspNetCore.ActiveSession.IActiveSession.Id.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_Id
-  commentId: P:MVVrus.AspNetCore.ActiveSession.IActiveSession.Id
-  fullName: MVVrus.AspNetCore.ActiveSession.IActiveSession.Id
-  nameWithType: IActiveSession.Id
-- uid: MVVrus.AspNetCore.ActiveSession.IActiveSession.Id*
-  name: Id
-  href: api/MVVrus.AspNetCore.ActiveSession.IActiveSession.Id.html
-  commentId: Overload:MVVrus.AspNetCore.ActiveSession.IActiveSession.Id
-  fullName: MVVrus.AspNetCore.ActiveSession.IActiveSession.Id
-  nameWithType: IActiveSession.Id
 - uid: MVVrus.AspNetCore.ActiveSession.IActiveSession.IsFresh
   name: IsFresh
   href: api/MVVrus.AspNetCore.ActiveSession.IActiveSession.IsFresh.html#MVVrus_AspNetCore_ActiveSession_IActiveSession_IsFresh
@@ -1182,24 +1239,48 @@ references:
   commentId: Overload:MVVrus.AspNetCore.ActiveSession.IActiveSessionFeature.LocalSession
   fullName: MVVrus.AspNetCore.ActiveSession.IActiveSessionFeature.LocalSession
   nameWithType: IActiveSessionFeature.LocalSession
+- uid: MVVrus.AspNetCore.ActiveSession.IActiveSessionFeature.RefreshActiveSession
+  name: RefreshActiveSession()
+  href: api/MVVrus.AspNetCore.ActiveSession.IActiveSessionFeature.RefreshActiveSession.html#MVVrus_AspNetCore_ActiveSession_IActiveSessionFeature_RefreshActiveSession
+  commentId: M:MVVrus.AspNetCore.ActiveSession.IActiveSessionFeature.RefreshActiveSession
+  fullName: MVVrus.AspNetCore.ActiveSession.IActiveSessionFeature.RefreshActiveSession()
+  nameWithType: IActiveSessionFeature.RefreshActiveSession()
+- uid: MVVrus.AspNetCore.ActiveSession.IActiveSessionFeature.RefreshActiveSession*
+  name: RefreshActiveSession
+  href: api/MVVrus.AspNetCore.ActiveSession.IActiveSessionFeature.RefreshActiveSession.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.IActiveSessionFeature.RefreshActiveSession
+  fullName: MVVrus.AspNetCore.ActiveSession.IActiveSessionFeature.RefreshActiveSession
+  nameWithType: IActiveSessionFeature.RefreshActiveSession
 - uid: MVVrus.AspNetCore.ActiveSession.ILocalSession
   name: ILocalSession
   href: api/MVVrus.AspNetCore.ActiveSession.ILocalSession.html
   commentId: T:MVVrus.AspNetCore.ActiveSession.ILocalSession
   fullName: MVVrus.AspNetCore.ActiveSession.ILocalSession
   nameWithType: ILocalSession
-- uid: MVVrus.AspNetCore.ActiveSession.ILocalSession.BaseId
-  name: BaseId
-  href: api/MVVrus.AspNetCore.ActiveSession.ILocalSession.BaseId.html#MVVrus_AspNetCore_ActiveSession_ILocalSession_BaseId
-  commentId: P:MVVrus.AspNetCore.ActiveSession.ILocalSession.BaseId
-  fullName: MVVrus.AspNetCore.ActiveSession.ILocalSession.BaseId
-  nameWithType: ILocalSession.BaseId
-- uid: MVVrus.AspNetCore.ActiveSession.ILocalSession.BaseId*
-  name: BaseId
-  href: api/MVVrus.AspNetCore.ActiveSession.ILocalSession.BaseId.html
-  commentId: Overload:MVVrus.AspNetCore.ActiveSession.ILocalSession.BaseId
-  fullName: MVVrus.AspNetCore.ActiveSession.ILocalSession.BaseId
-  nameWithType: ILocalSession.BaseId
+- uid: MVVrus.AspNetCore.ActiveSession.ILocalSession.CompletionToken
+  name: CompletionToken
+  href: api/MVVrus.AspNetCore.ActiveSession.ILocalSession.CompletionToken.html#MVVrus_AspNetCore_ActiveSession_ILocalSession_CompletionToken
+  commentId: P:MVVrus.AspNetCore.ActiveSession.ILocalSession.CompletionToken
+  fullName: MVVrus.AspNetCore.ActiveSession.ILocalSession.CompletionToken
+  nameWithType: ILocalSession.CompletionToken
+- uid: MVVrus.AspNetCore.ActiveSession.ILocalSession.CompletionToken*
+  name: CompletionToken
+  href: api/MVVrus.AspNetCore.ActiveSession.ILocalSession.CompletionToken.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.ILocalSession.CompletionToken
+  fullName: MVVrus.AspNetCore.ActiveSession.ILocalSession.CompletionToken
+  nameWithType: ILocalSession.CompletionToken
+- uid: MVVrus.AspNetCore.ActiveSession.ILocalSession.Id
+  name: Id
+  href: api/MVVrus.AspNetCore.ActiveSession.ILocalSession.Id.html#MVVrus_AspNetCore_ActiveSession_ILocalSession_Id
+  commentId: P:MVVrus.AspNetCore.ActiveSession.ILocalSession.Id
+  fullName: MVVrus.AspNetCore.ActiveSession.ILocalSession.Id
+  nameWithType: ILocalSession.Id
+- uid: MVVrus.AspNetCore.ActiveSession.ILocalSession.Id*
+  name: Id
+  href: api/MVVrus.AspNetCore.ActiveSession.ILocalSession.Id.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.ILocalSession.Id
+  fullName: MVVrus.AspNetCore.ActiveSession.ILocalSession.Id
+  nameWithType: ILocalSession.Id
 - uid: MVVrus.AspNetCore.ActiveSession.ILocalSession.IsAvailable
   name: IsAvailable
   href: api/MVVrus.AspNetCore.ActiveSession.ILocalSession.IsAvailable.html#MVVrus_AspNetCore_ActiveSession_ILocalSession_IsAvailable
@@ -1568,6 +1649,42 @@ references:
   fullName.vb: MVVrus.AspNetCore.ActiveSession.IRunnerFactory(Of TRequest, TResult).Create
   nameWithType: IRunnerFactory<TRequest, TResult>.Create
   nameWithType.vb: IRunnerFactory(Of TRequest, TResult).Create
+- uid: MVVrus.AspNetCore.ActiveSession.IRunnerMonitor
+  name: IRunnerMonitor
+  href: api/MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.html
+  commentId: T:MVVrus.AspNetCore.ActiveSession.IRunnerMonitor
+  fullName: MVVrus.AspNetCore.ActiveSession.IRunnerMonitor
+  nameWithType: IRunnerMonitor
+- uid: MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.GetRunnerCount
+  name: GetRunnerCount()
+  href: api/MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.GetRunnerCount.html#MVVrus_AspNetCore_ActiveSession_IRunnerMonitor_GetRunnerCount
+  commentId: M:MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.GetRunnerCount
+  fullName: MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.GetRunnerCount()
+  nameWithType: IRunnerMonitor.GetRunnerCount()
+- uid: MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.GetRunnerCount*
+  name: GetRunnerCount
+  href: api/MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.GetRunnerCount.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.GetRunnerCount
+  fullName: MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.GetRunnerCount
+  nameWithType: IRunnerMonitor.GetRunnerCount
+- uid: MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.GetRunnerListSnaphot
+  name: GetRunnerListSnaphot()
+  href: api/MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.GetRunnerListSnaphot.html#MVVrus_AspNetCore_ActiveSession_IRunnerMonitor_GetRunnerListSnaphot
+  commentId: M:MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.GetRunnerListSnaphot
+  fullName: MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.GetRunnerListSnaphot()
+  nameWithType: IRunnerMonitor.GetRunnerListSnaphot()
+- uid: MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.GetRunnerListSnaphot*
+  name: GetRunnerListSnaphot
+  href: api/MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.GetRunnerListSnaphot.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.GetRunnerListSnaphot
+  fullName: MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.GetRunnerListSnaphot
+  nameWithType: IRunnerMonitor.GetRunnerListSnaphot
+- uid: MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.NewRunner
+  name: NewRunner
+  href: api/MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.NewRunner.html
+  commentId: E:MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.NewRunner
+  fullName: MVVrus.AspNetCore.ActiveSession.IRunnerMonitor.NewRunner
+  nameWithType: IRunnerMonitor.NewRunner
 - uid: MVVrus.AspNetCore.ActiveSession.IRunnerProxy
   name: IRunnerProxy
   href: api/MVVrus.AspNetCore.ActiveSession.IRunnerProxy.html
@@ -1812,6 +1929,24 @@ references:
   fullName.vb: MVVrus.AspNetCore.ActiveSession.KeyedRunner(Of TResult).RunnerNumber
   nameWithType: KeyedRunner<TResult>.RunnerNumber
   nameWithType.vb: KeyedRunner(Of TResult).RunnerNumber
+- uid: MVVrus.AspNetCore.ActiveSession.LocalSessionExtensions
+  name: LocalSessionExtensions
+  href: api/MVVrus.AspNetCore.ActiveSession.LocalSessionExtensions.html
+  commentId: T:MVVrus.AspNetCore.ActiveSession.LocalSessionExtensions
+  fullName: MVVrus.AspNetCore.ActiveSession.LocalSessionExtensions
+  nameWithType: LocalSessionExtensions
+- uid: MVVrus.AspNetCore.ActiveSession.LocalSessionExtensions.TakeOwnership(MVVrus.AspNetCore.ActiveSession.ILocalSession,System.IDisposable)
+  name: TakeOwnership(ILocalSession, IDisposable)
+  href: api/MVVrus.AspNetCore.ActiveSession.LocalSessionExtensions.TakeOwnership.html#MVVrus_AspNetCore_ActiveSession_LocalSessionExtensions_TakeOwnership_MVVrus_AspNetCore_ActiveSession_ILocalSession_System_IDisposable_
+  commentId: M:MVVrus.AspNetCore.ActiveSession.LocalSessionExtensions.TakeOwnership(MVVrus.AspNetCore.ActiveSession.ILocalSession,System.IDisposable)
+  fullName: MVVrus.AspNetCore.ActiveSession.LocalSessionExtensions.TakeOwnership(MVVrus.AspNetCore.ActiveSession.ILocalSession, System.IDisposable)
+  nameWithType: LocalSessionExtensions.TakeOwnership(ILocalSession, IDisposable)
+- uid: MVVrus.AspNetCore.ActiveSession.LocalSessionExtensions.TakeOwnership*
+  name: TakeOwnership
+  href: api/MVVrus.AspNetCore.ActiveSession.LocalSessionExtensions.TakeOwnership.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.LocalSessionExtensions.TakeOwnership
+  fullName: MVVrus.AspNetCore.ActiveSession.LocalSessionExtensions.TakeOwnership
+  nameWithType: LocalSessionExtensions.TakeOwnership
 - uid: MVVrus.AspNetCore.ActiveSession.RunnerBase
   name: RunnerBase
   href: api/MVVrus.AspNetCore.ActiveSession.RunnerBase.html
@@ -2442,6 +2577,60 @@ references:
   commentId: Overload:MVVrus.AspNetCore.ActiveSession.RunnerId.ToString
   fullName: MVVrus.AspNetCore.ActiveSession.RunnerId.ToString
   nameWithType: RunnerId.ToString
+- uid: MVVrus.AspNetCore.ActiveSession.RunnerInfo
+  name: RunnerInfo
+  href: api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.html
+  commentId: T:MVVrus.AspNetCore.ActiveSession.RunnerInfo
+  fullName: MVVrus.AspNetCore.ActiveSession.RunnerInfo
+  nameWithType: RunnerInfo
+- uid: MVVrus.AspNetCore.ActiveSession.RunnerInfo.#ctor(MVVrus.AspNetCore.ActiveSession.IRunner,System.Type,System.Int32)
+  name: RunnerInfo(IRunner, Type, int)
+  href: api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.-ctor.html#MVVrus_AspNetCore_ActiveSession_RunnerInfo__ctor_MVVrus_AspNetCore_ActiveSession_IRunner_System_Type_System_Int32_
+  commentId: M:MVVrus.AspNetCore.ActiveSession.RunnerInfo.#ctor(MVVrus.AspNetCore.ActiveSession.IRunner,System.Type,System.Int32)
+  name.vb: New(IRunner, Type, Integer)
+  fullName: MVVrus.AspNetCore.ActiveSession.RunnerInfo.RunnerInfo(MVVrus.AspNetCore.ActiveSession.IRunner, System.Type, int)
+  fullName.vb: MVVrus.AspNetCore.ActiveSession.RunnerInfo.New(MVVrus.AspNetCore.ActiveSession.IRunner, System.Type, Integer)
+  nameWithType: RunnerInfo.RunnerInfo(IRunner, Type, int)
+  nameWithType.vb: RunnerInfo.New(IRunner, Type, Integer)
+- uid: MVVrus.AspNetCore.ActiveSession.RunnerInfo.#ctor*
+  name: RunnerInfo
+  href: api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.-ctor.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.RunnerInfo.#ctor
+  name.vb: New
+  fullName: MVVrus.AspNetCore.ActiveSession.RunnerInfo.RunnerInfo
+  fullName.vb: MVVrus.AspNetCore.ActiveSession.RunnerInfo.New
+  nameWithType: RunnerInfo.RunnerInfo
+  nameWithType.vb: RunnerInfo.New
+- uid: MVVrus.AspNetCore.ActiveSession.RunnerInfo.Number
+  name: Number
+  href: api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.Number.html
+  commentId: F:MVVrus.AspNetCore.ActiveSession.RunnerInfo.Number
+  fullName: MVVrus.AspNetCore.ActiveSession.RunnerInfo.Number
+  nameWithType: RunnerInfo.Number
+- uid: MVVrus.AspNetCore.ActiveSession.RunnerInfo.RemoteHost
+  name: RemoteHost
+  href: api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.RemoteHost.html
+  commentId: F:MVVrus.AspNetCore.ActiveSession.RunnerInfo.RemoteHost
+  fullName: MVVrus.AspNetCore.ActiveSession.RunnerInfo.RemoteHost
+  nameWithType: RunnerInfo.RemoteHost
+- uid: MVVrus.AspNetCore.ActiveSession.RunnerInfo.ResultType
+  name: ResultType
+  href: api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.ResultType.html
+  commentId: F:MVVrus.AspNetCore.ActiveSession.RunnerInfo.ResultType
+  fullName: MVVrus.AspNetCore.ActiveSession.RunnerInfo.ResultType
+  nameWithType: RunnerInfo.ResultType
+- uid: MVVrus.AspNetCore.ActiveSession.RunnerInfo.Runner
+  name: Runner
+  href: api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.Runner.html
+  commentId: F:MVVrus.AspNetCore.ActiveSession.RunnerInfo.Runner
+  fullName: MVVrus.AspNetCore.ActiveSession.RunnerInfo.Runner
+  nameWithType: RunnerInfo.Runner
+- uid: MVVrus.AspNetCore.ActiveSession.RunnerInfo.TrackCleanup
+  name: TrackCleanup
+  href: api/MVVrus.AspNetCore.ActiveSession.RunnerInfo.TrackCleanup.html
+  commentId: F:MVVrus.AspNetCore.ActiveSession.RunnerInfo.TrackCleanup
+  fullName: MVVrus.AspNetCore.ActiveSession.RunnerInfo.TrackCleanup
+  nameWithType: RunnerInfo.TrackCleanup
 - uid: MVVrus.AspNetCore.ActiveSession.RunnerResult`1
   name: RunnerResult<TResult>
   href: api/MVVrus.AspNetCore.ActiveSession.RunnerResult-1.html
@@ -3890,3 +4079,48 @@ references:
   fullName.vb: MVVrus.AspNetCore.ActiveSession.StdRunner.TimeSeriesRunner(Of TResult).New
   nameWithType: TimeSeriesRunner<TResult>.TimeSeriesRunner
   nameWithType.vb: TimeSeriesRunner(Of TResult).New
+- uid: MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute
+  name: TransactionalProviderAttribute
+  href: api/MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.html
+  commentId: T:MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute
+  fullName: MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute
+  nameWithType: TransactionalProviderAttribute
+- uid: MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.#ctor
+  name: TransactionalProviderAttribute()
+  href: api/MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.-ctor.html#MVVrus_AspNetCore_ActiveSession_TransactionalProviderAttribute__ctor
+  commentId: M:MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.#ctor
+  name.vb: New()
+  fullName: MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.TransactionalProviderAttribute()
+  fullName.vb: MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.New()
+  nameWithType: TransactionalProviderAttribute.TransactionalProviderAttribute()
+  nameWithType.vb: TransactionalProviderAttribute.New()
+- uid: MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.#ctor(System.Boolean)
+  name: TransactionalProviderAttribute(bool)
+  href: api/MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.-ctor.html#MVVrus_AspNetCore_ActiveSession_TransactionalProviderAttribute__ctor_System_Boolean_
+  commentId: M:MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.#ctor(System.Boolean)
+  name.vb: New(Boolean)
+  fullName: MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.TransactionalProviderAttribute(bool)
+  fullName.vb: MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.New(Boolean)
+  nameWithType: TransactionalProviderAttribute.TransactionalProviderAttribute(bool)
+  nameWithType.vb: TransactionalProviderAttribute.New(Boolean)
+- uid: MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.#ctor*
+  name: TransactionalProviderAttribute
+  href: api/MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.-ctor.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.#ctor
+  name.vb: New
+  fullName: MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.TransactionalProviderAttribute
+  fullName.vb: MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.New
+  nameWithType: TransactionalProviderAttribute.TransactionalProviderAttribute
+  nameWithType.vb: TransactionalProviderAttribute.New
+- uid: MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.IsTransactional
+  name: IsTransactional
+  href: api/MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.IsTransactional.html#MVVrus_AspNetCore_ActiveSession_TransactionalProviderAttribute_IsTransactional
+  commentId: P:MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.IsTransactional
+  fullName: MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.IsTransactional
+  nameWithType: TransactionalProviderAttribute.IsTransactional
+- uid: MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.IsTransactional*
+  name: IsTransactional
+  href: api/MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.IsTransactional.html
+  commentId: Overload:MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.IsTransactional
+  fullName: MVVrus.AspNetCore.ActiveSession.TransactionalProviderAttribute.IsTransactional
+  nameWithType: TransactionalProviderAttribute.IsTransactional

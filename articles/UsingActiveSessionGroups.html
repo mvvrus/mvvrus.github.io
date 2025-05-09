@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Using active session group object. </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Using active session group object. ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="using-active-session-group-object">Using active session group object.</h1>
+
+<p>The active session group object is created when the first active session object in the group is created and is disposed when the last active session object in the group ceases to exist. A reference to an active session group object is stored when processing a request in the context of this request. This reference is available via the <a href="/api/MVVrus.AspNetCore.ActiveSession.ActiveSessionContextExtension.GetActiveSessionGroup.html#MVVrus_AspNetCore_ActiveSession_ActiveSessionContextExtension_GetActiveSessionGroup_Microsoft_AspNetCore_Http_HttpContext_">GetActiveSessionGroup</a> extension method for the context.</p>
+<p>A reference to a session group object is an interface of the <a href="/api/MVVrus.AspNetCore.ActiveSession.ILocalSession.html">ILocalSession</a> type. This interface is a stripped-down version of the active session object interface IActiveSession (technically, the IActiveSession interface type inherits from ILocalSession). The ILocalSession interface contains the following properties, common with IActiveSession interface: Id - the group identifier, IsAvailable - an indication that the active session group reference points to an actual, not a dummy group object, Properties - a dictionary containing references to objects associated with this group with string keys that allow you to find the desired object, a CompletionToken cancellation token, which is canceled when the group object is being disposed, allowing to clean up the objects associated with the group.</p>
+<p>In addition, an active session group just like an active session has its own service scope with its own service container. The scope is created when the group object is created. This scope exists as long as the group object exists and is not disposed. The ILocalSession interface of the group object contains a reference to the scoped services container in the SessionServices property just like IActiveSession interface. Maintaining this specific to an active session group scope allows a code that uses the active session group object to use the same single copy of the services with a Scoped lifetime and to automatically clean them up when the group becomes disposed.</p>
+<p>However, unlike the services in the active session container, the ActiveSession library does not provide convenient helper services for the services in the group container to inject dependencies on the services in the group container. This is because the active session group object is not intended to be used in endpoint request handlers in dependency injection frameworks - it is intended primarily for use in middleware handlers in the request processing pipeline.</p>
+<p>Before working with an active session group object, as well as with an active session object, one should check that the IsAvailable property is set to true - that is, that the reference received from the GetActiveSessionGroup method points to a real, not a dummy object.</p>
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
